@@ -1,0 +1,32 @@
+# Netlify configuration for the LeanScale Ghostwriter app
+# Deploys the Next.js app at the repo root to a Netlify site.
+# The skill writes JSON batches to output/[YYYY-MM-DD]/ and commits to git;
+# Netlify auto-deploys on push and the team accesses the site.
+
+[build]
+  command = "npm run build"
+  publish = ".next"
+
+[[plugins]]
+  package = "@netlify/plugin-nextjs"
+
+# Edge function for the Satori OG image renderer
+# (Next.js App Router route at app/api/og/route.ts runs as an Edge Function automatically)
+
+# Optional: password-protect the site so only the team can access it
+# Set the password in Netlify UI: Site settings → Build & deploy → Password protection
+# Or via environment: NETLIFY_SITE_PASSWORD
+
+[context.production.environment]
+  NEXT_PUBLIC_APP_ENV = "production"
+
+[context.deploy-preview.environment]
+  NEXT_PUBLIC_APP_ENV = "preview"
+
+# Headers — basic security baseline
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "DENY"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
