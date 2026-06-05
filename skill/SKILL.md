@@ -3,6 +3,12 @@ name: leanscale-ghostwriter
 description: Generate 5 LinkedIn posts per LeanScale team member (25 total per run) from a podcast transcript, in each person's distinct voice, using the 8 canonical content types. Writes structured JSON output to a dated batch folder and triggers a Netlify deploy so the team can pull their posts from posts.leanscale.team. Use when Anthony asks for "ghostwriter posts," "team posts from this transcript," drops a transcript file path with a request to generate LinkedIn content, or asks to add a new batch.
 ---
 
+> **Note:** The canonical, installed orchestrator is the **Ghost Write** skill at
+> `~/.claude/skills/ghostwrite/` (invoke with `/ghostwrite`). It reads this repo's
+> `voices/`, `content-types.md`, and `prompts/` as the source of truth and bundles
+> the generation Workflow + assembly/brief/ingest scripts. This file is kept as
+> in-repo reference for the system design; edit the installed skill to change behavior.
+
 # LeanScale Team Ghostwriter
 
 Generates 25 publish-ready LinkedIn posts (5 per team member) from a podcast transcript or topic seed. Outputs structured JSON the LeanScale ghostwriter app reads.
