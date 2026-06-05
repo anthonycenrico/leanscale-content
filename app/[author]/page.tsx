@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { getLatestBatch, getVoiceProfile } from "../lib/data";
+import { getAllPostsForAuthor, getVoiceProfile } from "../lib/data";
 import { AUTHOR_META, AUTHOR_ORDER, type AuthorSlug } from "../lib/types";
 import { QueueView } from "../lib/queue-view";
 
@@ -23,11 +23,11 @@ export default async function AuthorPage({ params }: PageProps) {
 
   const slug = author as AuthorSlug;
   const meta = AUTHOR_META[slug];
-  const [batch, voice] = await Promise.all([
-    getLatestBatch(),
+  const [posts, voice] = await Promise.all([
+    getAllPostsForAuthor(slug),
     getVoiceProfile(slug),
   ]);
-  const posts = batch ? batch.posts.filter((p) => p.authorSlug === slug) : [];
+  const batchCount = new Set(posts.map((p) => p.batchId)).size;
 
   return (
     <main>
@@ -45,12 +45,12 @@ export default async function AuthorPage({ params }: PageProps) {
 
           <div className="stats">
             <div className="stat">
-              <p className="stat__k">Batch</p>
-              <p className="stat__v">{batch?.batchId ?? "—"}</p>
-            </div>
-            <div className="stat">
               <p className="stat__k">Posts in queue</p>
               <p className="stat__v">{posts.length}</p>
+            </div>
+            <div className="stat">
+              <p className="stat__k">Batches</p>
+              <p className="stat__v">{batchCount}</p>
             </div>
             <div className="stat">
               <p className="stat__k">Voice confidence</p>
@@ -67,9 +67,9 @@ export default async function AuthorPage({ params }: PageProps) {
               <p className="tag">Voice profile</p>
               <h2 className="h-section">How your voice was built.</h2>
               <p className="lede">
-                A behind-the-scenes look at the characteristics the ghostwriter
-                pulls from when generating your posts. Edit{" "}
-                <code>voices/{slug}.md</code> to refine it.
+                A behind-the-scenes look at the characteristics the generator pulls
+                from when writing your posts. Edit <code>voices/{slug}.md</code> to
+                refine it.
               </p>
             </div>
 
@@ -120,15 +120,14 @@ export default async function AuthorPage({ params }: PageProps) {
             <p className="tag">Your queue</p>
             <h2 className="h-section">Ready to publish.</h2>
             <p className="lede">
-              Mark posts as published as you go. Published posts move to the
-              bottom and dim. State persists across batches.
+              Every post written for you, across all batches — newest first. Mark
+              each published as you post it; published posts move to the bottom and
+              the state sticks in your browser.
             </p>
           </div>
 
           {posts.length === 0 ? (
-            <p className="queue-empty">
-              No posts in this batch for {meta.name}.
-            </p>
+            <p className="queue-empty">No posts for {meta.name} yet.</p>
           ) : (
             <QueueView posts={posts} />
           )}

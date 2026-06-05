@@ -63,6 +63,28 @@ export async function getLatestBatch(): Promise<Batch | null> {
   return batches[0] ?? null;
 }
 
+// Batches whose id starts with "sample-" are dev/bring-up artifacts kept on disk
+// for history but excluded from the live additive queue (they predate / duplicate
+// a real batch). Nothing is ever deleted — this just controls what the app shows.
+const SAMPLE_PREFIX = "sample-";
+
+export async function getProdBatches(): Promise<Batch[]> {
+  const all = await getAllBatches();
+  return all.filter((b) => !b.batchId.startsWith(SAMPLE_PREFIX));
+}
+
+// All posts across every real batch, newest batch first. The queue is additive —
+// new batches accumulate, they never replace earlier ones.
+export async function getAllPosts(): Promise<Post[]> {
+  const batches = await getProdBatches();
+  return batches.flatMap((b) => b.posts);
+}
+
+export async function getAllPostsForAuthor(slug: AuthorSlug): Promise<Post[]> {
+  const batches = await getProdBatches();
+  return batches.flatMap((b) => b.posts.filter((p) => p.authorSlug === slug));
+}
+
 export async function getBatch(batchId: string): Promise<Batch | null> {
   const batches = await getAllBatches();
   return batches.find((b) => b.batchId === batchId) ?? null;

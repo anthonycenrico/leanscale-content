@@ -14,6 +14,15 @@ import {
 
 const STORAGE_PREFIX = "leanscale-content:published:";
 
+function formatBatchChip(batchId: string): string {
+  // batchId like "2026-06-06" -> "Jun 6". Falls back to the raw id.
+  const m = /^(\d{4})-(\d{2})-(\d{2})$/.exec(batchId);
+  if (!m) return batchId;
+  const months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+  const mo = months[Number(m[2]) - 1] ?? m[2];
+  return `${mo} ${Number(m[3])}`;
+}
+
 interface QueueViewProps {
   posts: Post[];
 }
@@ -128,6 +137,9 @@ function PostCard({
         <div className="post-card-meta-left">
           <span className={`content-type-chip ${contentTypeChipClass(post.contentType)}`}>
             {post.contentType}
+          </span>
+          <span className="batch-chip" title={`Batch ${post.batchId}`}>
+            {formatBatchChip(post.batchId)}
           </span>
         </div>
         <label className={`publish-toggle ${isPublished ? "publish-toggle--on" : ""}`}>
