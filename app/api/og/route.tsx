@@ -11,15 +11,17 @@ export const runtime = "edge";
  * - Lime is callout-only
  * - Sharp geometry (max radius 16px), purple-tinted shadows, no gradients
  *
- * Usage: /api/og?template=cover&title=Hello&kicker=GTM
+ * Usage: /api/og?template=cover&kicker=GTM&title=Hello&body=World
  *
  * Templates:
- *  - cover     : Off-white hero slide with eyebrow + display headline
- *  - quote     : Lime-bg pull-quote callout
- *  - framework : Numbered framework slide (light bg, big purple numeral)
- *  - dark      : Dark aubergine variant for closing slides / CTAs
+ *  - cover     : Off-white hero slide. Params: kicker, title, body
+ *  - framework : Numbered framework step. Params: kicker, num, title, body
+ *  - quote     : Lime pull-quote callout. Params: kicker, title (the quote), body (attribution)
+ *  - dark      : Deep aubergine closing slide. Params: kicker, title, body
+ *  - stat      : Single big stat with label. Params: kicker, stat, statLabel, body
+ *  - listicle  : Numbered list of 3-5 items. Params: kicker, title, items (pipe-delimited)
  *
- * Note: PLACEHOLDER renderer. Claude Design template exports will replace these.
+ * Slides are 1080x1080 — square format for LinkedIn carousel uploads.
  */
 
 const COLORS = {
@@ -31,30 +33,78 @@ const COLORS = {
   strongPurple: "#642585",
   mediumPurple: "#D9AFD0",
   lime: "#E8FFCF",
+  borderSubtle: "#E9E9E7",
 };
 
 const SIZE = { width: 1080, height: 1080 };
+const PAD = 80;
+const FONT_FAMILY = "'Plus Jakarta Sans', system-ui, sans-serif";
 
 export async function GET(request: NextRequest) {
   const { searchParams } = new URL(request.url);
-  const template = searchParams.get("template") ?? "cover";
-  const title = searchParams.get("title") ?? "Untitled";
-  const kicker = searchParams.get("kicker") ?? "LeanScale";
-  const body = searchParams.get("body") ?? "";
-  const num = searchParams.get("num") ?? "1";
+  const template = (searchParams.get("template") ?? "cover").toLowerCase();
+  const params = {
+    kicker: searchParams.get("kicker") ?? "LeanScale",
+    title: searchParams.get("title") ?? "Untitled slide",
+    body: searchParams.get("body") ?? "",
+    num: searchParams.get("num") ?? "01",
+    items: (searchParams.get("items") ?? "").split("|").filter(Boolean),
+    stat: searchParams.get("stat") ?? "",
+    statLabel: searchParams.get("statLabel") ?? "",
+  };
 
-  return new ImageResponse(
-    renderTemplate(template, { title, kicker, body, num }),
-    { ...SIZE }
+  return new ImageResponse(renderTemplate(template, params), { ...SIZE });
+}
+
+interface RenderParams {
+  kicker: string;
+  title: string;
+  body: string;
+  num: string;
+  items: string[];
+  stat: string;
+  statLabel: string;
+}
+
+function eyebrow(text: string, color: string) {
+  return (
+    <div
+      style={{
+        fontSize: 18,
+        letterSpacing: 4,
+        textTransform: "uppercase",
+        fontWeight: 300,
+        color,
+      }}
+    >
+      {text}
+    </div>
   );
 }
 
-function renderTemplate(
-  template: string,
-  props: { title: string; kicker: string; body: string; num: string }
-) {
-  const { title, kicker, body, num } = props;
+function footer(left: string, right: string, color: string, borderColor: string) {
+  return (
+    <div
+      style={{
+        display: "flex",
+        justifyContent: "space-between",
+        alignItems: "center",
+        paddingTop: 24,
+        borderTop: `1px solid ${borderColor}`,
+        fontSize: 13,
+        letterSpacing: 4,
+        textTransform: "uppercase",
+        fontWeight: 300,
+        color,
+      }}
+    >
+      <span>{left}</span>
+      <span>{right}</span>
+    </div>
+  );
+}
 
+function renderTemplate(template: string, p: RenderParams) {
   switch (template) {
     case "quote":
       return (
@@ -65,40 +115,60 @@ function renderTemplate(
             display: "flex",
             background: COLORS.lime,
             color: COLORS.darkPurple,
-            alignItems: "center",
-            justifyContent: "center",
-            padding: 120,
-            fontFamily: "'Plus Jakarta Sans', system-ui, sans-serif",
+            padding: PAD,
+            fontFamily: FONT_FAMILY,
+            flexDirection: "column",
+            justifyContent: "space-between",
           }}
         >
-          <div style={{ display: "flex", flexDirection: "column", gap: 40, width: "100%" }}>
+          {eyebrow(p.kicker, COLORS.strongPurple)}
+          <div style={{ display: "flex", flexDirection: "column", gap: 36 }}>
             <div
               style={{
-                fontSize: 14,
-                letterSpacing: 4,
-                textTransform: "uppercase",
-                fontWeight: 300,
-                color: COLORS.strongPurple,
+                fontSize: 220,
+                lineHeight: 0.7,
+                fontWeight: 500,
+                color: COLORS.darkPurple,
               }}
             >
-              {kicker}
+              "
             </div>
             <div
               style={{
-                fontSize: 64,
-                lineHeight: 1.15,
+                fontSize: 60,
+                lineHeight: 1.12,
                 fontWeight: 500,
                 color: COLORS.darkPurple,
                 letterSpacing: "-0.01em",
               }}
             >
-              {title}
+              {p.title}
             </div>
-            {body && (
-              <div style={{ fontSize: 24, color: COLORS.darkPurple, opacity: 0.7, fontWeight: 400 }}>
-                {body}
+            {p.body && (
+              <div
+                style={{
+                  fontSize: 22,
+                  color: COLORS.darkPurple,
+                  opacity: 0.7,
+                  fontWeight: 500,
+                  marginTop: 16,
+                }}
+              >
+                — {p.body}
               </div>
             )}
+          </div>
+          <div
+            style={{
+              fontSize: 13,
+              letterSpacing: 4,
+              textTransform: "uppercase",
+              fontWeight: 300,
+              color: COLORS.darkPurple,
+              opacity: 0.7,
+            }}
+          >
+            www.leanscale.team
           </div>
         </div>
       );
@@ -114,25 +184,15 @@ function renderTemplate(
             justifyContent: "space-between",
             background: COLORS.offWhite,
             color: COLORS.black,
-            padding: 96,
-            fontFamily: "'Plus Jakarta Sans', system-ui, sans-serif",
+            padding: PAD,
+            fontFamily: FONT_FAMILY,
           }}
         >
-          <div
-            style={{
-              fontSize: 16,
-              letterSpacing: 4,
-              textTransform: "uppercase",
-              fontWeight: 300,
-              color: COLORS.strongPurple,
-            }}
-          >
-            {kicker}
-          </div>
-          <div style={{ display: "flex", alignItems: "flex-start", gap: 64 }}>
+          {eyebrow(p.kicker, COLORS.strongPurple)}
+          <div style={{ display: "flex", alignItems: "flex-start", gap: 56 }}>
             <div
               style={{
-                fontSize: 180,
+                fontSize: 200,
                 fontWeight: 300,
                 color: COLORS.strongPurple,
                 lineHeight: 1,
@@ -140,42 +200,35 @@ function renderTemplate(
                 fontVariantNumeric: "tabular-nums",
               }}
             >
-              {num}
+              {p.num}
             </div>
-            <div style={{ display: "flex", flexDirection: "column", gap: 32, flex: 1, paddingTop: 24 }}>
+            <div style={{ display: "flex", flexDirection: "column", gap: 28, flex: 1, paddingTop: 24 }}>
               <div
                 style={{
-                  fontSize: 56,
+                  fontSize: 60,
                   lineHeight: 1.05,
                   fontWeight: 500,
                   color: COLORS.black,
                   letterSpacing: "-0.01em",
                 }}
               >
-                {title}
+                {p.title}
               </div>
-              {body && (
-                <div style={{ fontSize: 24, lineHeight: 1.4, color: COLORS.darkGray, fontWeight: 500 }}>
-                  {body}
+              {p.body && (
+                <div
+                  style={{
+                    fontSize: 24,
+                    lineHeight: 1.4,
+                    color: COLORS.darkGray,
+                    fontWeight: 500,
+                  }}
+                >
+                  {p.body}
                 </div>
               )}
             </div>
           </div>
-          <div
-            style={{
-              display: "flex",
-              justifyContent: "space-between",
-              alignItems: "center",
-              fontSize: 13,
-              letterSpacing: 4,
-              textTransform: "uppercase",
-              fontWeight: 300,
-              color: COLORS.darkGray,
-            }}
-          >
-            <span>www.leanscale.team</span>
-            <span>Placeholder</span>
-          </div>
+          {footer("www.leanscale.team", "LeanScale Ghostwriter", COLORS.darkGray, COLORS.borderSubtle)}
         </div>
       );
 
@@ -190,54 +243,166 @@ function renderTemplate(
             justifyContent: "space-between",
             background: COLORS.darkPurple,
             color: COLORS.offWhite,
-            padding: 96,
-            fontFamily: "'Plus Jakarta Sans', system-ui, sans-serif",
+            padding: PAD,
+            fontFamily: FONT_FAMILY,
           }}
         >
-          <div
-            style={{
-              fontSize: 16,
-              letterSpacing: 4,
-              textTransform: "uppercase",
-              fontWeight: 300,
-              color: COLORS.mediumPurple,
-            }}
-          >
-            {kicker}
-          </div>
+          {eyebrow(p.kicker, COLORS.mediumPurple)}
           <div style={{ display: "flex", flexDirection: "column", gap: 32 }}>
             <div
               style={{
-                fontSize: 68,
-                lineHeight: 1.05,
+                fontSize: 72,
+                lineHeight: 1.02,
                 fontWeight: 500,
                 color: COLORS.offWhite,
                 letterSpacing: "-0.02em",
               }}
             >
-              {title}
+              {p.title}
             </div>
-            {body && (
-              <div style={{ fontSize: 26, lineHeight: 1.4, color: COLORS.lightGray, fontWeight: 500 }}>
-                {body}
+            {p.body && (
+              <div
+                style={{
+                  fontSize: 26,
+                  lineHeight: 1.4,
+                  color: COLORS.lightGray,
+                  fontWeight: 500,
+                }}
+              >
+                {p.body}
               </div>
             )}
           </div>
-          <div
-            style={{
-              display: "flex",
-              justifyContent: "space-between",
-              alignItems: "center",
-              fontSize: 13,
-              letterSpacing: 4,
-              textTransform: "uppercase",
-              fontWeight: 300,
-              color: COLORS.mediumPurple,
-            }}
-          >
-            <span>www.leanscale.team</span>
-            <span>Placeholder · Claude Design pending</span>
+          {footer("www.leanscale.team", "LeanScale Ghostwriter", COLORS.mediumPurple, "rgba(217,175,208,0.18)")}
+        </div>
+      );
+
+    case "stat":
+      return (
+        <div
+          style={{
+            width: "100%",
+            height: "100%",
+            display: "flex",
+            flexDirection: "column",
+            justifyContent: "space-between",
+            background: COLORS.offWhite,
+            color: COLORS.black,
+            padding: PAD,
+            fontFamily: FONT_FAMILY,
+          }}
+        >
+          {eyebrow(p.kicker, COLORS.strongPurple)}
+          <div style={{ display: "flex", flexDirection: "column", gap: 16 }}>
+            <div
+              style={{
+                fontSize: 280,
+                fontWeight: 300,
+                color: COLORS.strongPurple,
+                lineHeight: 0.95,
+                letterSpacing: "-0.03em",
+                fontVariantNumeric: "tabular-nums",
+              }}
+            >
+              {p.stat || p.title}
+            </div>
+            {p.statLabel && (
+              <div
+                style={{
+                  fontSize: 36,
+                  lineHeight: 1.2,
+                  fontWeight: 500,
+                  color: COLORS.black,
+                  letterSpacing: "-0.01em",
+                  maxWidth: 800,
+                }}
+              >
+                {p.statLabel}
+              </div>
+            )}
+            {p.body && (
+              <div
+                style={{
+                  fontSize: 22,
+                  lineHeight: 1.4,
+                  color: COLORS.darkGray,
+                  fontWeight: 500,
+                  marginTop: 16,
+                  maxWidth: 800,
+                }}
+              >
+                {p.body}
+              </div>
+            )}
           </div>
+          {footer("www.leanscale.team", "LeanScale Ghostwriter", COLORS.darkGray, COLORS.borderSubtle)}
+        </div>
+      );
+
+    case "listicle":
+      return (
+        <div
+          style={{
+            width: "100%",
+            height: "100%",
+            display: "flex",
+            flexDirection: "column",
+            justifyContent: "space-between",
+            background: COLORS.offWhite,
+            color: COLORS.black,
+            padding: PAD,
+            fontFamily: FONT_FAMILY,
+          }}
+        >
+          {eyebrow(p.kicker, COLORS.strongPurple)}
+          <div style={{ display: "flex", flexDirection: "column", gap: 36, flex: 1, justifyContent: "center" }}>
+            <div
+              style={{
+                fontSize: 48,
+                lineHeight: 1.1,
+                fontWeight: 500,
+                color: COLORS.black,
+                letterSpacing: "-0.01em",
+                marginBottom: 8,
+              }}
+            >
+              {p.title}
+            </div>
+            <div style={{ display: "flex", flexDirection: "column", gap: 14 }}>
+              {p.items.slice(0, 6).map((item, idx) => (
+                <div
+                  key={idx}
+                  style={{
+                    display: "flex",
+                    gap: 24,
+                    paddingTop: 18,
+                    paddingBottom: 18,
+                    borderTop: `1px solid ${COLORS.borderSubtle}`,
+                    fontSize: 24,
+                    lineHeight: 1.3,
+                    fontWeight: 500,
+                    color: COLORS.darkGray,
+                    alignItems: "baseline",
+                  }}
+                >
+                  <span
+                    style={{
+                      fontSize: 28,
+                      fontWeight: 300,
+                      color: COLORS.strongPurple,
+                      letterSpacing: "-0.01em",
+                      fontVariantNumeric: "tabular-nums",
+                      minWidth: 56,
+                    }}
+                  >
+                    {String(idx + 1).padStart(2, "0")}
+                  </span>
+                  <span style={{ flex: 1, color: COLORS.black }}>{item}</span>
+                </div>
+              ))}
+            </div>
+          </div>
+          {footer("www.leanscale.team", "LeanScale Ghostwriter", COLORS.darkGray, COLORS.borderSubtle)}
         </div>
       );
 
@@ -253,62 +418,38 @@ function renderTemplate(
             justifyContent: "space-between",
             background: COLORS.offWhite,
             color: COLORS.black,
-            padding: 96,
-            fontFamily: "'Plus Jakarta Sans', system-ui, sans-serif",
+            padding: PAD,
+            fontFamily: FONT_FAMILY,
           }}
         >
-          <div
-            style={{
-              fontSize: 18,
-              letterSpacing: 4,
-              textTransform: "uppercase",
-              fontWeight: 300,
-              color: COLORS.strongPurple,
-            }}
-          >
-            {kicker}
-          </div>
-          <div style={{ display: "flex", flexDirection: "column", gap: 28, paddingRight: 100 }}>
+          {eyebrow(p.kicker, COLORS.strongPurple)}
+          <div style={{ display: "flex", flexDirection: "column", gap: 28, paddingRight: 60 }}>
             <div
               style={{
-                fontSize: 80,
-                lineHeight: 1.02,
+                fontSize: 88,
+                lineHeight: 1.0,
                 fontWeight: 500,
                 color: COLORS.black,
                 letterSpacing: "-0.02em",
               }}
             >
-              {title}
+              {p.title}
             </div>
-            {body && (
+            {p.body && (
               <div
                 style={{
-                  fontSize: 26,
+                  fontSize: 28,
                   lineHeight: 1.4,
                   color: COLORS.darkGray,
                   fontWeight: 500,
-                  maxWidth: 720,
+                  maxWidth: 820,
                 }}
               >
-                {body}
+                {p.body}
               </div>
             )}
           </div>
-          <div
-            style={{
-              display: "flex",
-              justifyContent: "space-between",
-              alignItems: "center",
-              fontSize: 13,
-              letterSpacing: 4,
-              textTransform: "uppercase",
-              fontWeight: 300,
-              color: COLORS.darkGray,
-            }}
-          >
-            <span>www.leanscale.team</span>
-            <span>Placeholder · Claude Design pending</span>
-          </div>
+          {footer("www.leanscale.team", "LeanScale Ghostwriter", COLORS.darkGray, COLORS.borderSubtle)}
         </div>
       );
   }

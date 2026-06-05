@@ -776,6 +776,105 @@ a.voice-overview-meta-val { color: var(--fg-accent); }
 }
 
 /* ============================================================
+   Carousel block (inline slide preview + downloads)
+   ============================================================ */
+
+.carousel-block {
+  background: var(--ls-light-gray);
+  border-radius: var(--radius-md);
+  padding: var(--space-5);
+  margin-bottom: var(--space-5);
+}
+
+.section--gray .carousel-block { background: var(--ls-off-white); border: 1px solid var(--border-gray-section); }
+
+.carousel-block-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-4);
+  margin-bottom: var(--space-5);
+  flex-wrap: wrap;
+}
+
+.slide-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 14px;
+}
+
+.slide-tile {
+  background: var(--ls-off-white);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-sm);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: box-shadow 200ms cubic-bezier(.2, 0, 0, 1);
+}
+
+.section--gray .slide-tile { border-color: var(--border-gray-section); }
+
+.slide-tile:hover { box-shadow: var(--shadow-sm); }
+
+.slide-tile-img-wrap {
+  aspect-ratio: 1 / 1;
+  background: var(--ls-light-gray);
+  overflow: hidden;
+}
+
+.slide-tile-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.slide-tile-foot {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  padding: 10px 12px;
+  border-top: 1px solid var(--border-subtle);
+}
+
+.section--gray .slide-tile-foot { border-color: var(--border-gray-section); }
+
+.slide-tile-meta {
+  font-size: 10px;
+  font-weight: var(--fw-light);
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--fg-muted);
+  flex: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.slide-tile-download {
+  font-size: 10px;
+  font-weight: var(--fw-medium);
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--fg-accent);
+  padding: 6px 10px;
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-xs);
+  background: transparent;
+  cursor: pointer;
+  transition: all 160ms;
+  white-space: nowrap;
+}
+
+.slide-tile-download:hover {
+  background: var(--ls-strong-purple);
+  color: var(--ls-off-white);
+  border-color: var(--ls-strong-purple);
+}
+
+/* ============================================================
    Publish toggle (per-card pill — ghost off, lime on)
    ============================================================ */
 

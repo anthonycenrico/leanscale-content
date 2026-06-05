@@ -22,6 +22,31 @@ export interface TopicKernel {
   domain: string;
 }
 
+export type SlideTemplate =
+  | "cover"
+  | "framework"
+  | "quote"
+  | "dark"
+  | "stat"
+  | "listicle";
+
+export interface SlideSpec {
+  template: SlideTemplate;
+  params: {
+    kicker?: string;
+    title: string;
+    body?: string;
+    num?: string;
+    items?: string[];
+    stat?: string;
+    statLabel?: string;
+  };
+}
+
+export interface VisualSpec {
+  slides: SlideSpec[];
+}
+
 export interface Post {
   id: string;
   batchId: string;
@@ -32,7 +57,7 @@ export interface Post {
   postText: string;
   voiceNotes: string;
   visualAssetNeeded: string;
-  visualSpec: unknown | null;
+  visualSpec: VisualSpec | null;
   status: PostStatus;
   scheduledFor: string | null;
   postedAt: string | null;
