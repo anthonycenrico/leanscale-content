@@ -63,6 +63,16 @@ export interface AuthorMeta {
   confidence: string;
 }
 
+export interface VoiceProfile {
+  slug: string;
+  name: string;
+  role: string;
+  linkedin: string;
+  confidence: string;
+  lastUpdated: string;
+  bodyHtml: string;
+}
+
 export const AUTHOR_META: Record<AuthorSlug, AuthorMeta> = {
   jake:    { slug: "jake",    name: "Jake Toepel",     role: "Head of Engineering & Product", confidence: "medium-low" },
   joe:     { slug: "joe",     name: "Joe Zaghloul",    role: "Head of Revenue",               confidence: "medium" },

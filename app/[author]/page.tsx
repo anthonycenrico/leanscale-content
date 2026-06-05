@@ -1,13 +1,8 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { getLatestBatch, getPostsForAuthor } from "../lib/data";
-import {
-  AUTHOR_META,
-  AUTHOR_ORDER,
-  contentTypeChipClass,
-  type AuthorSlug,
-} from "../lib/types";
-import { CopyButton, ComposeOnLinkedInButton } from "../lib/post-actions";
+import { getLatestBatch, getVoiceProfile } from "../lib/data";
+import { AUTHOR_META, AUTHOR_ORDER, type AuthorSlug } from "../lib/types";
+import { QueueView } from "../lib/queue-view";
 
 export const dynamic = "force-static";
 
@@ -28,7 +23,10 @@ export default async function AuthorPage({ params }: PageProps) {
 
   const slug = author as AuthorSlug;
   const meta = AUTHOR_META[slug];
-  const batch = await getLatestBatch();
+  const [batch, voice] = await Promise.all([
+    getLatestBatch(),
+    getVoiceProfile(slug),
+  ]);
   const posts = batch ? batch.posts.filter((p) => p.authorSlug === slug) : [];
 
   return (
@@ -58,59 +56,58 @@ export default async function AuthorPage({ params }: PageProps) {
         </div>
       </header>
 
+      {voice && (
+        <section className="section section--voice">
+          <div className="container">
+            <details className="voice-overview">
+              <summary className="voice-overview-summary">
+                <span className="kicker kicker--lime">
+                  <span className="dot" />
+                  How your voice was built
+                </span>
+                <span className="voice-overview-summary-meta">
+                  Click to expand · {voice.bodyHtml ? "full profile" : "no body"}
+                </span>
+              </summary>
+              <div className="voice-overview-body">
+                <div className="voice-overview-meta">
+                  <div className="voice-overview-meta-item">
+                    <span className="voice-overview-meta-lbl">LinkedIn</span>
+                    {voice.linkedin ? (
+                      <a href={voice.linkedin} target="_blank" rel="noreferrer noopener" className="voice-overview-meta-val">
+                        {voice.linkedin.replace(/^https?:\/\//, "")}
+                      </a>
+                    ) : (
+                      <span className="voice-overview-meta-val">—</span>
+                    )}
+                  </div>
+                  <div className="voice-overview-meta-item">
+                    <span className="voice-overview-meta-lbl">Confidence</span>
+                    <span className="voice-overview-meta-val">{voice.confidence}</span>
+                  </div>
+                  <div className="voice-overview-meta-item">
+                    <span className="voice-overview-meta-lbl">Last updated</span>
+                    <span className="voice-overview-meta-val">{voice.lastUpdated || "—"}</span>
+                  </div>
+                </div>
+                <div
+                  className="voice-overview-content"
+                  dangerouslySetInnerHTML={{ __html: voice.bodyHtml }}
+                />
+              </div>
+            </details>
+          </div>
+        </section>
+      )}
+
       <section className="section">
         <div className="container">
           {posts.length === 0 ? (
-            <p style={{ color: "var(--ink-3)" }}>No posts in this batch for {meta.name}.</p>
+            <p style={{ color: "var(--ink-3)" }}>
+              No posts in this batch for {meta.name}.
+            </p>
           ) : (
-            <div className="post-list">
-              {posts.map((post) => {
-                const isCarousel =
-                  post.contentType.toUpperCase().includes("CAROUSEL") ||
-                  post.contentType.toUpperCase().includes("INFOGRAPHIC");
-
-                return (
-                  <article key={post.id} className="post-card">
-                    <div className="post-card-head">
-                      <div className="post-card-meta-left">
-                        <span className={`content-type-chip ${contentTypeChipClass(post.contentType)}`}>
-                          {post.contentType}
-                        </span>
-                        <span className={`status-chip status-chip--${post.status}`}>
-                          {post.status}
-                        </span>
-                      </div>
-                    </div>
-
-                    <h2 className="post-topic-title">{post.topicTitle}</h2>
-
-                    <div className="post-body">{post.postText}</div>
-
-                    {post.voiceNotes && (
-                      <div className="voice-notes">
-                        <span className="voice-notes-label">Voice notes</span>
-                        {post.voiceNotes}
-                      </div>
-                    )}
-
-                    {isCarousel && post.visualAssetNeeded && (
-                      <div className="visual-asset-block">
-                        <span className="visual-asset-label">Visual asset spec</span>
-                        <div className="visual-asset-text">{post.visualAssetNeeded}</div>
-                        <div className="visual-asset-status">
-                          PNG rendering pending — Claude Design template exports needed. Until then, copy this spec into your favorite design tool.
-                        </div>
-                      </div>
-                    )}
-
-                    <div className="post-actions">
-                      <CopyButton text={post.postText} />
-                      <ComposeOnLinkedInButton postText={post.postText} />
-                    </div>
-                  </article>
-                );
-              })}
-            </div>
+            <QueueView posts={posts} />
           )}
         </div>
       </section>

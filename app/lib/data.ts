@@ -1,8 +1,31 @@
 import { promises as fs } from "fs";
 import path from "path";
-import type { Batch, Post, AuthorSlug } from "./types";
+import matter from "gray-matter";
+import { marked } from "marked";
+import type { Batch, Post, AuthorSlug, VoiceProfile } from "./types";
 
 const OUTPUT_DIR = path.join(process.cwd(), "output");
+const VOICES_DIR = path.join(process.cwd(), "voices");
+
+export async function getVoiceProfile(slug: string): Promise<VoiceProfile | null> {
+  const filePath = path.join(VOICES_DIR, `${slug}.md`);
+  try {
+    const raw = await fs.readFile(filePath, "utf-8");
+    const { data, content } = matter(raw);
+    const bodyHtml = await marked.parse(content);
+    return {
+      slug,
+      name: String(data.name ?? slug),
+      role: String(data.role ?? ""),
+      linkedin: String(data.linkedin ?? ""),
+      confidence: String(data.confidence ?? "unknown"),
+      lastUpdated: String(data.last_updated ?? ""),
+      bodyHtml: typeof bodyHtml === "string" ? bodyHtml : "",
+    };
+  } catch {
+    return null;
+  }
+}
 
 export async function getAllBatches(): Promise<Batch[]> {
   let entries: string[] = [];
