@@ -1,0 +1,1219 @@
+{
+  "batchId": "2026-06-06",
+  "generatedAt": "2026-06-06T12:00:00Z",
+  "source": {
+    "type": "podcast-transcripts",
+    "note": "Mike Head (CRO, PartnerStack) — AEO/GEO, partnerships as AI-search distribution, partnership ROI, NDR, reinvention",
+    "transcripts": [
+      {
+        "guest": "Mike Head",
+        "topic": "AEO/GEO, partnerships, partnership ROI, NDR, reinvention"
+      }
+    ]
+  },
+  "topics": [
+    {
+      "title": "85% of what AI recommends isn't your website",
+      "angle": "Stop pouring budget into your own site for AI search. Up to 85% of what an LLM cites to recommend a vendor comes from third-party content — review sites, YouTube, LinkedIn, niche blogs, partner integration pages — not your domain. The buyer's shortlist is being written by everyone except you.",
+      "sourceQuote": "85 % of what AI recommends comes from third party content... And off of your websites is a very broad term. That's why we call it third party content as opposed to first party.",
+      "sourcePerson": "Mike Head",
+      "bestFor": [
+        "CONTRARIAN HOOK",
+        "INDUSTRY OBSERVATION",
+        "INFOGRAPHIC"
+      ],
+      "bestForRole": [
+        "Marketing",
+        "Founder",
+        "Revenue"
+      ],
+      "domain": "AEO/GEO strategy"
+    },
+    {
+      "title": "The 1,000-landing-page trap",
+      "angle": "The most common AI-search reflex is the worst one: spin up a thousand AI-written landing pages and blogs on your own domain. LLMs can tell it's brand-produced and AI-generated, and they discount it. Throwing the accelerant of AI onto a bad content strategy drives your brand into a brick wall faster.",
+      "sourceQuote": "if you take bad strategy and throw the accelerant of AI on top of it, you could really start putting your brand into a brick wall... Let me spin up a thousand landing pages... AI is smart enough to know that content is just produced by you.",
+      "sourcePerson": "Anthony",
+      "bestFor": [
+        "CONTRARIAN HOOK",
+        "SOFT EDUCATIONAL"
+      ],
+      "bestForRole": [
+        "Marketing",
+        "Founder"
+      ],
+      "domain": "AEO/GEO strategy"
+    },
+    {
+      "title": "Domain authority is no longer the moat",
+      "angle": "The SEO playbook is dead weight in AI search. Domain authority barely matters now — LLMs pull from mid- and long-tail sites, fresh FAQs, and breadth of coverage across your category. The winners aren't the highest-DA pages; they're the most widely distributed and most current.",
+      "sourceQuote": "domain authority doesn't matter as much as it used to... a majority of it actually comes from mid and long tail sites... you wanna make sure you're very widely distributed across all the different types of content sites.",
+      "sourcePerson": "Mike Head",
+      "bestFor": [
+        "SOFT EDUCATIONAL",
+        "INDUSTRY OBSERVATION",
+        "CONTRARIAN HOOK"
+      ],
+      "bestForRole": [
+        "Marketing",
+        "Founder"
+      ],
+      "domain": "AEO/GEO strategy"
+    },
+    {
+      "title": "Where AI actually sources your reputation",
+      "angle": "A field guide to the third-party surfaces LLMs read before recommending you: review sites (G2) to fact-check your claims, YouTube and small influencers, category blogs and digital publications, and — most overlooked — partner integration pages where two vendors explain how they work together. Each is a place you can be present or absent.",
+      "sourceQuote": "you have to work with review sites... It could be small influencers. YouTube is a huge channel... a number of different digital publications, blogs... whenever you're doing integrations with other vendors... that's another area that's quite often cited.",
+      "sourcePerson": "Mike Head",
+      "bestFor": [
+        "CAROUSEL",
+        "LISTICLE",
+        "SOFT EDUCATIONAL"
+      ],
+      "bestForRole": [
+        "Marketing",
+        "Revenue",
+        "Founder"
+      ],
+      "domain": "AEO/GEO strategy"
+    },
+    {
+      "title": "Partnerships are your AI-search distribution channel",
+      "angle": "Reframe partner content from 'nice co-marketing' to your single highest-leverage AEO play. Joint integration blogs, co-hosted webinars, and partner-produced YouTube get cited because an LLM weights a trusted third party talking about you far more than your own brand voice. Your partners are how you show up in the answer.",
+      "sourceQuote": "one of the areas where it really connects to partnerships is whenever you're doing integrations with other vendors, when you're writing blogs about one another... that's another area that's quite often cited and utilized by the LLM.",
+      "sourcePerson": "Mike Head",
+      "bestFor": [
+        "INDUSTRY OBSERVATION",
+        "SOFT EDUCATIONAL",
+        "CONTRARIAN HOOK"
+      ],
+      "bestForRole": [
+        "Marketing",
+        "Founder",
+        "Customers"
+      ],
+      "domain": "Partnerships as distribution"
+    },
+    {
+      "title": "Run the AI-visibility audit before you build content",
+      "angle": "A concrete playbook: start with an AI-visibility platform (AirOps, Profound, EverTune), pull the thousands of cited URLs and the content gaps it surfaces, then aim your partner and content strategy at exactly those gaps instead of guessing. The lowest-hanging fruit is a partner already being cited that you've never made content with.",
+      "sourceQuote": "start with the AI visibility platform and use their recommendations on the sites that you should be working with... you notice you have a partnership somewhere, they're actually being cited in these recommendations, you haven't done content together. That's obviously a no brainer.",
+      "sourcePerson": "Mike Head",
+      "bestFor": [
+        "TACTICAL PLAYBOOK",
+        "CAROUSEL"
+      ],
+      "bestForRole": [
+        "Marketing",
+        "Engineering/Product",
+        "Revenue"
+      ],
+      "domain": "AEO/GEO strategy"
+    },
+    {
+      "title": "Inauthentic content is a depreciating asset",
+      "angle": "The contrarian long-game bet: every spammy, low-relevance, pay-to-publish placement working today will stop working. LLMs are trending toward trust and authenticity, so content that doesn't genuinely match your product and customer use case is borrowed time. Build only what survives the next algorithm shift.",
+      "sourceQuote": "it's my belief that over time, any of this inauthentic spam type content won't be picked up long-term... there are some sites out there... willing to write about anyone and anything... I would expect over time, those type of tactics to not work.",
+      "sourcePerson": "Mike Head",
+      "bestFor": [
+        "CONTRARIAN HOOK",
+        "INDUSTRY OBSERVATION"
+      ],
+      "bestForRole": [
+        "Marketing",
+        "Founder"
+      ],
+      "domain": "AEO/GEO strategy"
+    },
+    {
+      "title": "Your AI listing might describe a product you no longer sell",
+      "angle": "If you've changed pricing, shipped a major release, or pivoted in the last 12 months, the LLMs may still be recommending the old you. AEO isn't just getting cited — it's monitoring and correcting what third-party content says so the model's answer matches reality. Stale citations actively misrepresent you to buyers.",
+      "sourceQuote": "If you've made product changes or pricing changes, like many technology companies have over the last 12 months, it's really important to make sure that that content is accurate because it will be used by the LLMs for these recommendations.",
+      "sourcePerson": "Mike Head",
+      "bestFor": [
+        "SOFT EDUCATIONAL",
+        "INDUSTRY OBSERVATION"
+      ],
+      "bestForRole": [
+        "Marketing",
+        "Engineering/Product",
+        "Founder"
+      ],
+      "domain": "AEO/GEO strategy"
+    },
+    {
+      "title": "The two camps on partnership ROI",
+      "angle": "Every partnership conversation splits people into two camps: those who intuitively get the value and don't sweat attribution, and those who can't wrap their heads around it without a clean number. The job isn't to convert the believers — it's to give the skeptics a model they can defend to a CRO or board.",
+      "sourceQuote": "there's two camps of people. There's people who just get it. They're not worried about tracking all the attribution... and then people who just can't wrap their heads around it.",
+      "sourcePerson": "Anthony",
+      "bestFor": [
+        "INDUSTRY OBSERVATION",
+        "CONTRARIAN HOOK"
+      ],
+      "bestForRole": [
+        "Revenue",
+        "Founder",
+        "Customers"
+      ],
+      "domain": "Partnership ROI"
+    },
+    {
+      "title": "Stop selling partnerships on 'influenced revenue'",
+      "angle": "Partner-influenced revenue is the metric that starts the fights. A CRO chasing pipeline and bookings hears 'influence' as noise. If you lead the ROI conversation with influence, you've already lost the room. Lead with sourced pipeline and a conversion math the rest of GTM already speaks.",
+      "sourceQuote": "One of the biggest debates is around partner influenced revenue... If you too much focus on partner influenced revenue and you have a CRO who's looking at I need more pipeline... That's where you start to have friction.",
+      "sourcePerson": "Mike Head",
+      "bestFor": [
+        "CONTRARIAN HOOK",
+        "SOFT EDUCATIONAL"
+      ],
+      "bestForRole": [
+        "Revenue",
+        "Founder"
+      ],
+      "domain": "Partnership ROI"
+    },
+    {
+      "title": "Model partnerships like a marketing funnel, not a black box",
+      "angle": "The unlock for proving partnership ROI: borrow the exact math marketing uses. Persona-overlap TAM, then % you can reach per quarter, then pipeline conversion, then win rate. '1,000 overlapping accounts, capture 5%, convert 50% to pipeline, win 30%' is a sentence a board understands — partnerships finally speaking the same language as every other channel.",
+      "sourceQuote": "try to emulate the same way that you would think about a TAM penetration pipeline, pipeline conversion rates with your partner program... we can get 5%... convert 50% in the pipeline... 30 % win rate into actual new bookings.",
+      "sourcePerson": "Mike Head",
+      "bestFor": [
+        "TACTICAL PLAYBOOK",
+        "CAROUSEL",
+        "INFOGRAPHIC"
+      ],
+      "bestForRole": [
+        "Revenue",
+        "Founder",
+        "Customers"
+      ],
+      "domain": "Partnership ROI"
+    },
+    {
+      "title": "Account mapping without persona overlap is theater",
+      "angle": "Two partners high-fiving over a big account-mapping overlap is meaningless if you hold the technical buyer and they hold the marketing buyer. Persona alignment, not logo overlap, determines whether co-selling generates real pipeline. Map personas first; the account list is downstream.",
+      "sourceQuote": "if we're doing account mapping and I have access to the technical buyer, you have access to the marketing buyer, that's really a pointless exercise... we're so misaligned at the persona level that it doesn't really show we'll have a great way to actually generate pipeline.",
+      "sourcePerson": "Mike Head",
+      "bestFor": [
+        "CONTRARIAN HOOK",
+        "SOFT EDUCATIONAL"
+      ],
+      "bestForRole": [
+        "Revenue",
+        "Customers"
+      ],
+      "domain": "Partnership strategy"
+    },
+    {
+      "title": "The metric every partnership pitch leaves out: NDR",
+      "angle": "Everyone sells partnerships on top-of-funnel — leads, pipeline, shorter cycles. Almost no one mentions the most durable benefit: net dollar retention is structurally higher when partners are involved. The most underused argument in the partnership deck is the one that compounds.",
+      "sourceQuote": "net dollar retention is higher when you have partners involved... That's a piece that almost everybody leaves out. Everybody's looking for the top of funnel... I rarely hear people talk about the net dollar retention component.",
+      "sourcePerson": "Mike Head",
+      "bestFor": [
+        "CONTRARIAN HOOK",
+        "INDUSTRY OBSERVATION",
+        "INFOGRAPHIC"
+      ],
+      "bestForRole": [
+        "Customers",
+        "Revenue",
+        "Founder"
+      ],
+      "domain": "Net dollar retention"
+    },
+    {
+      "title": "105 vs 130: the partner-managed NDR gap",
+      "angle": "Hard numbers across many partner programs: core business NDR benchmarks around 105, partner-managed revenue around 130. Better gross retention and more expansion, because partners know how to make the customer successful. The retention delta alone can justify the entire program — before you count a single sourced lead.",
+      "sourceQuote": "we're seeing 105 for the core business and 130 for the partner managed business. Typically you do see across the board better GDR gross dollar retention, so better churn, and... more expansion that comes through it.",
+      "sourcePerson": "Mike Head",
+      "bestFor": [
+        "INFOGRAPHIC",
+        "CASE STUDY SNIPPET",
+        "INDUSTRY OBSERVATION"
+      ],
+      "bestForRole": [
+        "Customers",
+        "Revenue",
+        "Founder"
+      ],
+      "domain": "Net dollar retention"
+    },
+    {
+      "title": "Segment your churn analysis by partner involvement",
+      "angle": "A specific CS analytics move most teams skip: when you run NDR cohort analysis, add a partner dimension. Split customers into refer-only, refer-and-manage, and manage-only. You can't see the retention lift partners create until you cut the data by who's actually managing the relationship.",
+      "sourceQuote": "There are some partners who refer you business but don't manage the customer versus those that refer you to business and manage the customer... anytime you're doing your NDR cohort analysis, make sure that you're including those variables.",
+      "sourcePerson": "Mike Head",
+      "bestFor": [
+        "TACTICAL PLAYBOOK",
+        "SOFT EDUCATIONAL",
+        "CAROUSEL"
+      ],
+      "bestForRole": [
+        "Customers",
+        "Engineering/Product",
+        "Revenue"
+      ],
+      "domain": "Net dollar retention"
+    },
+    {
+      "title": "Align your CS org to your partner portfolios",
+      "angle": "A small customer on its own is low priority; the same customer viewed as part of a partner's whole managed portfolio is strategic. Design customer success around partner portfolios — when the support team understands the agency behind the account, they deliver better service and pre-empt the fires that blow up partnerships.",
+      "sourceQuote": "Maybe on their own, they're not very important to your business... But if you look at the portfolio and what that total partner is managing... it becomes much more important. And if you have your success and support team aligned... you can provide a better experience.",
+      "sourcePerson": "Mike Head",
+      "bestFor": [
+        "SOFT EDUCATIONAL",
+        "TACTICAL PLAYBOOK"
+      ],
+      "bestForRole": [
+        "Customers",
+        "Founder"
+      ],
+      "domain": "CS organizational design"
+    },
+    {
+      "title": "Two companies on the hook beats one",
+      "angle": "Why partner-attached customers churn less, told as a dynamic, not a stat: when two companies are mutually invested, a problem with even your smallest account stops being about that account — it's the integrity of the whole partnership. Suddenly you'll throw resources at a small customer you never would have, because far more is at stake.",
+      "sourceQuote": "if there was anything going wrong with the smallest customer... it wasn't really just about that account anymore. It meant the integrity of the entire partnership. So you saw us invest insane amount of resources.",
+      "sourcePerson": "Anthony",
+      "bestFor": [
+        "PERSONAL STORY",
+        "INDUSTRY OBSERVATION"
+      ],
+      "bestForRole": [
+        "Customers",
+        "Revenue",
+        "Founder"
+      ],
+      "domain": "Partnership strategy"
+    },
+    {
+      "title": "Most companies start partnerships too late",
+      "angle": "A stage-by-stage build order for partnerships: 0-to-5 (finding PMF) usually needs no dedicated partner resource — but you should still lay groundwork. The failure mode isn't over-investing early; it's never starting, because unlike marketing, partnerships take patience and won't show a fast funnel. Good programs eventually deliver 30-40% of total revenue.",
+      "sourceQuote": "What I think companies fail at early stage is they don't do it early enough... good partnership organizations are delivering 30 to 40 % of total company revenue... partnerships can take a little bit more patience and you have to stick through to those investments.",
+      "sourcePerson": "Mike Head",
+      "bestFor": [
+        "TACTICAL PLAYBOOK",
+        "CAROUSEL",
+        "SOFT EDUCATIONAL"
+      ],
+      "bestForRole": [
+        "Founder",
+        "Revenue"
+      ],
+      "domain": "GTM build order"
+    },
+    {
+      "title": "Don't only swing for the home-run partner",
+      "angle": "The classic way to set a partnership program up to fail: only chase the one giant logo. Those take forever to incubate. You have to balance long-term home runs with smaller, faster partnerships that produce traction now — and set leadership's expectations on leading indicators and milestones so they stay committed through the slow incubation.",
+      "sourceQuote": "you can't only go for those long-term home runs with the biggest players in your space. You have to complement that strategy with other types of partnerships that... can provide more traction and more value in the short term.",
+      "sourcePerson": "Mike Head",
+      "bestFor": [
+        "SOFT EDUCATIONAL",
+        "TACTICAL PLAYBOOK",
+        "LISTICLE"
+      ],
+      "bestForRole": [
+        "Founder",
+        "Revenue"
+      ],
+      "domain": "Partnership strategy"
+    },
+    {
+      "title": "Run the business like you'll own it forever",
+      "angle": "The quiet rule that should govern every long-term GTM bet: 'Run your business as if you're going to own it forever — or else you will.' The obsession with quick wins and immediate stats is exactly what prevents the compounding investments (partnerships, content) that take years to bear fruit but define the company.",
+      "sourceQuote": "Jordan Bettman said, run your business as if you're going to own it forever, or else you will... You have to make some bets for the long term... give it time to come to fruition.",
+      "sourcePerson": "Anthony",
+      "bestFor": [
+        "CONTRARIAN HOOK",
+        "PERSONAL STORY",
+        "INFOGRAPHIC"
+      ],
+      "bestForRole": [
+        "Founder",
+        "Revenue",
+        "Marketing"
+      ],
+      "domain": "Leadership"
+    },
+    {
+      "title": "Co-branded content makes your existing GTM hit harder",
+      "angle": "The hidden second payoff of partner content: it doesn't just create new pipeline — it makes everything you already do more effective. BDRs prospecting into a partner's customer base convert better with co-branded proof. Ads targeting a partner's users perform better. Partnership content is a force multiplier on the whole engine, not a separate line item.",
+      "sourceQuote": "co-branded content helps make your BDRs more effective when they're reaching out to customers of your technology integration partners... If you have marketing ads targeting customers of your partner... those ads are also more effective.",
+      "sourcePerson": "Mike Head",
+      "bestFor": [
+        "INDUSTRY OBSERVATION",
+        "TACTICAL PLAYBOOK",
+        "CASE STUDY SNIPPET"
+      ],
+      "bestForRole": [
+        "Marketing",
+        "Revenue",
+        "Customers"
+      ],
+      "domain": "Partnerships as distribution"
+    },
+    {
+      "title": "Partnerships touch every stage of the GTM lifecycle",
+      "angle": "The whole-system reframe: a partnership investment is not a lead-gen line item. One program simultaneously sources pipeline, shortens sales cycles, lifts win rates, raises NDR, lowers cost-to-serve, AND feeds your AI-search visibility. Judging it on 'how many leads did we get' undervalues it by a wide margin.",
+      "sourceQuote": "now when you throw in another angle, increasing net dollar retention... also create beneficial content for the market that will increase your AEO... this investment isn't just, okay, how many leads did I get? No, it's touching every single component of the GTM lifecycle.",
+      "sourcePerson": "Anthony",
+      "bestFor": [
+        "CAROUSEL",
+        "INFOGRAPHIC",
+        "SOFT EDUCATIONAL"
+      ],
+      "bestForRole": [
+        "Founder",
+        "Revenue",
+        "Customers"
+      ],
+      "domain": "GTM strategy"
+    },
+    {
+      "title": "Ecosystem is the only durable moat left",
+      "angle": "A forecast with teeth: when anyone can build an application cheaply, product features stop being a moat — your ecosystem becomes one. The companies with the broadest base of partner-evangelists win; those leaning solely on sales and marketing struggle. In an AI-built world, distribution through partners is the defensible asset.",
+      "sourceQuote": "because of the prevalence of building applications now and the low cost to build applications... an ecosystem will be a moat... I think those that solely rely on sales and marketing are going to have a much harder time continuing to be successful.",
+      "sourcePerson": "Mike Head",
+      "bestFor": [
+        "CONTRARIAN HOOK",
+        "INDUSTRY OBSERVATION",
+        "INFOGRAPHIC"
+      ],
+      "bestForRole": [
+        "Founder",
+        "Engineering/Product",
+        "Revenue"
+      ],
+      "domain": "GTM strategy"
+    },
+    {
+      "title": "Every promotion, stop doing last year's job",
+      "angle": "The hardest discipline in scaling: a new title is easy, but most people just keep doing the job they did the year before with a different badge. Real growth means deliberately stepping back, relearning the function, getting out of your own way, and changing your habits — not importing 'how I've done it for eight years' into a role that demands something new.",
+      "sourceQuote": "one of the hardest things as you're growing within an organization is to stop doing the job you did the year before... it's so easy to take a promotion... and then just keep operating in that way with a different title... getting out of your own way, changing your habits.",
+      "sourcePerson": "Mike Head",
+      "bestFor": [
+        "PERSONAL STORY",
+        "SOFT EDUCATIONAL",
+        "CONTRARIAN HOOK"
+      ],
+      "bestForRole": [
+        "Founder",
+        "Revenue",
+        "Customers"
+      ],
+      "domain": "Leadership"
+    },
+    {
+      "title": "The first CRO lesson: stop closing deals",
+      "angle": "A pointed first-time-CRO confession: 'I love deals — I'll workshop the narrative all day.' But running a 250-person org, that's no longer your job. The trap is doing the thing that fills your cup at the expense of systems, tooling, and what happens four quarters out. Do enough of what you love to stay sharp; not so much that it eats the strategy.",
+      "sourceQuote": "I love deals. Love it... but as a CRO of an organization of 250... that's not my job... Make sure that you're really thinking about systems, processes, tooling, what's gonna happen four quarters from now, not what's gonna happen this quarter.",
+      "sourcePerson": "Mike Head",
+      "bestFor": [
+        "PERSONAL STORY",
+        "CONTRARIAN HOOK",
+        "SOFT EDUCATIONAL"
+      ],
+      "bestForRole": [
+        "Revenue",
+        "Founder"
+      ],
+      "domain": "GTM leadership"
+    },
+    {
+      "title": "Leaders have to be shoulder-to-shoulder on AI",
+      "angle": "The new bar for leadership in the AI era: you can't delegate the learning. Mike's ELT spends meeting time on Claude specifically because leaders have to lead from the front and actually do the work, not just sponsor it. Rolling up your sleeves shoulder-to-shoulder with the team matters most precisely during times of fast change.",
+      "sourceQuote": "we were even talking in our ELT meeting this morning about AI, Claude specifically, and how we need to be leading from the front and actually doing that... whatever thing you're doing, you're willing to roll up your sleeves and be shoulder to shoulder.",
+      "sourcePerson": "Mike Head",
+      "bestFor": [
+        "CONTRARIAN HOOK",
+        "INDUSTRY OBSERVATION",
+        "PERSONAL STORY"
+      ],
+      "bestForRole": [
+        "Founder",
+        "Engineering/Product",
+        "Revenue"
+      ],
+      "domain": "AI in GTM"
+    },
+    {
+      "title": "RevOps in 2021 vs. RevOps now",
+      "angle": "The definition of the work itself keeps moving. In 2021 RevOps meant 'implementing Salesforce and HubSpot.' Now it means standing up agentic workflows — an instance of Claude Code building automations. The market shifted from growth-at-all-costs to efficiency, while investors still demand growth. The role won't hold still, and that's the point.",
+      "sourceQuote": "When I started LeanScale in 2021, RevOps was totally different than what RevOps means now... back then it was implementing Salesforce and HubSpot. Now it's are you implementing an instance of cloud code and building these automated workflows.",
+      "sourcePerson": "Anthony",
+      "bestFor": [
+        "INDUSTRY OBSERVATION",
+        "SOFT EDUCATIONAL",
+        "CAROUSEL"
+      ],
+      "bestForRole": [
+        "Engineering/Product",
+        "Founder",
+        "Revenue"
+      ],
+      "domain": "RevOps strategy"
+    }
+  ],
+  "posts": [
+    {
+      "id": "anthony-20260606-1",
+      "batchId": "2026-06-06",
+      "author": "Anthony Enrico",
+      "authorSlug": "anthony",
+      "contentType": "CAROUSEL",
+      "topicTitle": "Most companies start partnerships too late",
+      "postText": "Most companies don't over-invest in partnerships too early.\n\nThey just never start.\n\nHere's the thing founders get wrong: partnerships don't behave like marketing. There's no fast funnel, no clean attribution in week two. So when you're 0-to-5 and hunting for PMF, the dedicated partner hire is the wrong move — but doing nothing is worse.\n\nLay the groundwork now. Then scale the investment as you grow.\n\nBecause the programs that stick it out? They eventually deliver 30-40% of total company revenue.\n\nSwiped through the stage-by-stage build order below. 👇",
+      "voiceNotes": "Opens with a contrarian reframe ('don't over-invest... they just never start') matching his bold-thesis hook style. Uses 'Here's the thing,' em-dashes, and the 30-40% revenue proof point. Closes with the 👇 comment-CTA pointer — used once in this batch.",
+      "visualAssetNeeded": "A 5-slide swipe-through carousel laying out a stage-by-stage partnership build order, from finding product-market fit through scale, with the failure mode (never starting) called out and a closing line on patience and the 30-40% revenue payoff.",
+      "visualSpec": {
+        "slides": [
+          {
+            "template": "cover",
+            "params": {
+              "kicker": "PARTNERSHIP BUILD ORDER",
+              "title": "Most companies start partnerships too late",
+              "body": "The failure mode isn't over-investing early. It's never starting at all."
+            }
+          },
+          {
+            "template": "framework",
+            "params": {
+              "kicker": "STAGE ONE",
+              "num": "01",
+              "title": "0 to 5: lay groundwork, don't hire",
+              "body": "Finding PMF rarely needs a dedicated partner resource. But map the ecosystem and seed relationships now."
+            }
+          },
+          {
+            "template": "framework",
+            "params": {
+              "kicker": "THE TRAP",
+              "num": "02",
+              "title": "Partnerships aren't marketing",
+              "body": "No fast funnel. No clean attribution. The teams that quit are the ones expecting one."
+            }
+          },
+          {
+            "template": "stat",
+            "params": {
+              "kicker": "THE PAYOFF",
+              "title": "What good programs eventually deliver",
+              "stat": "30-40%",
+              "statLabel": "of total company revenue",
+              "body": "The number a strong partnership organization reaches — if you stick through the slow incubation."
+            }
+          },
+          {
+            "template": "dark",
+            "params": {
+              "kicker": "THE RULE",
+              "title": "Start early. Scale with patience.",
+              "body": "Unlike marketing, partnerships compound on a delay. The groundwork you lay at 0-to-5 is what pays at scale."
+            }
+          }
+        ]
+      },
+      "status": "draft",
+      "scheduledFor": null,
+      "postedAt": null,
+      "linkedInUrl": null,
+      "createdAt": "2026-06-06T12:00:00Z"
+    },
+    {
+      "id": "anthony-20260606-2",
+      "batchId": "2026-06-06",
+      "author": "Anthony Enrico",
+      "authorSlug": "anthony",
+      "contentType": "INFOGRAPHIC",
+      "topicTitle": "Run the business like you'll own it forever",
+      "postText": "Best operating principle I've heard for long-term GTM, paraphrased from Jordan Bettman:\n\n\"Run your business as if you're going to own it forever — or else you will.\"\n\nRead it twice. The second half is the warning.\n\nThe obsession with quick wins and immediate stats is exactly what blocks the investments that take years to bear fruit — partnerships, content, ecosystem. The ones that don't show up in this quarter's dashboard but end up defining the entire company.\n\nYou have to make some bets for the long term. Then give them the time to come to fruition.\n\nOne image on the principle below.",
+      "voiceNotes": "Attributes the quote (Jordan Bettman) without turning it into a motivational graphic — frames it as an operating principle with teeth, which respects his 'no inspirational fluff' avoidance. Em-dash asides, plain operator vocabulary ('bets,' 'dashboard,' 'ecosystem'). Clean non-emoji close to vary from the carousel.",
+      "visualAssetNeeded": "A single dense infographic centered on the quote 'Run your business as if you're going to own it forever — or else you will,' framed as a long-term GTM operating principle, with a short contrast between quick-win obsession and compounding bets like partnerships and content.",
+      "visualSpec": {
+        "slides": [
+          {
+            "template": "quote",
+            "params": {
+              "kicker": "OPERATING PRINCIPLE",
+              "title": "Run your business as if you're going to own it forever — or else you will.",
+              "body": "Jordan Bettman, on the bets that take years to come to fruition."
+            }
+          }
+        ]
+      },
+      "status": "draft",
+      "scheduledFor": null,
+      "postedAt": null,
+      "linkedInUrl": null,
+      "createdAt": "2026-06-06T12:00:00Z"
+    },
+    {
+      "id": "anthony-20260606-3",
+      "batchId": "2026-06-06",
+      "author": "Anthony Enrico",
+      "authorSlug": "anthony",
+      "contentType": "CONTRARIAN HOOK",
+      "topicTitle": "Ecosystem is the only durable moat left",
+      "postText": "Product features are about to stop being a moat.\n\nWhen anyone can spin up an application cheaply, the thing you built last quarter gets cloned this quarter. The feature gap closes overnight.\n\nSo what's left to defend?\n\nYour ecosystem. 🤝\n\nThe companies with the broadest base of partner-evangelists — people who win when you win — are the ones who hold their ground. Distribution through partners isn't a nice-to-have anymore. In an AI-built world, it's the defensible asset.\n\nThe ones leaning solely on sales and marketing are going to have a much harder time continuing to be successful.\n\nEcosystem is the moat now.",
+      "voiceNotes": "Pure CONTRARIAN HOOK — bold forecast in line one, the 'why' in the body, clean payoff with no question bait. Uses his recurring POV (technical moats shrinking, ecosystem as the durable advantage) and the handshake emoji — used exactly once across the batch as the partnership signal.",
+      "visualAssetNeeded": "",
+      "visualSpec": null,
+      "status": "draft",
+      "scheduledFor": null,
+      "postedAt": null,
+      "linkedInUrl": null,
+      "createdAt": "2026-06-06T12:00:00Z"
+    },
+    {
+      "id": "anthony-20260606-4",
+      "batchId": "2026-06-06",
+      "author": "Anthony Enrico",
+      "authorSlug": "anthony",
+      "contentType": "SOFT EDUCATIONAL",
+      "topicTitle": "Partnerships are your AI-search distribution channel",
+      "postText": "Most teams still file partner content under \"nice co-marketing.\"\n\nThat's a miss. It might be your single highest-leverage answer-engine play.\n\nHere's the mechanic worth understanding: when an LLM decides what to say about your company, it doesn't weight your brand voice very highly. Of course you say good things about yourself. What it weights is a trusted third party saying those things about you.\n\nSo the assets that actually move you into the answer:\n\n- Integration blogs you and a partner write about each other\n- Co-hosted webinars\n- Partner-produced YouTube where they walk through working with you\n\nThat's the content getting cited and pulled into the response. Not your homepage.\n\nWhich reframes the whole thing — your partners aren't just a GTM channel. They're how you show up when a buyer asks the model about you.",
+      "voiceNotes": "SOFT EDUCATIONAL — clears up a misunderstanding ('nice co-marketing'), explains the AEO/LLM-citation mechanic simply, lands a new mental model. Uses scenario-style bullets (his observed bullet pattern), 'Here's the mechanic,' and em-dash reframes. No emoji, ends on the concept reframe rather than a CTA.",
+      "visualAssetNeeded": "",
+      "visualSpec": null,
+      "status": "draft",
+      "scheduledFor": null,
+      "postedAt": null,
+      "linkedInUrl": null,
+      "createdAt": "2026-06-06T12:00:00Z"
+    },
+    {
+      "id": "anthony-20260606-5",
+      "batchId": "2026-06-06",
+      "author": "Anthony Enrico",
+      "authorSlug": "anthony",
+      "contentType": "TACTICAL PLAYBOOK",
+      "topicTitle": "Don't only swing for the home-run partner",
+      "postText": "The fastest way to kill a partnership program: chase only the one giant logo.\n\nI get the temptation. Land the biggest player in your space and the whole thing prints. But those deals take forever to incubate — and while you wait, leadership stops believing.\n\nHere's how to set it up to actually survive:\n\n1. Keep the home-run swing. The category-defining partner is worth pursuing. Just know it's a multi-quarter incubation, not a Q3 number.\n\n2. Balance it with smaller, faster partnerships. The mid-size ones that produce real traction now — pipeline, intros, co-sells you can point to this quarter.\n\n3. Set leadership's expectations on leading indicators. Joint pipeline, partner-sourced meetings, integration milestones. Not closed-won, not yet.\n\n4. Report the milestones relentlessly. Commitment dies in the silence between the bet and the payoff. Your job is to fill that silence with progress.\n\nThe long game and the short game aren't a trade-off. Run both, and you buy yourself the patience to let the big one mature.",
+      "voiceNotes": "TACTICAL PLAYBOOK — problem setup, numbered SOP-style steps, prescriptive founder posture he's earned. Leans into his 'set expectations on leading indicators / milestones' substance and the long-game-vs-short-game balance. Closes on the payoff line (no CTA, no emoji) to keep sign-offs varied across the five.",
+      "visualAssetNeeded": "",
+      "visualSpec": null,
+      "status": "draft",
+      "scheduledFor": null,
+      "postedAt": null,
+      "linkedInUrl": null,
+      "createdAt": "2026-06-06T12:00:00Z"
+    },
+    {
+      "id": "joe-20260606-1",
+      "batchId": "2026-06-06",
+      "author": "Joe Zaghloul",
+      "authorSlug": "joe",
+      "contentType": "CAROUSEL",
+      "topicTitle": "Partnerships touch every stage of the GTM lifecycle",
+      "postText": "Most teams judge a partnership program on one number: how many leads did we get.\n\nThat math undervalues it by a wide margin.\n\nOne good partner program doesn't just source pipeline. It shortens sales cycles, lifts win rates, raises net dollar retention, lowers cost-to-serve, and feeds your AI-search visibility — all at once.\n\nIt touches every single component of the GTM lifecycle, not one line item on the demand-gen sheet.\n\nSwipe through how we map it 👇\n\n#partnerships #revops",
+      "voiceNotes": "Operator-to-operator framing with plural 'we' and the 👇 link-pointer he uses for swipe-throughs. Avoids the contrarian-bait hook by stating the pattern plainly ('Most teams judge...') rather than 'Stop doing X.' Tight 12-20 word sentences, lifts his actual phrasing 'touches every single component of the GTM lifecycle.' Closes with a 1-2 tag hashtag bundle, not engagement bait.",
+      "visualAssetNeeded": "A 5-slide swipe-through reframing a partnership program as a full-funnel GTM engine: open on the misconception (judged on lead count), then a slide mapping the six places one program creates value across the lifecycle, a stat slide quantifying how much the lead-only lens leaves on the table, and a closing statement slide that partnerships are a system, not a line item.",
+      "visualSpec": {
+        "slides": [
+          {
+            "template": "cover",
+            "params": {
+              "kicker": "GTM LIFECYCLE",
+              "title": "Partnerships aren't a lead-gen line item",
+              "body": "One program quietly moves six numbers across your entire go-to-market. Most teams only ever count one of them."
+            }
+          },
+          {
+            "template": "framework",
+            "params": {
+              "kicker": "THE REFRAME",
+              "num": "01",
+              "title": "Judge it on 'how many leads' and you miss the rest",
+              "body": "Lead count is the smallest payoff a partner program delivers. It's the one most teams build their entire ROI case on."
+            }
+          },
+          {
+            "template": "listicle",
+            "params": {
+              "kicker": "ONE PROGRAM",
+              "title": "Six places a partnership creates value",
+              "items": [
+                "Sources net-new pipeline",
+                "Shortens sales cycles",
+                "Lifts win rates",
+                "Raises net dollar retention",
+                "Lowers cost-to-serve",
+                "Feeds AI-search visibility"
+              ]
+            }
+          },
+          {
+            "template": "stat",
+            "params": {
+              "kicker": "THE GAP",
+              "title": "You're measuring one-sixth of the program",
+              "stat": "1 of 6",
+              "statLabel": "value drivers a lead-only lens captures",
+              "body": "Scoring partnerships on leads alone measures one-sixth of the program and ignores the rest of the lifecycle."
+            }
+          },
+          {
+            "template": "dark",
+            "params": {
+              "kicker": "THE TAKEAWAY",
+              "title": "Score the system, not the line item",
+              "body": "A partner program is GTM infrastructure. Measure pipeline, cycle time, win rate, NDR, cost-to-serve, and AI visibility together."
+            }
+          }
+        ]
+      },
+      "status": "draft",
+      "scheduledFor": null,
+      "postedAt": null,
+      "linkedInUrl": null,
+      "createdAt": "2026-06-06T12:00:00Z"
+    },
+    {
+      "id": "joe-20260606-2",
+      "batchId": "2026-06-06",
+      "author": "Joe Zaghloul",
+      "authorSlug": "joe",
+      "contentType": "INFOGRAPHIC",
+      "topicTitle": "Model partnerships like a marketing funnel, not a black box",
+      "postText": "Partnerships have a reputation as the channel nobody can put a number on.\n\nThe fix is simple: model them the exact same way you model every other channel.\n\nPersona-overlap TAM, then the % you can reach per quarter, then pipeline conversion, then win rate.\n\n1,000 overlapping accounts. Reach 5% a quarter. Convert 50% to pipeline. Win 30%. That's 7-8 new logos a board can actually defend.\n\nNo black box. Same language as paid, outbound, and PLG.\n\nSave the visual for your next partner-ROI conversation.",
+      "voiceNotes": "Soft-educational infographic caption in his matter-of-fact operator tone — clears up a confusion ('the channel nobody can put a number on') then teaches the model cleanly. Uses his fragment-for-emphasis rhythm ('No black box.') and the funnel math verbatim from the source. Soft CTA ('Save the visual') instead of engagement bait; no emoji here to vary against the carousel.",
+      "visualAssetNeeded": "A single dense funnel graphic that walks a worked example down four stages — persona-overlap TAM (1,000 accounts), quarterly reach (5%), pipeline conversion (50%), win rate (30%) — landing on the new-bookings number at the bottom, framed as the same math marketing already uses.",
+      "visualSpec": {
+        "slides": [
+          {
+            "template": "framework",
+            "params": {
+              "kicker": "PARTNER FUNNEL MATH",
+              "num": "→",
+              "title": "1,000 overlapping accounts, worked all the way down",
+              "body": "Persona-overlap TAM: 1,000 → Reach 5% per quarter: 50 → Convert 50% to pipeline: 25 → Win 30%: 7-8 new logos. Same funnel math as every other channel — partnerships finally speaking the language a board understands."
+            }
+          }
+        ]
+      },
+      "status": "draft",
+      "scheduledFor": null,
+      "postedAt": null,
+      "linkedInUrl": null,
+      "createdAt": "2026-06-06T12:00:00Z"
+    },
+    {
+      "id": "joe-20260606-3",
+      "batchId": "2026-06-06",
+      "author": "Joe Zaghloul",
+      "authorSlug": "joe",
+      "contentType": "SOFT EDUCATIONAL",
+      "topicTitle": "Co-branded content makes your existing GTM hit harder",
+      "postText": "There's a second payoff to co-branded partner content that almost nobody prices in.\n\nIt doesn't just create new pipeline. It makes everything you already do work better.\n\nBDRs prospecting into a partner's customer base convert higher when they're armed with co-branded proof — you're not a cold vendor, you're already in their stack's orbit.\n\nMarketing ads targeting that same partner's users perform better for the exact same reason.\n\nSo partner content isn't a separate line item competing with your other plays. It's a multiplier on the whole engine — outbound and paid included.\n\nBudget it that way.",
+      "voiceNotes": "Soft-educational explainer that clears up a misunderstanding (the 'hidden second payoff') in his calm operator register, no hook gymnastics. Pulls his actual examples — BDRs converting better, ads performing better against a partner's users. Plain-spoken vocabulary ('in their stack's orbit'), tight paragraphs, lands on a clean directive ('Budget it that way.') with no emoji and no engagement-bait — deliberately different opener and closer from the other posts.",
+      "visualAssetNeeded": "",
+      "visualSpec": null,
+      "status": "draft",
+      "scheduledFor": null,
+      "postedAt": null,
+      "linkedInUrl": null,
+      "createdAt": "2026-06-06T12:00:00Z"
+    },
+    {
+      "id": "joe-20260606-4",
+      "batchId": "2026-06-06",
+      "author": "Joe Zaghloul",
+      "authorSlug": "joe",
+      "contentType": "INDUSTRY OBSERVATION",
+      "topicTitle": "The two camps on partnership ROI",
+      "postText": "Every partnership conversation splits the room into two camps.\n\nCamp one just gets it. They see how an ecosystem play compounds across pipeline, retention, and brand, and they don't lose sleep over attributing every dollar.\n\nCamp two can't move without a clean number. No model, no buy-in.\n\nHere's what I've learned running these conversations: your job isn't to convert the believers. They're already in.\n\nThe work is handing camp two a model they can defend to a CRO or a board — overlap TAM, reach, conversion, win rate. Speak their language and the skeptic becomes your strongest internal champion.\n\nBuild for camp two.",
+      "voiceNotes": "Industry-observation pattern-recognition voice from a credible operator vantage ('running these conversations'), not a contrarian hot-take — respects Joe's avoidance of inflammatory hooks. Uses the two-camps construction straight from the source, his matter-of-fact tone, and a short fragment closer ('Build for camp two.'). No emoji, distinct opener and sign-off from the rest of the batch.",
+      "visualAssetNeeded": "",
+      "visualSpec": null,
+      "status": "draft",
+      "scheduledFor": null,
+      "postedAt": null,
+      "linkedInUrl": null,
+      "createdAt": "2026-06-06T12:00:00Z"
+    },
+    {
+      "id": "joe-20260606-5",
+      "batchId": "2026-06-06",
+      "author": "Joe Zaghloul",
+      "authorSlug": "joe",
+      "contentType": "TACTICAL PLAYBOOK",
+      "topicTitle": "Run the AI-visibility audit before you build content",
+      "postText": "Before you build a single piece of partner content, run the AI-visibility audit. It tells you exactly where to aim instead of guessing.\n\nHere's the workflow we run:\n\n1. Start with an AI-visibility platform — 𝗔𝗶𝗿𝗢𝗽𝘀, 𝗣𝗿𝗼𝗳𝗼𝘂𝗻𝗱, or 𝗘𝘃𝗲𝗿𝗧𝘂𝗻𝗲 — and pull the report.\n\n2. Export the thousands of URLs the LLMs are already citing for your category.\n\n3. Read the content gaps it surfaces — the questions where you're invisible and someone else owns the answer.\n\n4. Point your partner and content strategy directly at those gaps.\n\nThe lowest-hanging fruit: a partner already showing up in those citations that you've never made content with. That's a no-brainer — go make it together.\n\n🫡",
+      "voiceNotes": "His primary content type — tactical playbook with numbered SOP steps and the Unicode-bold tool-name pattern (𝗔𝗶𝗿𝗢𝗽𝘀, 𝗣𝗿𝗼𝗳𝗼𝘂𝗻𝗱, 𝗘𝘃𝗲𝗿𝗧𝘂𝗻𝗲) he uses for tool rundowns. Plural 'we run' framing, lifts 'no-brainer' and the lowest-hanging-fruit insight verbatim from the source. Signs off with the 🫡 salute — used only once across the five posts per anti-repetition rules.",
+      "visualAssetNeeded": "",
+      "visualSpec": null,
+      "status": "draft",
+      "scheduledFor": null,
+      "postedAt": null,
+      "linkedInUrl": null,
+      "createdAt": "2026-06-06T12:00:00Z"
+    },
+    {
+      "id": "cameron-20260606-1",
+      "batchId": "2026-06-06",
+      "author": "Cameron Legge",
+      "authorSlug": "cameron",
+      "contentType": "CAROUSEL",
+      "topicTitle": "Segment your churn analysis by partner involvement",
+      "postText": "Running NDR cohort analysis but not cutting it by partner involvement?\n\nYou're leaving the most interesting story in your retention data on the table.\n\nThere's a big difference between a partner who refers you business and a partner who refers AND manages the customer. Those are two completely different retention curves, and most teams blend them into one number.\n\nAdd one variable to your cohort analysis: who is actually managing the relationship. Refer-only, refer-and-manage, manage-only.\n\nThe retention lift partners create is invisible until you slice it this way.\n\nSwipe through for the exact cuts we run.",
+      "voiceNotes": "Opens with his question-as-pain-point hook (matches 'Don't know where to start with growth modeling?'). Downshifts to calm teacherly mode for the tactical CS-analytics content. Closes on a clean swipe/resource line rather than a signature salute, reserving the relational closers for other posts in the batch.",
+      "visualAssetNeeded": "A 5-slide carousel that teaches CS teams to add a partner dimension to NDR cohort analysis. Cover poses the question, body slides define the three customer segments (refer-only, refer-and-manage, manage-only), show how to build the cut, and call out the hidden retention lift; closing slide is a dark takeaway card.",
+      "visualSpec": {
+        "slides": [
+          {
+            "template": "cover",
+            "params": {
+              "kicker": "CS ANALYTICS",
+              "title": "Cut your churn data by partner involvement",
+              "body": "The one variable most NDR cohort analyses skip — and the retention story it unlocks."
+            }
+          },
+          {
+            "template": "framework",
+            "params": {
+              "kicker": "THE BLIND SPOT",
+              "num": "01",
+              "title": "Not all partners are the same",
+              "body": "A partner who refers a customer and a partner who refers AND manages that customer produce two very different retention curves."
+            }
+          },
+          {
+            "template": "listicle",
+            "params": {
+              "kicker": "THE THREE SEGMENTS",
+              "title": "Split every account three ways",
+              "items": [
+                "Refer-only: partner sent the lead, you manage it",
+                "Refer-and-manage: partner sent it and runs the relationship",
+                "Manage-only: partner runs an account they didn't source"
+              ]
+            }
+          },
+          {
+            "template": "framework",
+            "params": {
+              "kicker": "THE MOVE",
+              "num": "02",
+              "title": "Add the variable to your cohorts",
+              "body": "Anytime you run NDR cohort analysis, tag each customer by who manages the relationship. Then compare retention across the three groups."
+            }
+          },
+          {
+            "template": "dark",
+            "params": {
+              "kicker": "THE PAYOFF",
+              "title": "The lift was always there",
+              "body": "You can't see the retention partners create until you cut the data by who's actually managing the customer. So make the cut."
+            }
+          }
+        ]
+      },
+      "status": "draft",
+      "scheduledFor": null,
+      "postedAt": null,
+      "linkedInUrl": null,
+      "createdAt": "2026-06-06T12:00:00Z"
+    },
+    {
+      "id": "cameron-20260606-2",
+      "batchId": "2026-06-06",
+      "author": "Cameron Legge",
+      "authorSlug": "cameron",
+      "contentType": "INFOGRAPHIC",
+      "topicTitle": "105 vs 130: the partner-managed NDR gap",
+      "postText": "105 vs 130.\n\nThat's the NDR gap we keep seeing between core business and partner-managed revenue, across program after program.\n\nBetter gross retention. More expansion. For a simple reason: partners who manage the relationship know how to make the customer successful.\n\nHere's the part most people miss when they build the business case for a partner program. The retention delta alone can justify the whole thing — before you count a single sourced lead.\n\nMost partnership math starts with pipeline. The durable number is the one further down the funnel.\n\nOne image, the gap that pays for the program.",
+      "voiceNotes": "Opens with an emphatic stat fragment ('105 vs 130.') in his short punchy register. Stays calm and instructive on the numbers. Closes on a clean payoff line, not a salute or 'let's connect' — keeps signature closers rationed across the batch.",
+      "visualAssetNeeded": "A single stat-driven image comparing two NDR benchmarks side by side: core business around 105 versus partner-managed revenue around 130, with a short caption noting better gross retention plus more expansion, and a line that the retention gap can justify the program on its own.",
+      "visualSpec": {
+        "slides": [
+          {
+            "template": "stat",
+            "params": {
+              "kicker": "PARTNER-MANAGED NDR",
+              "stat": "105 → 130",
+              "statLabel": "Core business NDR vs. partner-managed NDR",
+              "title": "The gap that pays for the program",
+              "body": "Better gross retention and more expansion, because partners who manage the relationship know how to make the customer successful. The retention delta can justify the program before a single sourced lead."
+            }
+          }
+        ]
+      },
+      "status": "draft",
+      "scheduledFor": null,
+      "postedAt": null,
+      "linkedInUrl": null,
+      "createdAt": "2026-06-06T12:00:00Z"
+    },
+    {
+      "id": "cameron-20260606-3",
+      "batchId": "2026-06-06",
+      "author": "Cameron Legge",
+      "authorSlug": "cameron",
+      "contentType": "TACTICAL PLAYBOOK",
+      "topicTitle": "Align your CS org to your partner portfolios",
+      "postText": "A small customer on its own is a low priority. The same customer, viewed as one account inside a partner's whole managed portfolio, is strategic.\n\nThat reframe is the difference between a partner relationship that holds and one that quietly falls apart.\n\nHere's how to align customer success to partner portfolios:\n\n1. Map each account to the partner managing it, not just the logo on the contract.\n\n2. Roll those accounts up into a single portfolio view per partner, so your team sees the full book that partner is responsible for.\n\n3. Brief your success and support team on the agency behind the account before they ever pick up a ticket.\n\n4. Prioritize based on portfolio weight, not standalone ARR. A tiny account inside a big portfolio earns big-account attention.\n\n5. Pre-empt the fires. When your team understands the partner behind the customer, they catch the problems that blow up partnerships before they start.\n\nWhen the support team knows who's really on the other side, they deliver a better experience. Every time.\n\nThis is Customer Success as a growth function, not a cost center. If you're building your CS org around partners, let's connect!",
+      "voiceNotes": "His primary type — teacherly TACTICAL PLAYBOOK with a numbered SOP and short connective prose. Leans on his core CS-as-revenue-function thesis. Uses his one relational closer for the batch ('let's connect!'), which fits a long-form prescriptive post.",
+      "visualAssetNeeded": "",
+      "visualSpec": null,
+      "status": "draft",
+      "scheduledFor": null,
+      "postedAt": null,
+      "linkedInUrl": null,
+      "createdAt": "2026-06-06T12:00:00Z"
+    },
+    {
+      "id": "cameron-20260606-4",
+      "batchId": "2026-06-06",
+      "author": "Cameron Legge",
+      "authorSlug": "cameron",
+      "contentType": "CASE STUDY SNIPPET",
+      "topicTitle": "Two companies on the hook beats one",
+      "postText": "Years ago I watched our team throw an insane amount of resources at our single smallest customer.\n\nOn paper it made no sense. The account was tiny. The economics didn't come close to justifying the effort.\n\nBut that customer came through a partner. And the moment something went wrong, it stopped being about that account.\n\nIt was about the integrity of the entire partnership.\n\nSo we invested like the account was ten times its size, because in reality far more was on the line than one small logo. Two companies were mutually invested, and neither of us could afford to let it slip.\n\nThat's the quiet reason partner-attached customers churn less. It isn't a discount or a contract term. It's that two companies are on the hook instead of one.\n\nWhen a problem shows up, there are simply more people who refuse to let it fail.",
+      "voiceNotes": "Tells the retention dynamic as a positive lived snippet rather than a stat or a confession — keeps clear of his vulnerability-as-marketing avoidance. First-person narrative with a surprise turn (why we over-invested) and a quiet landing line, no CTA, which varies the close.",
+      "visualAssetNeeded": "",
+      "visualSpec": null,
+      "status": "draft",
+      "scheduledFor": null,
+      "postedAt": null,
+      "linkedInUrl": null,
+      "createdAt": "2026-06-06T12:00:00Z"
+    },
+    {
+      "id": "cameron-20260606-5",
+      "batchId": "2026-06-06",
+      "author": "Cameron Legge",
+      "authorSlug": "cameron",
+      "contentType": "INDUSTRY OBSERVATION",
+      "topicTitle": "The metric every partnership pitch leaves out: NDR",
+      "postText": "Across the partnership pitches I see, almost everyone sells the same thing: top of funnel.\n\nMore leads. More pipeline. Shorter sales cycles.\n\nAll real. All worth having.\n\nBut there's a benefit I rarely hear anyone mention, and it's the most durable one of the bunch: net dollar retention is structurally higher when partners are involved.\n\nBetter gross retention. More expansion. Revenue that compounds long after the sourced lead is forgotten.\n\nIt's the most underused argument in the partnership deck — the one piece of the story that keeps paying you back, and the piece almost everybody leaves out.\n\nIf you're building a partner program, put NDR on the first slide. Cheers!",
+      "voiceNotes": "Uses INDUSTRY OBSERVATION as the safe substitute for a contrarian take (per the taxonomy note for Cameron) — frames it as a pattern he sees, not 'everyone is wrong.' Closes with his celebratory 'Cheers!', the second and final use of a signature closer in the batch.",
+      "visualAssetNeeded": "",
+      "visualSpec": null,
+      "status": "draft",
+      "scheduledFor": null,
+      "postedAt": null,
+      "linkedInUrl": null,
+      "createdAt": "2026-06-06T12:00:00Z"
+    },
+    {
+      "id": "yasin-20260606-1",
+      "batchId": "2026-06-06",
+      "author": "Yaseen Arshad",
+      "authorSlug": "yasin",
+      "contentType": "CAROUSEL",
+      "topicTitle": "Where AI actually sources your reputation",
+      "postText": "When an LLM recommends a vendor, it isn't reading your homepage.\n\nIt's reading everyone who has written about you — and the surfaces it trusts most are the ones you don't own.\n\nI mapped the third-party places AI checks before it puts you on a buyer's shortlist. Each one is somewhere you're either present or absent.\n\nSwipe through the field guide. →",
+      "voiceNotes": "Behind-the-scenes 'I mapped' anchor + clean declarative hook (no hype, no fragment). Uses his em-dash contrast and a single functional → arrow. Closer is a plain swipe line, not a salute or CTA — reserves the LeanScale Letter close for a later post in the batch.",
+      "visualAssetNeeded": "A 5-slide swipeable field guide titled 'Where AI sources your reputation', walking through four third-party surfaces LLMs read before recommending a vendor — review sites, YouTube and small influencers, category blogs and publications, partner integration pages — opening on a cover slide and closing on a dark summary slide.",
+      "visualSpec": {
+        "slides": [
+          {
+            "template": "cover",
+            "params": {
+              "kicker": "AI VISIBILITY",
+              "title": "Where AI sources your reputation",
+              "body": "The third-party surfaces an LLM reads before it ever recommends you. Four places to be present — or absent."
+            }
+          },
+          {
+            "template": "framework",
+            "params": {
+              "kicker": "SURFACE 01",
+              "num": "01",
+              "title": "Review sites",
+              "body": "G2 and its peers are where AI fact-checks your claims. If you say it and a review site doesn't, the model trusts the review site."
+            }
+          },
+          {
+            "template": "framework",
+            "params": {
+              "kicker": "SURFACE 02",
+              "num": "02",
+              "title": "YouTube and small influencers",
+              "body": "Video is a huge citation channel. A niche creator walking through your product carries more weight than your own demo page."
+            }
+          },
+          {
+            "template": "framework",
+            "params": {
+              "kicker": "SURFACE 03",
+              "num": "03",
+              "title": "Category blogs and publications",
+              "body": "Digital publications and category blogs are where the model learns your context — who you serve and how you compare."
+            }
+          },
+          {
+            "template": "listicle",
+            "params": {
+              "kicker": "SURFACE 04",
+              "title": "Partner integration pages",
+              "items": [
+                "The most overlooked surface of all.",
+                "When two vendors document how they work together, that page gets cited.",
+                "It tells the model who you integrate with — and who vouches for you.",
+                "Most teams never write it."
+              ]
+            }
+          },
+          {
+            "template": "dark",
+            "params": {
+              "kicker": "THE TAKEAWAY",
+              "title": "You're cited where you show up",
+              "body": "Four surfaces. None of them your domain. Pick the ones that match your buyer and earn a place on each."
+            }
+          }
+        ]
+      },
+      "status": "draft",
+      "scheduledFor": null,
+      "postedAt": null,
+      "linkedInUrl": null,
+      "createdAt": "2026-06-06T12:00:00Z"
+    },
+    {
+      "id": "yasin-20260606-2",
+      "batchId": "2026-06-06",
+      "author": "Yaseen Arshad",
+      "authorSlug": "yasin",
+      "contentType": "INFOGRAPHIC",
+      "topicTitle": "85% of what AI recommends isn't your website",
+      "postText": "Up to 85% of what an LLM cites to recommend a vendor doesn't come from that vendor's website.\n\nMost teams are reading this backwards. They pour the AI-search budget into their own domain — more pages, more copy, more FAQs on a site the model barely weights.\n\nMeanwhile the citations come from somewhere else entirely: review sites, YouTube, LinkedIn, niche blogs, partner integration pages.\n\nWe call it first-party vs third-party for a reason. First-party is what you publish about yourself. Third-party is everyone else writing about you — and that's where the shortlist actually gets written.\n\nThe buyer's shortlist is being built by everyone except you. One image, below.",
+      "voiceNotes": "Stat-as-hook reframe — leads with the 85% number, then 'most teams are reading this backwards.' Uses his first-party/third-party agreed-definition framing. Closes on a clean declarative line, no emoji, no question bait. Different open and close from the carousel to avoid copy-paste feel.",
+      "visualAssetNeeded": "A single dense stat graphic: a large '85%' callout stating that up to 85% of what AI cites to recommend a vendor comes from third-party content, with a short labeled list of the off-site sources — review sites, YouTube, LinkedIn, niche blogs, partner integration pages — set against the small share that comes from a vendor's own website.",
+      "visualSpec": {
+        "slides": [
+          {
+            "template": "stat",
+            "params": {
+              "kicker": "AI SEARCH REALITY",
+              "title": "Your homepage is the small slice",
+              "stat": "85%",
+              "statLabel": "of AI citations are third-party",
+              "body": "Up to 85% of what an LLM uses to recommend a vendor comes from off your domain — review sites, YouTube, LinkedIn, niche blogs, partner integration pages."
+            }
+          }
+        ]
+      },
+      "status": "draft",
+      "scheduledFor": null,
+      "postedAt": null,
+      "linkedInUrl": null,
+      "createdAt": "2026-06-06T12:00:00Z"
+    },
+    {
+      "id": "yasin-20260606-3",
+      "batchId": "2026-06-06",
+      "author": "Yaseen Arshad",
+      "authorSlug": "yasin",
+      "contentType": "CONTRARIAN HOOK",
+      "topicTitle": "Domain authority is no longer the moat",
+      "postText": "Domain authority barely matters in AI search. The SEO playbook you spent a decade building is dead weight now.\n\nLLMs don't reward the highest-DA page. A majority of what they pull actually comes from mid- and long-tail sites — smaller, more specific, more current.\n\nWhat they reward instead:\n\n→ Fresh FAQs that answer the exact question a buyer typed\n→ Breadth of coverage across every content surface in your category\n→ Being recent, not just being ranked\n\nThe winners aren't the domains with the most backlinks. They're the brands that are the most widely distributed and the most up to date.\n\nStop optimizing for a leaderboard the models stopped reading.",
+      "voiceNotes": "His contrarian frame — the bold claim lands in line one, the reframe and proof in the body, no 'Hot take:' label. Em-dash and parallel → bullets as full thoughts. Reframe-not-attack energy: 'the right way' is shown. Clean one-line declarative payoff close, no CTA, no emoji sign-off.",
+      "visualAssetNeeded": "",
+      "visualSpec": null,
+      "status": "draft",
+      "scheduledFor": null,
+      "postedAt": null,
+      "linkedInUrl": null,
+      "createdAt": "2026-06-06T12:00:00Z"
+    },
+    {
+      "id": "yasin-20260606-4",
+      "batchId": "2026-06-06",
+      "author": "Yaseen Arshad",
+      "authorSlug": "yasin",
+      "contentType": "INDUSTRY OBSERVATION",
+      "topicTitle": "Inauthentic content is a depreciating asset",
+      "postText": "One bet quietly separates the serious AI-search teams from the rest right now.\n\nEvery spammy, pay-to-publish, low-relevance placement working today is borrowed time.\n\nThere are sites out there willing to write about anyone and anything for a fee. Right now the models still pick some of it up. That's the trade a lot of teams are making — buy a citation, book the win.\n\nHere's the pattern. LLMs are trending hard toward trust and authenticity. The content that survives is the content that genuinely matches your product and your customer's use case. Everything else is a depreciating asset.\n\nMy read: those tactics stop working. Not all at once — one algorithm shift at a time.\n\nSo build only what survives the next one. If a placement wouldn't be true without the payment, it isn't worth the line item.",
+      "voiceNotes": "Industry-observation 'across what I'm watching / here's the pattern / my read' construction — his pattern-recognition authority voice. Contrarian long-game thesis delivered as a trend call, not a dunk on named vendors (respects his avoidances). Closes on an operator takeaway line, no emoji, no signature stamp.",
+      "visualAssetNeeded": "",
+      "visualSpec": null,
+      "status": "draft",
+      "scheduledFor": null,
+      "postedAt": null,
+      "linkedInUrl": null,
+      "createdAt": "2026-06-06T12:00:00Z"
+    },
+    {
+      "id": "yasin-20260606-5",
+      "batchId": "2026-06-06",
+      "author": "Yaseen Arshad",
+      "authorSlug": "yasin",
+      "contentType": "SOFT EDUCATIONAL",
+      "topicTitle": "The 1,000-landing-page trap",
+      "postText": "The most common reflex in AI search is also the worst one.\n\nA team gets serious about getting recommended by LLMs, and the first move is almost always the same: \"Let me spin up a thousand landing pages and blog posts on our domain.\"\n\nHere's the part that trips people up. The models can tell. AI is smart enough to know that content was produced by you, about you, and generated by AI — and it discounts it accordingly. Volume on your own domain isn't the signal you think it is.\n\nThe deeper problem is what you've actually done. You took a thin content strategy and poured the accelerant of AI on top of it. Bad strategy doesn't get better at scale. It just gets to the wall faster — and now it's your brand hitting the wall.\n\nThe fix isn't fewer pages for the sake of fewer pages. It's earning genuine coverage on the surfaces AI actually trusts, then letting your own pages support it instead of carry it.\n\nMore on how we think about AI visibility in The LeanScale Letter.",
+      "voiceNotes": "Soft-educational explainer — clears up a misunderstanding ('here's the part that trips people up') and hands the reader a mental model. Uses his 'accelerant of AI / brick wall' source phrasing and the 'AI is smart enough to know' line. This is the one post that carries the LeanScale Letter CTA close — used once in the batch, not on all five.",
+      "visualAssetNeeded": "",
+      "visualSpec": null,
+      "status": "draft",
+      "scheduledFor": null,
+      "postedAt": null,
+      "linkedInUrl": null,
+      "createdAt": "2026-06-06T12:00:00Z"
+    },
+    {
+      "id": "jake-20260606-1",
+      "batchId": "2026-06-06",
+      "author": "Jake Toepel",
+      "authorSlug": "jake",
+      "contentType": "CAROUSEL",
+      "topicTitle": "Run the AI-visibility audit before you build content",
+      "postText": "Most teams build AEO content by guessing what buyers ask the LLMs.\n\nYou don't have to guess. The data already exists.\n\nStart with an AI-visibility platform (AirOps, Profound, EverTune). Pull the thousands of URLs the models are actually citing for your category, and the content-gap report it generates. Then aim your partner and content strategy at exactly those gaps.\n\nThe lowest-hanging fruit shows up fast: a partner already being cited in your space that you've never published a single piece of content with.\n\nSwipe through for the 5-step version we run.\n\nWhat platform are you pulling your citation data from?",
+      "voiceNotes": "Artifact-led, builder-pragmatic. Opens with the problem (guessing) and the fix (the data exists) rather than a hot take. Names real tools (load-bearing, not decorative) per his platform-proper-noun habit. Closes with a practitioner question, not a buyer pitch. No emojis here to keep variety across the batch.",
+      "visualAssetNeeded": "A 5-step playbook carousel for running an AI-visibility audit before building AEO content: cover, the gap-report step, the partner-citation insight, the prioritization step, and a closing line. Clean swipeable cards, one idea per slide.",
+      "visualSpec": {
+        "slides": [
+          {
+            "template": "cover",
+            "params": {
+              "kicker": "AEO PLAYBOOK",
+              "title": "Run the AI-visibility audit before you build content",
+              "body": "Stop guessing what buyers ask the LLMs. The citation data already exists. Aim your content at it."
+            }
+          },
+          {
+            "template": "framework",
+            "params": {
+              "kicker": "STEP ONE",
+              "num": "01",
+              "title": "Start with the platform, not a blank doc",
+              "body": "Stand up an AI-visibility tool: AirOps, Profound, or EverTune. It watches what the models cite for your category."
+            }
+          },
+          {
+            "template": "stat",
+            "params": {
+              "kicker": "WHAT YOU PULL",
+              "stat": "1,000s",
+              "statLabel": "Cited URLs surfaced",
+              "title": "The platform hands you the source list",
+              "body": "It returns the thousands of URLs the LLMs reference, plus a content-gap report showing exactly where you're invisible."
+            }
+          },
+          {
+            "template": "listicle",
+            "params": {
+              "kicker": "AIM THE STRATEGY",
+              "title": "Point content and partners at the gaps",
+              "items": [
+                "Rank gaps by how often they're cited",
+                "Map each gap to a partner or a page",
+                "Build to the gap, not to a guess",
+                "Re-pull monthly to track movement"
+              ]
+            }
+          },
+          {
+            "template": "framework",
+            "params": {
+              "kicker": "LOWEST-HANGING FRUIT",
+              "num": "05",
+              "title": "The partner already being cited",
+              "body": "A partner the models cite in your space, that you've never made content with, is a no-brainer. Co-publish first."
+            }
+          },
+          {
+            "template": "dark",
+            "params": {
+              "kicker": "THE TAKEAWAY",
+              "title": "Audit first. Build second.",
+              "body": "The gap report tells you exactly where to point your content and your partnerships. Let the data set the roadmap."
+            }
+          }
+        ]
+      },
+      "status": "draft",
+      "scheduledFor": null,
+      "postedAt": null,
+      "linkedInUrl": null,
+      "createdAt": "2026-06-06T12:00:00Z"
+    },
+    {
+      "id": "jake-20260606-2",
+      "batchId": "2026-06-06",
+      "author": "Jake Toepel",
+      "authorSlug": "jake",
+      "contentType": "INFOGRAPHIC",
+      "topicTitle": "RevOps in 2021 vs. RevOps now",
+      "postText": "I started LeanScale in 2021. RevOps meant something completely different than it does today.\n\nBack then the job was implementing Salesforce and HubSpot. Clean the data, build the reports, ship the routing.\n\nNow the job is standing up agentic workflows. Last week that looked like an instance of Claude Code building automations end to end.\n\nThe market moved from growth-at-all-costs to efficiency. Investors still want the growth. So the definition of the work keeps moving underneath us.\n\nThat's not a complaint. The role refusing to hold still is the whole reason it's worth doing.\n\nOne image, then and now. 🤖",
+      "voiceNotes": "First-person but anchored to a concrete artifact (Claude Code building automations) rather than a personal narrative arc, which he avoids. Earnest, optimistic landing ('not a complaint... whole reason it's worth doing') matches his bio register. Single robot emoji to mark the shipped/AI artifact, used once. Declarative medium sentences.",
+      "visualAssetNeeded": "A single side-by-side comparison image: RevOps in 2021 versus RevOps now. Left column lists the old definition (implementing Salesforce and HubSpot), right column lists the new one (standing up agentic workflows, an instance of Claude Code building automations). Self-contained, shareable.",
+      "visualSpec": {
+        "slides": [
+          {
+            "template": "listicle",
+            "params": {
+              "kicker": "THEN VS. NOW",
+              "title": "RevOps in 2021 vs. RevOps now",
+              "items": [
+                "2021: Implement Salesforce and HubSpot",
+                "2021: Clean data, build reports, ship routing",
+                "Now: Stand up agentic workflows",
+                "Now: An instance of Claude Code building automations",
+                "Shift: Growth-at-all-costs to efficiency",
+                "Constant: Investors still demand the growth"
+              ]
+            }
+          }
+        ]
+      },
+      "status": "draft",
+      "scheduledFor": null,
+      "postedAt": null,
+      "linkedInUrl": null,
+      "createdAt": "2026-06-06T12:00:00Z"
+    },
+    {
+      "id": "jake-20260606-3",
+      "batchId": "2026-06-06",
+      "author": "Jake Toepel",
+      "authorSlug": "jake",
+      "contentType": "SOFT EDUCATIONAL",
+      "topicTitle": "Your AI listing might describe a product you no longer sell",
+      "postText": "Here's a confusion worth clearing up about AEO.\n\nMost people think getting cited is the finish line. It isn't. The harder half is keeping what's cited accurate.\n\nIf you've changed pricing, shipped a major release, or pivoted in the last 12 months — like a lot of technology companies have — the LLMs may still be recommending the old you. The model pulls from third-party content, and that content goes stale quietly.\n\nSo the answer a buyer gets describes a product you no longer sell.\n\nThat's the part teams miss. AEO isn't a one-time push to get mentioned. It's an ongoing job of monitoring what the web says about you and correcting it, so the model's answer matches reality.\n\nStale citations don't sit there neutrally. They actively misrepresent you at the exact moment a buyer is deciding.\n\nThe mental model: treat your AI listing like a data pipeline, not a press release. It needs maintenance, not a launch.",
+      "voiceNotes": "SOFT EDUCATIONAL per his secondary fit. Opens by naming a confusion to clear up (matches his explainer hook), no contrarian-bait. Lands by handing the reader a mental model ('data pipeline, not a press release') in their pocket — textbook soft-ed structure, and the pipeline metaphor is squarely his data-plumbing vocabulary. Clean close, no CTA, for sign-off variety.",
+      "visualAssetNeeded": "",
+      "visualSpec": null,
+      "status": "draft",
+      "scheduledFor": null,
+      "postedAt": null,
+      "linkedInUrl": null,
+      "createdAt": "2026-06-06T12:00:00Z"
+    },
+    {
+      "id": "jake-20260606-4",
+      "batchId": "2026-06-06",
+      "author": "Jake Toepel",
+      "authorSlug": "jake",
+      "contentType": "TACTICAL PLAYBOOK",
+      "topicTitle": "Segment your churn analysis by partner involvement",
+      "postText": "A CS analytics move most teams skip:\n\nWhen you run NDR cohort analysis, add a partner dimension. Most retention dashboards never cut the data this way, so the lift partners create stays invisible.\n\nHere's the cut:\n\n1. Refer-only — the partner sent the deal, then walked away.\n2. Refer-and-manage — the partner sent it AND actively manages the relationship.\n3. Manage-only — you sourced it, a partner runs it day to day.\n\nRun your NDR cohorts across those three buckets and the picture usually changes. A managed relationship retains differently than a referral that got handed off, and you can't see the gap until the variable is in the model.\n\nThe payoff: you stop crediting \"partners\" as one blurry line item and start seeing which partner motion actually drives retention — the one worth investing more into.\n\nDM me if you want the cohort structure we use.",
+      "voiceNotes": "TACTICAL PLAYBOOK, his primary type. Numbered, SOP-style steps with the exact three segments from the kernel. 'until the variable is in the model' is his data-modeling vocabulary. Uses the signature 'DM me if you want the [artifact]' close — deployed here as one of at most two signature closers in the batch.",
+      "visualAssetNeeded": "",
+      "visualSpec": null,
+      "status": "draft",
+      "scheduledFor": null,
+      "postedAt": null,
+      "linkedInUrl": null,
+      "createdAt": "2026-06-06T12:00:00Z"
+    },
+    {
+      "id": "jake-20260606-5",
+      "batchId": "2026-06-06",
+      "author": "Jake Toepel",
+      "authorSlug": "jake",
+      "contentType": "INDUSTRY OBSERVATION",
+      "topicTitle": "Leaders have to be shoulder-to-shoulder on AI",
+      "postText": "The bar for leadership in the AI era moved, and a lot of execs haven't caught up to it.\n\nWe were talking about this in our ELT meeting this morning — AI, Claude specifically. The takeaway: you can't delegate the learning. Mike's leadership team spends actual meeting time doing the work, not just approving a budget for it.\n\nThe pattern I keep seeing is two kinds of leaders right now.\n\nOne sponsors AI. Sets the mandate, funds the tooling, asks for the dashboard, never opens the tool.\n\nThe other leads from the front. Sits down, builds the automation, hits the same walls the team hits, and learns where it actually breaks.\n\nDuring slow change, sponsoring might be enough. During fast change, it isn't. Whatever the thing is, you have to roll up your sleeves and be shoulder-to-shoulder with the team.\n\nThat's the part that compounds.",
+      "voiceNotes": "INDUSTRY OBSERVATION rather than a generic leadership-wisdom post — anchored to a specific recurring practice (Mike's ELT spending meeting time on Claude) so it stays concrete, avoiding his 'leadership platitudes disconnected from an artifact' avoidance. The two-kinds-of-leaders contrast is the parallel-observation structure of the type. Clean payoff close ('That's the part that compounds'), no CTA — keeps sign-offs varied.",
+      "visualAssetNeeded": "",
+      "visualSpec": null,
+      "status": "draft",
+      "scheduledFor": null,
+      "postedAt": null,
+      "linkedInUrl": null,
+      "createdAt": "2026-06-06T12:00:00Z"
+    }
+  ]
+}
