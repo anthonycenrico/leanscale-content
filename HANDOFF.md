@@ -6,6 +6,17 @@ This doc captures what was built in the initial scaffold pass, what's left, and 
 
 ---
 
+## Live URLs
+
+- **GitHub repo:** https://github.com/anthonycenrico/leanscale-content
+- **Production app:** https://leanscale-content.netlify.app
+- **Netlify admin:** https://app.netlify.com/projects/leanscale-content
+- **Netlify project ID:** `974bfd84-c017-4cd2-844d-23fe3183f5dd`
+
+Initial deploy was CLI-triggered (`netlify deploy --build --prod`). Future deploys will auto-trigger from git push once the Git integration is connected in the Netlify UI (see "What's left" below).
+
+---
+
 ## What's built (MVP foundation)
 
 ### Skill layer — fully ready
