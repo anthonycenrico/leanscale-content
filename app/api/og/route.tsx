@@ -228,7 +228,7 @@ function renderTemplate(template: string, p: RenderParams) {
               )}
             </div>
           </div>
-          {footer("www.leanscale.team", "LeanScale Ghostwriter", COLORS.darkGray, COLORS.borderSubtle)}
+          {footer("www.leanscale.team", "", COLORS.darkGray, COLORS.borderSubtle)}
         </div>
       );
 
@@ -273,7 +273,7 @@ function renderTemplate(template: string, p: RenderParams) {
               </div>
             )}
           </div>
-          {footer("www.leanscale.team", "LeanScale Ghostwriter", COLORS.mediumPurple, "rgba(217,175,208,0.18)")}
+          {footer("www.leanscale.team", "", COLORS.mediumPurple, "rgba(217,175,208,0.18)")}
         </div>
       );
 
@@ -335,7 +335,7 @@ function renderTemplate(template: string, p: RenderParams) {
               </div>
             )}
           </div>
-          {footer("www.leanscale.team", "LeanScale Ghostwriter", COLORS.darkGray, COLORS.borderSubtle)}
+          {footer("www.leanscale.team", "", COLORS.darkGray, COLORS.borderSubtle)}
         </div>
       );
 
@@ -402,7 +402,7 @@ function renderTemplate(template: string, p: RenderParams) {
               ))}
             </div>
           </div>
-          {footer("www.leanscale.team", "LeanScale Ghostwriter", COLORS.darkGray, COLORS.borderSubtle)}
+          {footer("www.leanscale.team", "", COLORS.darkGray, COLORS.borderSubtle)}
         </div>
       );
 
@@ -449,7 +449,7 @@ function renderTemplate(template: string, p: RenderParams) {
               </div>
             )}
           </div>
-          {footer("www.leanscale.team", "LeanScale Ghostwriter", COLORS.darkGray, COLORS.borderSubtle)}
+          {footer("www.leanscale.team", "", COLORS.darkGray, COLORS.borderSubtle)}
         </div>
       );
   }

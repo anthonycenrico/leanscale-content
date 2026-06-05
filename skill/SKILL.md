@@ -109,11 +109,22 @@ For carousel/infographic posts, populate `visualAssetNeeded` with a slide-by-sli
 Stage, commit, and push the new batch folder:
 ```
 git add output/[YYYY-MM-DD]/
-git commit -m "Add ghostwriter batch [YYYY-MM-DD] — [N] posts from [transcript description]"
+git commit -m "Add content batch [YYYY-MM-DD] — [N] posts from [transcript description]"
 git push
 ```
 
-Netlify auto-deploys on push. The team can access the new batch at posts.leanscale.team within ~60 seconds.
+Netlify auto-deploys on push. The team can access the new batch at the LeanScale Content site within ~60 seconds.
+
+### Step 7 — Visual asset workflow (batch)
+
+After the new batch lands, Anthony exports all visual posts in a single tagged document for Claude.ai-based design:
+
+1. On the home page, hit "Export N visual posts for Claude design →" — this copies a markdown doc with all CAROUSEL + INFOGRAPHIC posts (≈10 per batch of 25), the LeanScale Light Mode design system, and the asset naming convention.
+2. He pastes that into Claude.ai and iterates on the designs.
+3. He hands me the PNG files; I commit them to `public/assets/{slide-id}.png`.
+4. The carousel block prefers the designed PNG over the Satori-rendered fallback automatically.
+
+The skill itself just needs to emit correct structured `visualSpec` — the rest of the workflow is human-driven.
 
 ### Step 7 — Report back
 

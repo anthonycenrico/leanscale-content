@@ -1,12 +1,17 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import type { Post, VisualSpec } from "./types";
+import type { Post, VisualSpec, SlideSpec } from "./types";
 import { contentTypeChipClass } from "./types";
 import { CopyButton, ComposeOnLinkedInButton } from "./post-actions";
-import { buildSlideUrl, buildSlideFilename } from "./visual-spec";
+import {
+  buildSlideUrl,
+  buildSlideFilename,
+  buildAssetPngUrl,
+  buildSlideId,
+} from "./visual-spec";
 
-const STORAGE_PREFIX = "leanscale-ghostwriter:published:";
+const STORAGE_PREFIX = "leanscale-content:published:";
 
 interface QueueViewProps {
   posts: Post[];
@@ -62,7 +67,7 @@ export function QueueView({ posts }: QueueViewProps) {
         {hydrated && published.length > 0 && (
           <button
             onClick={() => setShowPublished(!showPublished)}
-            className="btn btn--small"
+            className="btn btn--small btn--ghost"
           >
             {showPublished ? "Hide published" : `Show published (${published.length})`}
           </button>
@@ -114,9 +119,8 @@ function PostCard({
   isPublished: boolean;
   onToggle: () => void;
 }) {
-  const isCarousel =
-    post.contentType.toUpperCase().includes("CAROUSEL") ||
-    post.contentType.toUpperCase().includes("INFOGRAPHIC");
+  const hasVisuals =
+    post.visualSpec !== null && post.visualSpec.slides.length > 0;
 
   return (
     <article className={`post-card ${isPublished ? "post-card--published" : ""}`}>
@@ -150,16 +154,18 @@ function PostCard({
         </div>
       )}
 
-      {isCarousel && post.visualSpec && post.visualSpec.slides.length > 0 && (
+      {hasVisuals && post.visualSpec && (
         <CarouselBlock postId={post.id} spec={post.visualSpec} />
       )}
 
-      {isCarousel && !post.visualSpec && post.visualAssetNeeded && (
+      {!hasVisuals && post.visualAssetNeeded && (
         <div className="visual-asset-block">
           <span className="visual-asset-label">Visual asset spec</span>
           <div className="visual-asset-text">{post.visualAssetNeeded}</div>
           <div className="visual-asset-status">
-            Structured visualSpec not yet defined for this post — using free-text fallback. The next batch of generated posts will include slide-by-slide specs.
+            Structured visualSpec not yet defined for this post — using free-text
+            fallback. Add a visualSpec in the next batch run to enable inline
+            slide rendering and downloads.
           </div>
         </div>
       )}
@@ -197,7 +203,17 @@ function CarouselBlock({ postId, spec }: { postId: string; spec: VisualSpec }) {
     try {
       for (let i = 0; i < spec.slides.length; i++) {
         const slide = spec.slides[i];
-        await downloadSlide(buildSlideUrl(slide), buildSlideFilename(postId, i));
+        const pngUrl = buildAssetPngUrl(postId, i);
+        const satoriUrl = buildSlideUrl(slide);
+        // Try the designed PNG first
+        let url = pngUrl;
+        try {
+          const head = await fetch(pngUrl, { method: "HEAD" });
+          if (!head.ok) url = satoriUrl;
+        } catch {
+          url = satoriUrl;
+        }
+        await downloadSlide(url, buildSlideFilename(postId, i));
         // tiny pause so the browser doesn't block sequential downloads
         await new Promise((r) => setTimeout(r, 220));
       }
@@ -209,45 +225,105 @@ function CarouselBlock({ postId, spec }: { postId: string; spec: VisualSpec }) {
   return (
     <div className="carousel-block">
       <div className="carousel-block-head">
-        <span className="visual-asset-label">Carousel · {spec.slides.length} slides</span>
+        <span className="visual-asset-label">
+          {spec.slides.length === 1
+            ? "Infographic · 1 slide"
+            : `Carousel · ${spec.slides.length} slides`}
+        </span>
         <button
           className="btn btn--small btn--lime"
           onClick={downloadAll}
           disabled={downloadingAll}
         >
-          {downloadingAll ? "Downloading…" : "Download all →"}
+          {downloadingAll
+            ? "Downloading…"
+            : spec.slides.length === 1
+            ? "Download PNG →"
+            : "Download all →"}
         </button>
       </div>
 
       <div className="slide-grid">
-        {spec.slides.map((slide, idx) => {
-          const url = buildSlideUrl(slide);
-          const filename = buildSlideFilename(postId, idx);
-          return (
-            <div key={idx} className="slide-tile">
-              <div className="slide-tile-img-wrap">
-                <img
-                  src={url}
-                  alt={`Slide ${idx + 1}: ${slide.params.title}`}
-                  className="slide-tile-img"
-                  loading="lazy"
-                />
-              </div>
-              <div className="slide-tile-foot">
-                <span className="slide-tile-meta">
-                  Slide {String(idx + 1).padStart(2, "0")} · {slide.template}
-                </span>
-                <button
-                  className="slide-tile-download"
-                  onClick={() => downloadSlide(url, filename)}
-                  title="Download PNG"
-                >
-                  ↓ PNG
-                </button>
-              </div>
-            </div>
-          );
-        })}
+        {spec.slides.map((slide, idx) => (
+          <SlideTile key={idx} postId={postId} slide={slide} index={idx} />
+        ))}
+      </div>
+    </div>
+  );
+}
+
+function SlideTile({
+  postId,
+  slide,
+  index,
+}: {
+  postId: string;
+  slide: SlideSpec;
+  index: number;
+}) {
+  const slideId = buildSlideId(postId, index);
+  const pngUrl = buildAssetPngUrl(postId, index);
+  const satoriUrl = buildSlideUrl(slide);
+  const filename = buildSlideFilename(postId, index);
+
+  // Prefer the designed PNG; fall back to Satori on error.
+  const [imgSrc, setImgSrc] = useState(pngUrl);
+  const [isDesigned, setIsDesigned] = useState<boolean | null>(null);
+
+  const handleError = () => {
+    if (imgSrc !== satoriUrl) {
+      setImgSrc(satoriUrl);
+      setIsDesigned(false);
+    }
+  };
+
+  const handleLoad = () => {
+    if (isDesigned === null) {
+      setIsDesigned(imgSrc === pngUrl);
+    }
+  };
+
+  const handleDownload = async () => {
+    try {
+      const res = await fetch(imgSrc);
+      const blob = await res.blob();
+      const blobUrl = URL.createObjectURL(blob);
+      const a = document.createElement("a");
+      a.href = blobUrl;
+      a.download = filename;
+      document.body.appendChild(a);
+      a.click();
+      document.body.removeChild(a);
+      URL.revokeObjectURL(blobUrl);
+    } catch (e) {
+      console.error("download failed:", e);
+    }
+  };
+
+  return (
+    <div className="slide-tile">
+      <div className="slide-tile-img-wrap">
+        <img
+          src={imgSrc}
+          alt={`Slide ${index + 1}: ${slide.params.title ?? ""}`}
+          className="slide-tile-img"
+          loading="lazy"
+          onError={handleError}
+          onLoad={handleLoad}
+        />
+      </div>
+      <div className="slide-tile-foot">
+        <span className="slide-tile-meta">
+          Slide {String(index + 1).padStart(2, "0")} ·{" "}
+          {isDesigned ? "designed" : slide.template}
+        </span>
+        <button
+          className="slide-tile-download"
+          onClick={handleDownload}
+          title={`Download ${slideId}.png`}
+        >
+          ↓ PNG
+        </button>
       </div>
     </div>
   );

@@ -1,6 +1,11 @@
 # LeanScale LinkedIn Content Types
 
-The 8 canonical types the ghostwriter skill picks from when generating posts. Each post is tagged with exactly one type. The post-generation agent uses these definitions to match content type to topic kernel + author voice.
+The 9 canonical types the skill picks from when generating posts. Each post is tagged with exactly one type. The post-generation agent uses these definitions to match content type to topic kernel + author voice.
+
+**Batch constraints (enforced by the skill):**
+- Each author gets exactly 5 posts per batch
+- Of those 5: exactly 1 must be CAROUSEL (multi-slide) and exactly 1 must be INFOGRAPHIC (single image). Both require structured `visualSpec` output.
+- The remaining 3 posts mix the other 7 types
 
 If you want to add a new type, append it here and update `skill/SKILL.md` so the agent knows about it.
 
@@ -118,31 +123,51 @@ If you want to add a new type, append it here and update `skill/SKILL.md` so the
 
 ---
 
-## 6. CAROUSEL / INFOGRAPHIC
+## 6. CAROUSEL (multi-slide swipe-through)
 
-**Shape:** Short caption pointing to a visual that carries the value. The post text is bait + signal; the visual is the payoff.
+**Shape:** Short caption pointing to a multi-slide deck. LinkedIn loads each slide as a swipeable card. Caption is bait + signal; the slides are the payoff.
 
-**Length:** Caption is 80-120 words.
+**Length:** Caption is 80-120 words. Slide count is 4-6 typically.
 
 **Structure:**
-- Hook line that frames the visual
-- 1-2 sentences telling readers what they'll get from swiping
-- Optional: source/credit/CTA line
+- Caption: hook line + 1-2 sentences telling readers what they'll get from swiping
+- Slides: 4-6 slides, each 1080×1080 PNG, with a clear narrative arc (cover → body slides → closing CTA)
+
+**Required:** Every CAROUSEL post MUST include a structured `visualSpec` field with a `slides` array. Each slide entry specifies a template (`cover`, `framework`, `listicle`, `stat`, `quote`, `dark`) and params.
 
 **Hook examples (caption-side):**
-- "We put together a simple visual on the non-negotiable build order for a B2B GTM org — and where the wheels come off when you skip a step."
-- "Built this prioritization matrix for our team at LeanScale Labs. Swipe through."
-- "The B2B SaaS GTM build order, mapped to phases — what each role owns, what they need in place, and the most common failure mode at each step."
+- "We put together a simple visual on the non-negotiable build order — and where the wheels come off when you skip a step."
+- "Built this prioritization matrix for our team. Swipe through."
 
-**Required:** Every CAROUSEL/INFOGRAPHIC post MUST include a `visualAssetNeeded` field describing the visual asset slide-by-slide. The Satori renderer reads this spec and produces the PNGs.
+**When to use:** Topic decomposes into 4-6 sequential beats. Framework that needs visual scaffolding. Comparison that benefits from a side-by-side per slide.
 
-**When to use:** Topic kernel maps well to a framework, matrix, sequence, or comparison. The author's voice tolerates visual-led content.
-
-**When NOT to use:** The topic is mostly verbal/argumentative — text-only formats will be stronger.
+**When NOT to use:** Topic is a single argument that doesn't benefit from decomposition. Use INFOGRAPHIC (single image) or a text-only type instead.
 
 ---
 
-## 7. LISTICLE
+## 7. INFOGRAPHIC (single dense image)
+
+**Shape:** Single 1080×1080 image that carries the value. Caption introduces, the image teaches.
+
+**Length:** Caption is 80-150 words. Visual is 1 slide.
+
+**Structure:**
+- Caption: hook + 1-3 sentences framing the visual + optional credit/CTA
+- Image: a self-contained graphic — a 2×2 matrix, a comparison table, a process flow, a stat callout
+
+**Required:** Every INFOGRAPHIC post MUST include a `visualSpec` field with exactly 1 slide entry. Same templates as CAROUSEL — typically `stat`, `listicle`, or a future custom infographic template.
+
+**Hook examples:**
+- "One image that explains the entire GTM build order. Save it for your next founder conversation."
+- "5 things every Series B CRO underestimates. All in one visual."
+
+**When to use:** A pattern, comparison, or framework that fits cleanly into one image. Top-of-funnel positioning that benefits from a shareable visual artifact.
+
+**When NOT to use:** A story or argument that needs more than one beat of visual content — use CAROUSEL instead.
+
+---
+
+## 8. LISTICLE
 
 **Shape:** "5 things..." / "7 mistakes..." Scannable, often numbered or implicitly bulleted.
 
@@ -164,7 +189,7 @@ If you want to add a new type, append it here and update `skill/SKILL.md` so the
 
 ---
 
-## 8. CASE STUDY SNIPPET
+## 9. CASE STUDY SNIPPET
 
 **Shape:** "We helped a [stage] [type of] company do X. Here's what happened."
 

@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { getLatestBatch, countCarousels } from "./lib/data";
 import { AUTHOR_META, AUTHOR_ORDER } from "./lib/types";
+import { BatchExportButton } from "./lib/batch-export-button";
 
 export const dynamic = "force-static";
 export const revalidate = 60;
@@ -41,6 +42,10 @@ export default async function HomePage() {
             Five voices, ongoing batches. Click your name to see what's queued —
             copy, paste, post.
           </p>
+
+          <div className="hero__cta" style={{ marginTop: "var(--space-7)" }}>
+            <BatchExportButton batch={batch} />
+          </div>
 
           <div className="stats">
             <div className="stat">

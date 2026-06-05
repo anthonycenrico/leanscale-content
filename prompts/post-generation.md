@@ -22,7 +22,7 @@ Ghostwrite 5 LinkedIn posts in the voice of {{AUTHOR_NAME}} ({{AUTHOR_ROLE}}).
 
 1. Pick 5 topic kernels that fit {{AUTHOR_NAME}}'s domain and voice. Prefer kernels tagged with their role in `bestForRole` and content types in their `contentTypeFit`.
 
-2. For each kernel, choose a content type from the 8 that best matches their voice. Hard constraint: don't use the same content type more than twice across the 5 posts.
+2. **Hard constraint — content type mix:** of the 5 posts, exactly 1 must be `CAROUSEL` (multi-slide, 4-6 slides) and exactly 1 must be `INFOGRAPHIC` (single image). The other 3 posts mix the remaining 7 content types (CONTRARIAN HOOK, TACTICAL PLAYBOOK, PERSONAL STORY, INDUSTRY OBSERVATION, SOFT EDUCATIONAL, LISTICLE, CASE STUDY SNIPPET). Don't use the same content type more than twice across the 5 posts.
 
 3. Write each post in {{AUTHOR_NAME}}'s voice. Match:
    - Hook style (see voice profile)
@@ -34,11 +34,28 @@ Ghostwrite 5 LinkedIn posts in the voice of {{AUTHOR_NAME}} ({{AUTHOR_ROLE}}).
 
    The post should read like THEY wrote it, not like a generic LinkedIn post.
 
-4. For CAROUSEL/INFOGRAPHIC posts, describe the visual asset in `visualAssetNeeded` slide-by-slide. The Satori renderer will use this to produce the PNGs. Be specific:
-   - How many slides
-   - What's on each slide (title, body, data, layout type)
-   - Which LeanScale brand template to use (carousel cover, framework diagram, listicle quote card, before/after, infographic)
-   - Any specific text content for the slides
+4. **For CAROUSEL and INFOGRAPHIC posts:** output a structured `visualSpec` field (JSON object with a `slides` array). Each slide specifies a template and params:
+
+   ```json
+   {
+     "slides": [
+       { "template": "cover", "params": { "kicker": "...", "title": "...", "body": "..." } },
+       { "template": "stat", "params": { "kicker": "...", "stat": "01", "statLabel": "...", "body": "..." } }
+     ]
+   }
+   ```
+
+   Available templates and their params:
+   - `cover`: kicker, title, body
+   - `framework`: kicker, num, title, body
+   - `listicle`: kicker, title, items (array, 3-6 strings)
+   - `stat`: kicker, stat, statLabel, body
+   - `quote`: kicker, title (the quote), body (attribution)
+   - `dark`: kicker, title, body (use for closing slide of a carousel)
+
+   CAROUSEL = 4-6 slides. INFOGRAPHIC = exactly 1 slide.
+
+   Also include a free-text `visualAssetNeeded` for human editors who want a quick read on what the visual is supposed to be.
 
 ==== QUALITY BAR ====
 

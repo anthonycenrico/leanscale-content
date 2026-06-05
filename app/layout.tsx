@@ -3,8 +3,8 @@ import Link from "next/link";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "LeanScale Ghostwriter",
-  description: "Internal LinkedIn post hub for the LeanScale leadership team",
+  title: "LeanScale Content",
+  description: "Internal content hub for the LeanScale team",
 };
 
 export default function RootLayout({
@@ -20,7 +20,7 @@ export default function RootLayout({
             <Link href="/" className="nav__brand">
               <span className="nav__title">LeanScale</span>
               <span className="nav__sep" />
-              <span className="nav__label">Ghostwriter</span>
+              <span className="nav__label">Content</span>
             </Link>
             <a
               className="btn btn--ghost-dark"
@@ -35,9 +35,9 @@ export default function RootLayout({
         {children}
         <footer className="footer">
           <div className="wrap footer__inner">
-            <span className="footer__label">LeanScale Ghostwriter</span>
+            <span className="footer__label">LeanScale</span>
             <div className="footer__meta">
-              <span>Internal tool</span>
+              <span>Internal</span>
               <span>·</span>
               <a href="https://www.leanscale.team">www.leanscale.team</a>
             </div>

@@ -16,7 +16,7 @@ For each kernel, return:
 - angle: the SPECIFIC take or POV. Bad: "AI is changing RevOps." Good: "The CHRO is no longer the economic buyer for HR AI — IT is."
 - sourceQuote: 1-3 lines from the transcript that sparked it
 - sourcePerson: guest name OR "Anthony" (he's the host)
-- bestFor: which content types could carry it, from: CONTRARIAN HOOK, TACTICAL PLAYBOOK, PERSONAL STORY, INDUSTRY OBSERVATION, SOFT EDUCATIONAL, CAROUSEL/INFOGRAPHIC, LISTICLE, CASE STUDY SNIPPET
+- bestFor: which content types could carry it, from: CONTRARIAN HOOK, TACTICAL PLAYBOOK, PERSONAL STORY, INDUSTRY OBSERVATION, SOFT EDUCATIONAL, CAROUSEL, INFOGRAPHIC, LISTICLE, CASE STUDY SNIPPET
 - bestForRole: which LeanScale team roles this fits, from: Engineering/Product, Revenue, Customers, Marketing, Founder
 - domain: e.g., RevOps strategy, AI in GTM, sales methodology, services-as-software, GTM hiring, leadership, MEDDPICC, enterprise selling
 
