@@ -11,6 +11,7 @@
     "type-check": "tsc --noEmit"
   },
   "dependencies": {
+    "@anthropic-ai/sdk": "^0.100.1",
     "gray-matter": "^4.0.3",
     "marked": "^18.0.5",
     "next": "^15.0.0",

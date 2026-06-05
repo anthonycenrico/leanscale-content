@@ -115,6 +115,15 @@ In Netlify UI: Site settings → Domain management → Add custom domain → `po
 
 Site settings → Build & deploy → Password protection → enable → set shared team password.
 
+### Environment variables
+
+| Variable | Required? | Purpose |
+|---|---|---|
+| `ANTHROPIC_API_KEY` | Optional | Powers the per-post "Regenerate / Generate visual" buttons. Without it, those buttons return a clear error but everything else (batch export, Satori rendering, designed PNGs) works. Server-only — never prefix with `NEXT_PUBLIC_`. |
+| `ANTHROPIC_MODEL` | Optional | Overrides the model used for visual generation. Defaults to `claude-sonnet-4-5`. |
+
+Set these in Netlify → Site configuration → Environment variables, then trigger a redeploy (env changes only apply on a fresh build).
+
 ## Editing voice profiles
 
 Each `voices/*.md` is the canonical source of truth for that person's voice. To refine a profile:

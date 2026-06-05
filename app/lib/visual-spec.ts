@@ -49,7 +49,7 @@ export function buildSlideFilename(postId: string, index: number): string {
    Batch export — for the "Copy for Claude Design" workflow
    ============================================================ */
 
-const CONDENSED_BRAND_SPEC = `LEANSCALE LIGHT MODE — DESIGN SYSTEM (CONDENSED)
+export const CONDENSED_BRAND_SPEC = `LEANSCALE LIGHT MODE — DESIGN SYSTEM (CONDENSED)
 
 Colors (use exact tokens, never improvise):
 - Page bg: #FFFBFF (warm off-white — NEVER pure white)
