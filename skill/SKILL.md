@@ -120,7 +120,7 @@ Netlify auto-deploys on push. The team can access the new batch at the LeanScale
 After the new batch lands, Anthony exports all visual posts in a single tagged document for Claude.ai-based design:
 
 1. On the home page, hit "Export N visual posts for Claude design →" — this copies a markdown doc with all CAROUSEL + INFOGRAPHIC posts (≈10 per batch of 25), the LeanScale Light Mode design system, and the asset naming convention.
-2. He pastes that into Claude.ai and iterates on the designs.
+2. He pastes that into Claude Design and iterates. The exported doc already includes an EXPORT QUALITY block (export at 2× / 2160px, use geometric clip-paths NOT SVG masks for the logo so the mark doesn't drift, verify the mark renders before exporting) — those must be followed so the PNGs come back crisp and on-brand.
 3. He hands me the PNG files; I commit them to `public/assets/{slide-id}.png`.
 4. The carousel block prefers the designed PNG over the Satori-rendered fallback automatically.
 

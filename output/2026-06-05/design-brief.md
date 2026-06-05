@@ -1,24 +1,24 @@
 # LeanScale Visual Batch — 2026-06-05
 
-**10 visual assets to design** — 5 carousels + 5 infographics (30 slides total).
+10 visual assets — 5 carousels + 5 infographics (30 slides total).
 
-Paste this whole doc into Claude Design — it already has the LeanScale brand system, so this brief is **content + concept only** (no colors, fonts, or tokens). Just design each asset described below.
+Paste this whole doc into Claude Design. It already has the LeanScale brand system, so this is content + concept only — no colors, fonts, or tokens. Each asset is labeled CAROUSEL (multi-slide) or INFOGRAPHIC (single image); the dimensions differ. Design each, then export each slide / image as a PNG named with its slide ID so it wires back into the app.
 
-**Two asset types in here — note which is which, because the dimensions differ:**
-- **CAROUSEL** — a multi-slide, swipeable LinkedIn document. Design each slide as a separate frame and export each as its own PNG.
-- **INFOGRAPHIC** — a single standalone image. One dense graphic that lands the point at a glance.
-
-**Exporting:** every slide / image below has a unique ID in backticks (e.g. `anthony-20260605-4-slide-01`). Name each exported PNG `{id}.png` and the app wires it in automatically. Keep slides in the order shown.
+EXPORT QUALITY — bake these in so the PNGs come out crisp and on-brand:
+- Export at 2× resolution: 2160×2160 per slide (render at pixelRatio 2, not 1). 1080×1080 looks soft when viewed or scaled larger; 2160 downscales cleanly for LinkedIn.
+- Do NOT use an SVG <mask> for the logo or any brand mark. DOM-to-image renderers don't reproduce masks faithfully and the mark drifts between exports. Use a geometric clip-path (or plain shapes) so the mark renders identically every time.
+- Reload and visually confirm the brand mark renders correctly BEFORE exporting.
+- Keep the exact slide-ID filename for each PNG ({slide-id}.png) so it wires straight back into the app.
 
 ---
 
 ## Anthony Enrico · Co-founder & CEO
 
+CAROUSEL — Why, What, How: The Three Layers of GTM Work
 
-### CAROUSEL · 5 slides
-*Topic: Why, What, How: The Three Layers of GTM Work*
+Asset type: LinkedIn carousel — 5 swipeable slides. Design each as its own 1080×1080 frame and export each as a separate PNG.
 
-**The LinkedIn post this pairs with (context for the design):**
+The LinkedIn post this pairs with (context for the design):
 
 > **'We have an AI engineer now, so we don't need a RevOps leader.'**
 >
@@ -32,42 +32,44 @@ Paste this whole doc into Claude Design — it already has the LeanScale brand s
 >
 > Swipe through for the breakdown of all three layers, what each one owns, and the exact place AI-first orgs are about to discover a gap.
 
-**Design the carousel slide by slide:**
+Design the carousel slide by slide:
 
-**Slide 01 — `anthony-20260605-4-slide-01.png`**  ·  *Cover / title slide — opens the set and frames the core idea.*
+Slide 01 — anthony-20260605-4-slide-01.png  ·  Cover / title slide — opens the set and frames the core idea.
   - Eyebrow: GTM OPERATING SYSTEM
   - Headline: Why, What, How.
   - Supporting text: The three layers of GTM work — and the one AI is fooling executives into cutting.
 
-**Slide 02 — `anthony-20260605-4-slide-02.png`**  ·  *Numbered point slide — a large step number anchors a bold statement plus a line of supporting detail.*
+Slide 02 — anthony-20260605-4-slide-02.png  ·  Numbered point slide — a large step number anchors a bold statement plus a line of supporting detail.
   - Step number: 01
   - Eyebrow: LAYER ONE
   - Headline: The Why — owned by CEO + CRO.
   - Supporting text: What market we attack, what the motion is, what winning means this year. Strategy. AI doesn't touch this.
 
-**Slide 03 — `anthony-20260605-4-slide-03.png`**  ·  *Numbered point slide — a large step number anchors a bold statement plus a line of supporting detail.*
+Slide 03 — anthony-20260605-4-slide-03.png  ·  Numbered point slide — a large step number anchors a bold statement plus a line of supporting detail.
   - Step number: 02
   - Eyebrow: LAYER TWO
   - Headline: The What — owned by VP of RevOps.
   - Supporting text: Translating strategy into process, data architecture, and measurement. The layer that scales you from 5 reps to 100.
 
-**Slide 04 — `anthony-20260605-4-slide-04.png`**  ·  *Numbered point slide — a large step number anchors a bold statement plus a line of supporting detail.*
+Slide 04 — anthony-20260605-4-slide-04.png  ·  Numbered point slide — a large step number anchors a bold statement plus a line of supporting detail.
   - Step number: 03
   - Eyebrow: LAYER THREE
   - Headline: The How — owned by GTM engineering.
   - Supporting text: Systems, integrations, agents, automations that make the What run. This is the layer AI actually collapses.
 
-**Slide 05 — `anthony-20260605-4-slide-05.png`**  ·  *Closing slide — the final takeaway / sign-off.*
+Slide 05 — anthony-20260605-4-slide-05.png  ·  Closing slide — the final takeaway / sign-off.
   - Eyebrow: THE GAP
   - Headline: Cut the What and the How solves the wrong problem.
   - Supporting text: AI is raising the floor. It is not deciding what gets built, or why.
 
+Keep the slide IDs above as the exported PNG filenames so the new versions wire back into the app automatically. (Claude Design already has the LeanScale brand — no need to specify colors or fonts.)
+
 ---
+INFOGRAPHIC — AI Won't Cut Your Headcount Until You Fix Your Data
 
-### INFOGRAPHIC · single image
-*Topic: AI Won't Cut Your Headcount Until You Fix Your Data*
+Asset type: single infographic image (1080×1080) — one dense graphic that lands the point at a glance.
 
-**The LinkedIn post this pairs with (context for the design):**
+The LinkedIn post this pairs with (context for the design):
 
 > **Boards are mandating RevOps headcount cuts because AI is 'supposed to absorb the work.' They're skipping the most expensive step.**
 >
@@ -79,24 +81,27 @@ Paste this whole doc into Claude Design — it already has the LeanScale brand s
 >
 > I built the math into one image. Save it for your next board conversation about 'just using AI.'
 
-**The infographic — `anthony-20260605-3-slide-01.png`:**
+The infographic — anthony-20260605-3-slide-01.png:
 
-**Concept:** A two-column before / after comparison. Left column 'Cut first, backfill with agents' resolves to 'quietly rehiring under new titles.' Right column 'Fund data + process first' resolves to 'running 30-40% leaner.' Big headline across the top: 'Sequence is the whole game.' The visual point: the investment comes BEFORE the cut.
+Concept: A two-column before / after comparison. Left column 'Cut first, backfill with agents' resolves to 'quietly rehiring under new titles.' Right column 'Fund data + process first' resolves to 'running 30-40% leaner.' Big headline across the top: 'Sequence is the whole game.' The visual point: the investment comes BEFORE the cut.
 
-**Copy + elements to include:**
+Copy + elements to include:
+  - Step number: 01
   - Eyebrow: AI + HEADCOUNT
   - Headline: Sequence is the whole game.
   - Supporting text: Cut first, backfill with agents → quietly rehiring under new titles. Fund data + process first → running 30-40% leaner. The investment comes BEFORE the cut.
+
+Keep the slide IDs above as the exported PNG filenames so the new versions wire back into the app automatically. (Claude Design already has the LeanScale brand — no need to specify colors or fonts.)
 
 ---
 
 ## Joe Zaghloul · Chief Operating Officer
 
+CAROUSEL — The Build Order: CRO, Then RevOps, Then Enablement, Then AEs
 
-### CAROUSEL · 5 slides
-*Topic: The Build Order: CRO, Then RevOps, Then Enablement, Then AEs*
+Asset type: LinkedIn carousel — 5 swipeable slides. Design each as its own 1080×1080 frame and export each as a separate PNG.
 
-**The LinkedIn post this pairs with (context for the design):**
+The LinkedIn post this pairs with (context for the design):
 
 > Most founders we talk to want to hire their first AE before they've hired their CRO.
 >
@@ -118,20 +123,20 @@ Paste this whole doc into Claude Design — it already has the LeanScale brand s
 >
 > #revops #gtm
 
-**Design the carousel slide by slide:**
+Design the carousel slide by slide:
 
-**Slide 01 — `joe-20260605-5-slide-01.png`**  ·  *Cover / title slide — opens the set and frames the core idea.*
+Slide 01 — joe-20260605-5-slide-01.png  ·  Cover / title slide — opens the set and frames the core idea.
   - Eyebrow: B2B GTM
   - Headline: The Build Order.
   - Supporting text: From 50+ hyper-growth implementations — Mistral AI, Clio, Chainguard, and counting.
 
-**Slide 02 — `joe-20260605-5-slide-02.png`**  ·  *Numbered point slide — a large step number anchors a bold statement plus a line of supporting detail.*
+Slide 02 — joe-20260605-5-slide-02.png  ·  Numbered point slide — a large step number anchors a bold statement plus a line of supporting detail.
   - Step number: 01
   - Eyebrow: THE SEQUENCE
   - Headline: CRO first. Then RevOps + Enablement. Then AEs.
   - Supporting text: Skip a phase and the AE walks into chaos. Hit the order and they ramp in weeks, not quarters.
 
-**Slide 03 — `joe-20260605-5-slide-03.png`**  ·  *List slide — a short titled list, each item on its own row.*
+Slide 03 — joe-20260605-5-slide-03.png  ·  List slide — a short titled list, each item on its own row.
   - Eyebrow: RAMP TIME
   - Headline: AE into a built machine vs. chaos.
   - List items:
@@ -139,7 +144,7 @@ Paste this whole doc into Claude Design — it already has the LeanScale brand s
     - Chaos — 6+ month ramp, or never
     - The difference: RevOps and Enablement in seat first
 
-**Slide 04 — `joe-20260605-5-slide-04.png`**  ·  *List slide — a short titled list, each item on its own row.*
+Slide 04 — joe-20260605-5-slide-04.png  ·  List slide — a short titled list, each item on its own row.
   - Eyebrow: OWNERSHIP
   - Headline: What each role owns in the first 90 days.
   - List items:
@@ -148,17 +153,19 @@ Paste this whole doc into Claude Design — it already has the LeanScale brand s
     - Enablement — onboarding, playbooks
     - AE — pipeline and close
 
-**Slide 05 — `joe-20260605-5-slide-05.png`**  ·  *Closing slide — the final takeaway / sign-off.*
+Slide 05 — joe-20260605-5-slide-05.png  ·  Closing slide — the final takeaway / sign-off.
   - Eyebrow: FULL BREAKDOWN
   - Headline: The complete playbook is up.
   - Supporting text: docs.leanscale.team
 
+Keep the slide IDs above as the exported PNG filenames so the new versions wire back into the app automatically. (Claude Design already has the LeanScale brand — no need to specify colors or fonts.)
+
 ---
+INFOGRAPHIC — The Eisenhower Matrix for AI-Enabled Operators
 
-### INFOGRAPHIC · single image
-*Topic: The Eisenhower Matrix for AI-Enabled Operators*
+Asset type: single infographic image (1080×1080) — one dense graphic that lands the point at a glance.
 
-**The LinkedIn post this pairs with (context for the design):**
+The LinkedIn post this pairs with (context for the design):
 
 > My team's output ceiling jumped about 10x this year. Spending all of it at once was the mistake.
 >
@@ -170,24 +177,27 @@ Paste this whole doc into Claude Design — it already has the LeanScale brand s
 >
 > #revops
 
-**The infographic — `joe-20260605-4-slide-01.png`:**
+The infographic — joe-20260605-4-slide-01.png:
 
-**Concept:** A 2×2 prioritization matrix. X-axis: Level of Effort (with AI), Low → High. Y-axis: Business Impact, Low → High. Four labeled quadrants: top-left 'Quick Wins — ship now', top-right 'Big Bets — pick 1-2', bottom-left 'Auto / Delegate', bottom-right 'Drop'. Small footnote across the bottom: 'AI shrinks the effort axis — re-score quarterly.'
+Concept: A 2×2 prioritization matrix. X-axis: Level of Effort (with AI), Low → High. Y-axis: Business Impact, Low → High. Four labeled quadrants: top-left 'Quick Wins — ship now', top-right 'Big Bets — pick 1-2', bottom-left 'Auto / Delegate', bottom-right 'Drop'. Small footnote: 'AI shrinks the effort axis — re-score quarterly.'
 
-**Copy + elements to include:**
+Copy + elements to include:
+  - Step number: 01
   - Eyebrow: OPERATOR MATRIX
   - Headline: Effort × Impact — with an AI multiplier.
   - Supporting text: Quick Wins: ship now. Big Bets: pick 1-2. Auto or delegate the low-impact lane. Drop the rest. AI shrinks the effort axis — re-score every quarter.
+
+Keep the slide IDs above as the exported PNG filenames so the new versions wire back into the app automatically. (Claude Design already has the LeanScale brand — no need to specify colors or fonts.)
 
 ---
 
 ## Cameron Legge · Head of Customers
 
+CAROUSEL — Why, What, How: The Three Layers of GTM Work
 
-### CAROUSEL · 5 slides
-*Topic: Why, What, How: The Three Layers of GTM Work*
+Asset type: LinkedIn carousel — 5 swipeable slides. Design each as its own 1080×1080 frame and export each as a separate PNG.
 
-**The LinkedIn post this pairs with (context for the design):**
+The LinkedIn post this pairs with (context for the design):
 
 > There's a hiring trade founders keep trying to make: swap the RevOps leader for an AI engineer and call the org chart cleaner.
 >
@@ -197,42 +207,44 @@ Paste this whole doc into Claude Design — it already has the LeanScale brand s
 >
 > Swipe through. If you're rebuilding your GTM ops org right now, this is the conversation to have before the headcount one.
 
-**Design the carousel slide by slide:**
+Design the carousel slide by slide:
 
-**Slide 01 — `cameron-20260605-5-slide-01.png`**  ·  *Cover / title slide — opens the set and frames the core idea.*
+Slide 01 — cameron-20260605-5-slide-01.png  ·  Cover / title slide — opens the set and frames the core idea.
   - Eyebrow: CAMERON LEGGE
   - Headline: Why, What, How: The Three Layers of GTM Work.
   - Supporting text: And the one most AI-first orgs are about to discover they're missing.
 
-**Slide 02 — `cameron-20260605-5-slide-02.png`**  ·  *Numbered point slide — a large step number anchors a bold statement plus a line of supporting detail.*
+Slide 02 — cameron-20260605-5-slide-02.png  ·  Numbered point slide — a large step number anchors a bold statement plus a line of supporting detail.
   - Step number: 01
   - Eyebrow: THE STRATEGY
   - Headline: The Why is owned by the CEO and CRO.
   - Supporting text: What market are we attacking, what does the motion look like, what does winning mean this year.
 
-**Slide 03 — `cameron-20260605-5-slide-03.png`**  ·  *Numbered point slide — a large step number anchors a bold statement plus a line of supporting detail.*
+Slide 03 — cameron-20260605-5-slide-03.png  ·  Numbered point slide — a large step number anchors a bold statement plus a line of supporting detail.
   - Step number: 02
   - Eyebrow: THE TRANSLATION
   - Headline: The What is owned by RevOps.
   - Supporting text: Territory model, capacity plan, comp design, lifecycle, forecast cadence. The layer that turns strategy into execution.
 
-**Slide 04 — `cameron-20260605-5-slide-04.png`**  ·  *Numbered point slide — a large step number anchors a bold statement plus a line of supporting detail.*
+Slide 04 — cameron-20260605-5-slide-04.png  ·  Numbered point slide — a large step number anchors a bold statement plus a line of supporting detail.
   - Step number: 03
   - Eyebrow: THE EXECUTION
   - Headline: The How is owned by GTM engineering.
   - Supporting text: Which systems, integrations, agents, and automations make the What actually run at scale.
 
-**Slide 05 — `cameron-20260605-5-slide-05.png`**  ·  *Closing slide — the final takeaway / sign-off.*
+Slide 05 — cameron-20260605-5-slide-05.png  ·  Closing slide — the final takeaway / sign-off.
   - Eyebrow: THE GAP
   - Headline: AI automates the How. It can't decide the What.
   - Supporting text: Hire both, be clear on what each owns. That's the conversation before the headcount one.
 
+Keep the slide IDs above as the exported PNG filenames so the new versions wire back into the app automatically. (Claude Design already has the LeanScale brand — no need to specify colors or fonts.)
+
 ---
+INFOGRAPHIC — The Eisenhower Matrix for AI-Enabled Operators
 
-### INFOGRAPHIC · single image
-*Topic: The Eisenhower Matrix for AI-Enabled Operators*
+Asset type: single infographic image (1080×1080) — one dense graphic that lands the point at a glance.
 
-**The LinkedIn post this pairs with (context for the design):**
+The LinkedIn post this pairs with (context for the design):
 
 > AI just handed every operator something close to 10x output capacity.
 >
@@ -244,11 +256,11 @@ Paste this whole doc into Claude Design — it already has the LeanScale brand s
 >
 > The goal was never to do more. It's to do the right three things, faster.
 
-**The infographic — `cameron-20260605-4-slide-01.png`:**
+The infographic — cameron-20260605-4-slide-01.png:
 
-**Concept:** A 2×2 matrix titled 'The AI Operator's Priority Filter.' X-axis: Level of Effort, Low → High. Y-axis: Business Impact, Low → High. Quadrants: top-left 'Quick Wins' (low effort, high impact), top-right 'Big Bets' (high effort, high impact), bottom-left 'Fill-In Tasks' (low effort, low impact), bottom-right 'Time Sinks' (high effort, low impact). Mark the quadrants AI accelerates well with a check; mark the ones still needing human judgment with a caution symbol.
+Concept: A 2×2 matrix titled 'The AI Operator's Priority Filter.' X-axis: Level of Effort, Low → High. Y-axis: Business Impact, Low → High. Quadrants: top-left 'Quick Wins' (low effort, high impact), top-right 'Big Bets' (high effort, high impact), bottom-left 'Fill-In Tasks' (low effort, low impact), bottom-right 'Time Sinks' (high effort, low impact). Mark the quadrants AI accelerates well with a check; mark the ones still needing human judgment with a caution symbol.
 
-**Copy + elements to include:**
+Copy + elements to include:
   - Eyebrow: PRIORITY FILTER
   - Headline: Effort × Impact, with an AI read.
   - List items:
@@ -257,15 +269,17 @@ Paste this whole doc into Claude Design — it already has the LeanScale brand s
     - Fill-In Tasks — low effort, low impact (batch or ignore)
     - Time Sinks — high effort, low impact (just stop)
 
+Keep the slide IDs above as the exported PNG filenames so the new versions wire back into the app automatically. (Claude Design already has the LeanScale brand — no need to specify colors or fonts.)
+
 ---
 
 ## Yaseen Arshad · Head of AI
 
+CAROUSEL — The Eisenhower Matrix for AI-Enabled Operators
 
-### CAROUSEL · 5 slides
-*Topic: The Eisenhower Matrix for AI-Enabled Operators*
+Asset type: LinkedIn carousel — 5 swipeable slides. Design each as its own 1080×1080 frame and export each as a separate PNG.
 
-**The LinkedIn post this pairs with (context for the design):**
+The LinkedIn post this pairs with (context for the design):
 
 > AI didn't just make my team faster this year. It made us capable of shipping ten times more work than the field can actually absorb.
 >
@@ -277,21 +291,21 @@ Paste this whole doc into Claude Design — it already has the LeanScale brand s
 >
 > More on this in The LeanScale Letter.
 
-**Design the carousel slide by slide:**
+Design the carousel slide by slide:
 
-**Slide 01 — `yasin-20260605-5-slide-01.png`**  ·  *Cover / title slide — opens the set and frames the core idea.*
+Slide 01 — yasin-20260605-5-slide-01.png  ·  Cover / title slide — opens the set and frames the core idea.
   - Eyebrow: THE LEANSCALE LETTER
   - Headline: The AI-Enabled Operator's Matrix.
   - Supporting text: How to prioritize when AI gives you 10x output and the field can only absorb a fraction of it.
 
-**Slide 02 — `yasin-20260605-5-slide-02.png`**  ·  *Stat slide — one big hero metric dominates, with a label beneath and a line of context.*
+Slide 02 — yasin-20260605-5-slide-02.png  ·  Stat slide — one big hero metric dominates, with a label beneath and a line of context.
   - Eyebrow: THE REAL CONSTRAINT
   - Big number / metric: 10x
   - Metric label: output · 1x absorption
   - Headline: Output is cheap. Absorption isn't.
   - Supporting text: AI multiplied what we can ship. It did nothing for how much change the field can actually adopt. That gap is where good operators go to drown.
 
-**Slide 03 — `yasin-20260605-5-slide-03.png`**  ·  *List slide — a short titled list, each item on its own row.*
+Slide 03 — yasin-20260605-5-slide-03.png  ·  List slide — a short titled list, each item on its own row.
   - Eyebrow: THE 2×2
   - Headline: Effort × importance, the original.
   - List items:
@@ -300,23 +314,25 @@ Paste this whole doc into Claude Design — it already has the LeanScale brand s
     - Delegate — urgent, not important
     - Drop — neither, and be honest about it
 
-**Slide 04 — `yasin-20260605-5-slide-04.png`**  ·  *Numbered point slide — a large step number anchors a bold statement plus a line of supporting detail.*
+Slide 04 — yasin-20260605-5-slide-04.png  ·  Numbered point slide — a large step number anchors a bold statement plus a line of supporting detail.
   - Step number: 04
   - Eyebrow: THE AI OVERLAY
   - Headline: Add what AI can actually accelerate.
   - Supporting text: Lime = an agent does this well today against a clear definition. Purple = still needs your judgment. Score every task on both axes before you build.
 
-**Slide 05 — `yasin-20260605-5-slide-05.png`**  ·  *Closing slide — the final takeaway / sign-off.*
+Slide 05 — yasin-20260605-5-slide-05.png  ·  Closing slide — the final takeaway / sign-off.
   - Eyebrow: THE TAKEAWAY
   - Headline: Three things adopted beat ten things ignored.
   - Supporting text: Push the needle forward, then keep the boat afloat — in that order. More in The LeanScale Letter.
 
+Keep the slide IDs above as the exported PNG filenames so the new versions wire back into the app automatically. (Claude Design already has the LeanScale brand — no need to specify colors or fonts.)
+
 ---
+INFOGRAPHIC — Start Analog, Then Layer AI
 
-### INFOGRAPHIC · single image
-*Topic: Start Analog, Then Layer AI*
+Asset type: single infographic image (1080×1080) — one dense graphic that lands the point at a glance.
 
-**The LinkedIn post this pairs with (context for the design):**
+The LinkedIn post this pairs with (context for the design):
 
 > The best operators I know point AI at a problem only after they've written down what they think is true.
 >
@@ -328,24 +344,27 @@ Paste this whole doc into Claude Design — it already has the LeanScale brand s
 >
 > Saved this one as a single graphic: the four-step sequence that keeps the work durable instead of brittle. Steal it for your next strategy doc.
 
-**The infographic — `yasin-20260605-4-slide-01.png`:**
+The infographic — yasin-20260605-4-slide-01.png:
 
-**Concept:** A vertical 4-step flow titled 'Start Analog, Then Layer AI.' Four numbered rows (01–04), each a short label plus a one-line description, reading top to bottom as the sequence a sharp operator follows. Designed to be screenshotted and reused.
+Concept: A vertical 4-step flow titled 'Start Analog, Then Layer AI.' Four numbered rows (01–04), each a short label plus a one-line description, reading top to bottom as the sequence a sharp operator follows. Designed to be screenshotted and reused.
 
-**Copy + elements to include:**
+Copy + elements to include:
+  - Step number: 01
   - Eyebrow: BUILD ORDER
   - Headline: Start analog. Then layer AI.
   - Supporting text: 01 Write the hypothesis by hand · 02 AI finds examples + data · 03 AI pressure-tests your logic · 04 You decide. Skip step 01 and it collapses under the first hard question.
+
+Keep the slide IDs above as the exported PNG filenames so the new versions wire back into the app automatically. (Claude Design already has the LeanScale brand — no need to specify colors or fonts.)
 
 ---
 
 ## Jake Toepel · Head of Engineering & Product
 
+CAROUSEL — Why, What, How: The Three Layers of GTM Work
 
-### CAROUSEL · 5 slides
-*Topic: Why, What, How: The Three Layers of GTM Work*
+Asset type: LinkedIn carousel — 5 swipeable slides. Design each as its own 1080×1080 frame and export each as a separate PNG.
 
-**The LinkedIn post this pairs with (context for the design):**
+The LinkedIn post this pairs with (context for the design):
 
 > Founders keep telling me their AI engineer makes a RevOps leader redundant.
 >
@@ -359,42 +378,44 @@ Paste this whole doc into Claude Design — it already has the LeanScale brand s
 >
 > Built this out as a 5-slide breakdown — the whole framework's in the swipe.
 
-**Design the carousel slide by slide:**
+Design the carousel slide by slide:
 
-**Slide 01 — `jake-20260605-5-slide-01.png`**  ·  *Cover / title slide — opens the set and frames the core idea.*
+Slide 01 — jake-20260605-5-slide-01.png  ·  Cover / title slide — opens the set and frames the core idea.
   - Eyebrow: GTM ENGINEERING
   - Headline: Why / What / How.
   - Supporting text: The three layers of GTM work — and why one AI engineer can't cover all of them.
 
-**Slide 02 — `jake-20260605-5-slide-02.png`**  ·  *Numbered point slide — a large step number anchors a bold statement plus a line of supporting detail.*
+Slide 02 — jake-20260605-5-slide-02.png  ·  Numbered point slide — a large step number anchors a bold statement plus a line of supporting detail.
   - Step number: 01
   - Eyebrow: LAYER ONE
   - Headline: The Why — owned by CEO & CRO.
   - Supporting text: What market we attack, what the motion is, what winning means this year. Strategy. Nobody automates this.
 
-**Slide 03 — `jake-20260605-5-slide-03.png`**  ·  *Numbered point slide — a large step number anchors a bold statement plus a line of supporting detail.*
+Slide 03 — jake-20260605-5-slide-03.png  ·  Numbered point slide — a large step number anchors a bold statement plus a line of supporting detail.
   - Step number: 02
   - Eyebrow: LAYER TWO
   - Headline: The What — owned by RevOps.
   - Supporting text: Lead lifecycle, territory model, comp plan, forecast cadence. The translation of strategy into process. The layer teams keep cutting.
 
-**Slide 04 — `jake-20260605-5-slide-04.png`**  ·  *Numbered point slide — a large step number anchors a bold statement plus a line of supporting detail.*
+Slide 04 — jake-20260605-5-slide-04.png  ·  Numbered point slide — a large step number anchors a bold statement plus a line of supporting detail.
   - Step number: 03
   - Eyebrow: LAYER THREE
   - Headline: The How — owned by GTM Engineering.
   - Supporting text: Systems, integrations, agents, automations that make the What run at scale. This is my layer. I can build all of it.
 
-**Slide 05 — `jake-20260605-5-slide-05.png`**  ·  *Closing slide — the final takeaway / sign-off.*
+Slide 05 — jake-20260605-5-slide-05.png  ·  Closing slide — the final takeaway / sign-off.
   - Eyebrow: THE FAILURE MODE
   - Headline: Skip the What and the How solves the wrong problem.
   - Supporting text: A perfectly engineered system, pointed at the wrong target. DM me for the diagram.
 
+Keep the slide IDs above as the exported PNG filenames so the new versions wire back into the app automatically. (Claude Design already has the LeanScale brand — no need to specify colors or fonts.)
+
 ---
+INFOGRAPHIC — Forward Deployed Engineers Are Not a Trend — They're a Requirement
 
-### INFOGRAPHIC · single image
-*Topic: Forward Deployed Engineers Are Not a Trend — They're a Requirement*
+Asset type: single infographic image (1080×1080) — one dense graphic that lands the point at a glance.
 
-**The LinkedIn post this pairs with (context for the design):**
+The LinkedIn post this pairs with (context for the design):
 
 > Spent last week comparing implementation models from a handful of AI vendors a customer was evaluating.
 >
@@ -408,15 +429,17 @@ Paste this whole doc into Claude Design — it already has the LeanScale brand s
 >
 > What ratio are you running? Curious where teams have landed.
 
-**The infographic — `jake-20260605-4-slide-01.png`:**
+The infographic — jake-20260605-4-slide-01.png:
 
-**Concept:** A single big-stat graphic. One huge centered figure — '~2×' — as the POC-to-production conversion delta between in-house forward deployed engineers and outsourced implementation. Label beneath: 'POC-to-production conversion: in-house FDEs vs. outsourced implementation.' Plus a small supporting ratio line: '1 FDE : 5–7 accounts.'
+Concept: A single big-stat graphic. One huge centered figure — '~2×' — as the POC-to-production conversion delta between in-house forward deployed engineers and outsourced implementation. Label beneath: 'POC-to-production conversion: in-house FDEs vs. outsourced implementation.' Plus a small supporting ratio line: '1 FDE : 5–7 accounts.'
 
-**Copy + elements to include:**
+Copy + elements to include:
   - Eyebrow: AI IMPLEMENTATION
   - Big number / metric: ~2x
   - Metric label: POC-to-production conversion: in-house FDEs vs. outsourced
   - Headline: The FDE ratio that decides POC outcomes.
   - Supporting text: Vendors with forward deployed engineers convert at roughly double the rate. Sustainable gearing: 1 FDE per 5-7 accounts. Model it as a CAC line, not a post-sale afterthought.
+
+Keep the slide IDs above as the exported PNG filenames so the new versions wire back into the app automatically. (Claude Design already has the LeanScale brand — no need to specify colors or fonts.)
 
 ---

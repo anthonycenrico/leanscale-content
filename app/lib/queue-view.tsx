@@ -13,7 +13,6 @@ import {
 } from "./visual-spec";
 
 const STORAGE_PREFIX = "leanscale-content:published:";
-const SPEC_PREFIX = "leanscale-content:visualspec:";
 
 interface QueueViewProps {
   posts: Post[];
@@ -121,39 +120,7 @@ function PostCard({
   isPublished: boolean;
   onToggle: () => void;
 }) {
-  // Effective spec = localStorage override (a regenerated version) or the original.
-  const [effectiveSpec, setEffectiveSpec] = useState<VisualSpec | null>(post.visualSpec);
-  const [overridden, setOverridden] = useState(false);
-  const [hydrated, setHydrated] = useState(false);
-
-  useEffect(() => {
-    try {
-      const raw = localStorage.getItem(SPEC_PREFIX + post.id);
-      if (raw) {
-        setEffectiveSpec(JSON.parse(raw) as VisualSpec);
-        setOverridden(true);
-      }
-    } catch {}
-    setHydrated(true);
-  }, [post.id]);
-
-  const persistSpec = (spec: VisualSpec) => {
-    setEffectiveSpec(spec);
-    setOverridden(true);
-    try {
-      localStorage.setItem(SPEC_PREFIX + post.id, JSON.stringify(spec));
-    } catch {}
-  };
-
-  const resetSpec = () => {
-    setEffectiveSpec(post.visualSpec);
-    setOverridden(false);
-    try {
-      localStorage.removeItem(SPEC_PREFIX + post.id);
-    } catch {}
-  };
-
-  const hasVisuals = effectiveSpec !== null && effectiveSpec.slides.length > 0;
+  const hasVisuals = post.visualSpec !== null && post.visualSpec.slides.length > 0;
 
   return (
     <article className={`post-card ${isPublished ? "post-card--published" : ""}`}>
@@ -187,22 +154,19 @@ function PostCard({
         </div>
       )}
 
-      {hasVisuals && effectiveSpec && (
-        <CarouselBlock postId={post.id} spec={effectiveSpec} overridden={overridden} />
+      {hasVisuals && post.visualSpec && (
+        <CarouselBlock postId={post.id} spec={post.visualSpec} />
       )}
 
-      {hasVisuals && effectiveSpec && (
-        <DesignNotes brief={buildPostDesignBrief(post, effectiveSpec)} />
+      {hasVisuals && post.visualSpec && (
+        <DesignNotes brief={buildPostDesignBrief(post)} />
       )}
 
-      {hydrated && (
-        <VisualControls
-          post={post}
-          hasVisuals={hasVisuals}
-          overridden={overridden}
-          onSpec={persistSpec}
-          onReset={resetSpec}
-        />
+      {!hasVisuals && post.visualAssetNeeded && (
+        <div className="visual-asset-block">
+          <span className="visual-asset-label">Visual asset spec</span>
+          <div className="visual-asset-text">{post.visualAssetNeeded}</div>
+        </div>
       )}
 
       <div className="post-actions">
@@ -210,114 +174,6 @@ function PostCard({
         <ComposeOnLinkedInButton postText={post.postText} />
       </div>
     </article>
-  );
-}
-
-function VisualControls({
-  post,
-  hasVisuals,
-  overridden,
-  onSpec,
-  onReset,
-}: {
-  post: Post;
-  hasVisuals: boolean;
-  overridden: boolean;
-  onSpec: (spec: VisualSpec) => void;
-  onReset: () => void;
-}) {
-  const [guidance, setGuidance] = useState("");
-  const [loading, setLoading] = useState<null | "carousel" | "infographic">(null);
-  const [error, setError] = useState("");
-
-  const call = async (mode: "carousel" | "infographic") => {
-    setLoading(mode);
-    setError("");
-    try {
-      const res = await fetch("/api/regenerate-visual", {
-        method: "POST",
-        headers: { "content-type": "application/json" },
-        body: JSON.stringify({
-          postText: post.postText,
-          topicTitle: post.topicTitle,
-          contentType: post.contentType,
-          guidance: guidance.trim() || undefined,
-          mode,
-        }),
-      });
-      const data = await res.json();
-      if (!res.ok) {
-        throw new Error(data.error || "Generation failed.");
-      }
-      onSpec(data.visualSpec as VisualSpec);
-      setGuidance("");
-    } catch (e) {
-      setError(e instanceof Error ? e.message : "Generation failed.");
-    } finally {
-      setLoading(null);
-    }
-  };
-
-  // For a post that already has visuals, the "regenerate" mode matches the
-  // current kind (1 slide = infographic, else carousel).
-  const currentMode: "carousel" | "infographic" =
-    hasVisuals && post.visualSpec && post.visualSpec.slides.length === 1
-      ? "infographic"
-      : "carousel";
-
-  return (
-    <div className="visual-controls">
-      <div className="visual-controls-head">
-        <span className="visual-controls-label">
-          {hasVisuals ? "Regenerate visual" : "Generate a visual"}
-        </span>
-        {overridden && (
-          <button className="visual-reset" onClick={onReset}>
-            ↺ Reset to original
-          </button>
-        )}
-      </div>
-
-      <input
-        type="text"
-        className="visual-guidance-input"
-        placeholder="Optional: how should it look? e.g. 'lead with the 40% stat, fewer words'"
-        value={guidance}
-        onChange={(e) => setGuidance(e.target.value)}
-        disabled={loading !== null}
-      />
-
-      <div className="visual-controls-row">
-        {hasVisuals ? (
-          <button
-            className="btn btn--small btn--primary"
-            onClick={() => call(currentMode)}
-            disabled={loading !== null}
-          >
-            {loading ? "Generating…" : `↻ Regenerate ${currentMode}`}
-          </button>
-        ) : (
-          <>
-            <button
-              className="btn btn--small btn--primary"
-              onClick={() => call("carousel")}
-              disabled={loading !== null}
-            >
-              {loading === "carousel" ? "Generating…" : "Generate carousel"}
-            </button>
-            <button
-              className="btn btn--small btn--ghost"
-              onClick={() => call("infographic")}
-              disabled={loading !== null}
-            >
-              {loading === "infographic" ? "Generating…" : "Generate infographic"}
-            </button>
-          </>
-        )}
-      </div>
-
-      {error && <p className="visual-error">Couldn&apos;t generate: {error}</p>}
-    </div>
   );
 }
 
@@ -353,15 +209,7 @@ function DesignNotes({ brief }: { brief: string }) {
   );
 }
 
-function CarouselBlock({
-  postId,
-  spec,
-  overridden,
-}: {
-  postId: string;
-  spec: VisualSpec;
-  overridden: boolean;
-}) {
+function CarouselBlock({ postId, spec }: { postId: string; spec: VisualSpec }) {
   const [downloadingAll, setDownloadingAll] = useState(false);
 
   const downloadSlide = async (url: string, filename: string) => {
@@ -388,15 +236,12 @@ function CarouselBlock({
         const slide = spec.slides[i];
         const pngUrl = buildAssetPngUrl(postId, i);
         const satoriUrl = buildSlideUrl(slide);
+        // Prefer the designed PNG; fall back to Satori if it isn't there yet.
         let url = satoriUrl;
-        // Use a designed PNG only when not overridden (override = freshly
-        // regenerated spec, so the static PNG is stale) and the file exists.
-        if (!overridden) {
-          try {
-            const head = await fetch(pngUrl, { method: "HEAD" });
-            if (head.ok) url = pngUrl;
-          } catch {}
-        }
+        try {
+          const head = await fetch(pngUrl, { method: "HEAD" });
+          if (head.ok) url = pngUrl;
+        } catch {}
         await downloadSlide(url, buildSlideFilename(postId, i));
         await new Promise((r) => setTimeout(r, 220));
       }
@@ -412,7 +257,6 @@ function CarouselBlock({
       <div className="carousel-block-head">
         <span className="visual-asset-label">
           {single ? "Infographic · 1 slide" : `Carousel · ${spec.slides.length} slides`}
-          {overridden && <span className="regenerated-tag"> · regenerated</span>}
         </span>
         <button
           className="btn btn--small btn--lime"
@@ -425,13 +269,7 @@ function CarouselBlock({
 
       <div className="slide-grid">
         {spec.slides.map((slide, idx) => (
-          <SlideTile
-            key={idx}
-            postId={postId}
-            slide={slide}
-            index={idx}
-            preferDesigned={!overridden}
-          />
+          <SlideTile key={idx} postId={postId} slide={slide} index={idx} />
         ))}
       </div>
     </div>
@@ -442,21 +280,18 @@ function SlideTile({
   postId,
   slide,
   index,
-  preferDesigned,
 }: {
   postId: string;
   slide: SlideSpec;
   index: number;
-  preferDesigned: boolean;
 }) {
   const slideId = buildSlideId(postId, index);
   const pngUrl = buildAssetPngUrl(postId, index);
   const satoriUrl = buildSlideUrl(slide);
   const filename = buildSlideFilename(postId, index);
 
-  // When the spec is original, prefer a designed PNG (falls back to Satori on
-  // error). When regenerated, always use Satori — the static PNG is stale.
-  const [imgSrc, setImgSrc] = useState(preferDesigned ? pngUrl : satoriUrl);
+  // Prefer the designed PNG; fall back to the Satori render on error.
+  const [imgSrc, setImgSrc] = useState(pngUrl);
   const [isDesigned, setIsDesigned] = useState<boolean | null>(null);
 
   const handleError = () => {

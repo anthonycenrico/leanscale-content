@@ -117,12 +117,7 @@ Site settings → Build & deploy → Password protection → enable → set shar
 
 ### Environment variables
 
-| Variable | Required? | Purpose |
-|---|---|---|
-| `ANTHROPIC_API_KEY` | Optional | Powers the per-post "Regenerate / Generate visual" buttons. Without it, those buttons return a clear error but everything else (batch export, Satori rendering, designed PNGs) works. Server-only — never prefix with `NEXT_PUBLIC_`. |
-| `ANTHROPIC_MODEL` | Optional | Overrides the model used for visual generation. Defaults to `claude-sonnet-4-5`. |
-
-Set these in Netlify → Site configuration → Environment variables, then trigger a redeploy (env changes only apply on a fresh build).
+None required. The app is fully static + Satori-rendered, with designed PNGs served from `public/assets/`. No API keys, no secrets.
 
 ## Editing voice profiles
 
