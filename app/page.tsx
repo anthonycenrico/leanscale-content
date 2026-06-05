@@ -27,36 +27,20 @@ export default async function HomePage() {
     );
   }
 
-  const transcriptList = batch.source.transcripts
-    .map((t) => `${t.guest} — ${t.topic}`)
-    .join(" · ");
-
   return (
     <main>
       <section className="section section--dark hero">
         <div className="wrap">
-          <p className="tag tag--on-dark">Latest batch · {batch.batchId}</p>
+          <p className="tag tag--on-dark">LeanScale Ghostwriter</p>
           <h1 className="display" style={{ marginTop: "var(--space-5)" }}>
-            {batch.posts.length} posts ready
+            Posts ready to ship.
             <br />
-            <span className="hero__em">for the team.</span>
+            <span className="hero__em">Pick your queue.</span>
           </h1>
           <p className="lede" style={{ marginTop: "var(--space-6)", maxWidth: "60ch" }}>
-            Pick your name below to see your queue. Copy any post and paste it
-            straight into LinkedIn.
+            Five voices, ongoing batches. Click your name to see what's queued —
+            copy, paste, post.
           </p>
-          {transcriptList && (
-            <p
-              className="tag tag--on-dark"
-              style={{
-                marginTop: "var(--space-7)",
-                color: "var(--fg-on-dark-2)",
-                opacity: 0.8,
-              }}
-            >
-              Source · {transcriptList}
-            </p>
-          )}
 
           <div className="stats">
             <div className="stat">

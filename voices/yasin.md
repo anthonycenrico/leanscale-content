@@ -1,12 +1,12 @@
 ---
-name: Yasin Arshad
-role: Head of Marketing, Education & Enablement (Partner & Head of AI)
+name: Yaseen Arshad
+role: Head of AI
 linkedin: https://www.linkedin.com/in/yasin-arshad/
 confidence: medium-high
-last_updated: 2026-06-04
+last_updated: 2026-06-05
 ---
 
-# Voice Profile — Yasin Arshad
+# Voice Profile — Yaseen Arshad
 
 ## Summary
 

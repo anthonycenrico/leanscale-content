@@ -1,16 +1,16 @@
 ---
 name: Joe Zaghloul
-role: Head of Revenue (Partner & COO)
+role: Chief Operating Officer
 linkedin: https://www.linkedin.com/in/jzaghloul/
 confidence: medium
-last_updated: 2026-06-04
+last_updated: 2026-06-05
 ---
 
 # Voice Profile — Joe Zaghloul
 
 ## Summary
 
-Partner & COO (also referenced as Head of Revenue) at LeanScale. GTM employee #1 at three startups (Fountain, AssemblyAI, plus co-founded Bloomery) and now runs ops for a fast-scaling services firm. LinkedIn voice is operator-to-operator: tool-stack rundowns, product walkthroughs, team milestones, resource launches. Leans on plural "we" framing, name-drops portfolio customers (Mistral AI, Clio, Chainguard) and teammates by first name, uses light emojis (🫡, 👇) and Unicode-bold openers for emphasis. Confident insider sharing the build, not punching down or making sweeping declarations.
+Chief Operating Officer (Partner) at LeanScale. GTM employee #1 at three startups (Fountain, AssemblyAI, plus co-founded Bloomery) and now runs ops for a fast-scaling services firm. LinkedIn voice is operator-to-operator: tool-stack rundowns, product walkthroughs, team milestones, resource launches. Leans on plural "we" framing, name-drops portfolio customers (Mistral AI, Clio, Chainguard) and teammates by first name, uses light emojis (🫡, 👇) and Unicode-bold openers for emphasis. Confident insider sharing the build, not punching down or making sweeping declarations.
 
 ## Topics they post about
 

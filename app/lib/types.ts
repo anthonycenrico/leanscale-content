@@ -99,11 +99,11 @@ export interface VoiceProfile {
 }
 
 export const AUTHOR_META: Record<AuthorSlug, AuthorMeta> = {
-  jake:    { slug: "jake",    name: "Jake Toepel",     role: "Head of Engineering & Product", confidence: "medium-low" },
-  joe:     { slug: "joe",     name: "Joe Zaghloul",    role: "Head of Revenue",               confidence: "medium" },
-  cameron: { slug: "cameron", name: "Cameron Legge",   role: "Head of Customers",             confidence: "medium-high" },
-  yasin:   { slug: "yasin",   name: "Yasin Arshad",    role: "Head of Marketing & Education", confidence: "medium-high" },
-  anthony: { slug: "anthony", name: "Anthony Enrico",  role: "Co-founder & CEO",              confidence: "medium-high" },
+  jake:    { slug: "jake",    name: "Jake Toepel",      role: "Head of Engineering & Product", confidence: "medium-low" },
+  joe:     { slug: "joe",     name: "Joe Zaghloul",     role: "Chief Operating Officer",       confidence: "medium" },
+  cameron: { slug: "cameron", name: "Cameron Legge",    role: "Head of Customers",             confidence: "medium-high" },
+  yasin:   { slug: "yasin",   name: "Yaseen Arshad",    role: "Head of AI",                    confidence: "medium-high" },
+  anthony: { slug: "anthony", name: "Anthony Enrico",   role: "Co-founder & CEO",              confidence: "medium-high" },
 };
 
 export const AUTHOR_ORDER: AuthorSlug[] = ["anthony", "joe", "cameron", "yasin", "jake"];
