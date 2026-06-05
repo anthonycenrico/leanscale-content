@@ -15,21 +15,32 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <nav className="nav">
-          <div className="nav-inner">
-            <Link href="/" className="nav-brand">
-              <span className="nav-brand-dot" />
-              <span>LeanScale Ghostwriter</span>
+        <header className="nav">
+          <div className="wrap nav__inner">
+            <Link href="/" className="nav__brand">
+              <span className="nav__title">LeanScale</span>
+              <span className="nav__sep" />
+              <span className="nav__label">Ghostwriter</span>
             </Link>
-            <span className="nav-meta">Internal · v0.1</span>
+            <a
+              className="btn btn--ghost-dark"
+              href="https://www.leanscale.team"
+              target="_blank"
+              rel="noreferrer noopener"
+            >
+              www.leanscale.team
+            </a>
           </div>
-        </nav>
+        </header>
         {children}
-        <footer className="site-footer">
-          <div className="container">
-            <p className="footer-meta">
-              Internal LeanScale tool · <a href="https://www.leanscale.team">www.leanscale.team</a>
-            </p>
+        <footer className="footer">
+          <div className="wrap footer__inner">
+            <span className="footer__label">LeanScale Ghostwriter</span>
+            <div className="footer__meta">
+              <span>Internal tool</span>
+              <span>·</span>
+              <a href="https://www.leanscale.team">www.leanscale.team</a>
+            </div>
           </div>
         </footer>
       </body>

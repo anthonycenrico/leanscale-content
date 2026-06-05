@@ -21,8 +21,8 @@ export function CopyButton({ text, label = "Copy text" }: CopyButtonProps) {
   };
 
   return (
-    <button onClick={handleCopy} className={copied ? "btn btn--primary" : "btn btn--primary"}>
-      {copied ? "Copied ✓" : label}
+    <button onClick={handleCopy} className="btn btn--lime">
+      {copied ? "Copied ✓" : `${label} →`}
     </button>
   );
 }
@@ -42,7 +42,7 @@ export function ComposeOnLinkedInButton({ postText }: ComposeButtonProps) {
   };
 
   return (
-    <button onClick={handleClick} className="btn btn--secondary">
+    <button onClick={handleClick} className="btn btn--ghost">
       Compose on LinkedIn ↗
     </button>
   );

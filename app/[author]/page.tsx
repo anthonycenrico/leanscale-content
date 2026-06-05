@@ -31,50 +31,64 @@ export default async function AuthorPage({ params }: PageProps) {
 
   return (
     <main>
-      <header className="hero">
-        <div className="container">
-          <span className="kicker">
-            <span className="dot" />
-            <Link href="/" style={{ color: "inherit" }}>← All authors</Link>
-          </span>
-          <h1>{meta.name}</h1>
-          <p className="hero-sub">{meta.role}</p>
-          <div className="hero-meta">
-            <div className="hero-meta-item">
-              <span className="hero-meta-lbl">Batch</span>
-              <span className="hero-meta-val">{batch?.batchId ?? "—"}</span>
+      <section className="section section--dark hero">
+        <div className="wrap">
+          <p className="tag tag--on-dark">
+            <Link href="/" style={{ color: "inherit", borderBottom: "1px solid currentColor" }}>
+              ← All authors
+            </Link>
+          </p>
+          <h1 className="display" style={{ marginTop: "var(--space-5)" }}>
+            {meta.name}
+          </h1>
+          <p className="lede" style={{ marginTop: "var(--space-5)" }}>{meta.role}</p>
+
+          <div className="stats">
+            <div className="stat">
+              <p className="stat__k">Batch</p>
+              <p className="stat__v">{batch?.batchId ?? "—"}</p>
             </div>
-            <div className="hero-meta-item">
-              <span className="hero-meta-lbl">Posts in queue</span>
-              <span className="hero-meta-val">{posts.length}</span>
+            <div className="stat">
+              <p className="stat__k">Posts in queue</p>
+              <p className="stat__v">{posts.length}</p>
             </div>
-            <div className="hero-meta-item">
-              <span className="hero-meta-lbl">Voice confidence</span>
-              <span className="hero-meta-val">{meta.confidence}</span>
+            <div className="stat">
+              <p className="stat__k">Voice confidence</p>
+              <p className="stat__v">{meta.confidence}</p>
             </div>
           </div>
         </div>
-      </header>
+      </section>
 
       {voice && (
-        <section className="section section--voice">
-          <div className="container">
+        <section className="section section--gray">
+          <div className="wrap">
+            <div className="section-head">
+              <p className="tag">Voice profile</p>
+              <h2 className="h-section">How your voice was built.</h2>
+              <p className="lede">
+                A behind-the-scenes look at the characteristics the ghostwriter
+                pulls from when generating your posts. Edit{" "}
+                <code>voices/{slug}.md</code> to refine it.
+              </p>
+            </div>
+
             <details className="voice-overview">
               <summary className="voice-overview-summary">
-                <span className="kicker kicker--lime">
-                  <span className="dot" />
-                  How your voice was built
-                </span>
-                <span className="voice-overview-summary-meta">
-                  Click to expand · {voice.bodyHtml ? "full profile" : "no body"}
-                </span>
+                <span className="tag">View full profile</span>
+                <span className="voice-overview-summary-meta">Click to expand</span>
               </summary>
               <div className="voice-overview-body">
                 <div className="voice-overview-meta">
                   <div className="voice-overview-meta-item">
                     <span className="voice-overview-meta-lbl">LinkedIn</span>
                     {voice.linkedin ? (
-                      <a href={voice.linkedin} target="_blank" rel="noreferrer noopener" className="voice-overview-meta-val">
+                      <a
+                        href={voice.linkedin}
+                        target="_blank"
+                        rel="noreferrer noopener"
+                        className="voice-overview-meta-val"
+                      >
                         {voice.linkedin.replace(/^https?:\/\//, "")}
                       </a>
                     ) : (
@@ -100,10 +114,19 @@ export default async function AuthorPage({ params }: PageProps) {
         </section>
       )}
 
-      <section className="section">
-        <div className="container">
+      <section className="section section--light">
+        <div className="wrap">
+          <div className="section-head">
+            <p className="tag">Your queue</p>
+            <h2 className="h-section">Ready to publish.</h2>
+            <p className="lede">
+              Mark posts as published as you go. Published posts move to the
+              bottom and dim. State persists across batches.
+            </p>
+          </div>
+
           {posts.length === 0 ? (
-            <p style={{ color: "var(--ink-3)" }}>
+            <p className="queue-empty">
               No posts in this batch for {meta.name}.
             </p>
           ) : (
