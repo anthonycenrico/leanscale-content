@@ -1,4 +1,4 @@
-import type { SlideSpec, Post, Batch, AuthorSlug } from "./types";
+import type { SlideSpec, Post, Batch, AuthorSlug, VisualSpec } from "./types";
 import { AUTHOR_META, AUTHOR_ORDER } from "./types";
 
 /**
@@ -43,6 +43,94 @@ export function buildAssetPngUrl(postId: string, index: number): string {
 
 export function buildSlideFilename(postId: string, index: number): string {
   return `${buildSlideId(postId, index)}.png`;
+}
+
+/* ============================================================
+   Per-post design brief — for the "tweak it yourself" workflow
+   ============================================================ */
+
+const TEMPLATE_PURPOSE: Record<string, string> = {
+  cover: "Cover / title slide — opens the set and frames the core idea.",
+  framework: "Numbered point slide — a large step number anchors a bold statement plus a line of supporting detail.",
+  listicle: "List slide — a short titled list, each item on its own row.",
+  stat: "Stat slide — one big hero metric dominates, with a label beneath and a line of context.",
+  quote: "Quote slide — a pulled quote treated as the hero, with attribution.",
+  dark: "Closing slide — the final takeaway / sign-off.",
+};
+
+function padNum(n: number): string {
+  return String(n + 1).padStart(2, "0");
+}
+
+function slideCopyLines(slide: SlideSpec): string[] {
+  const pr = slide.params;
+  const out: string[] = [];
+  const add = (label: string, val?: string) => {
+    if (val) out.push(`  - ${label}: ${val}`);
+  };
+  add("Step number", pr.num);
+  add("Eyebrow", pr.kicker);
+  add("Big number / metric", pr.stat);
+  add("Metric label", pr.statLabel);
+  add(slide.template === "quote" ? "Quote" : "Headline", pr.title);
+  add(slide.template === "quote" ? "Attribution" : "Supporting text", pr.body);
+  if (pr.items && pr.items.length) {
+    out.push("  - List items:");
+    pr.items.forEach((it) => out.push(`    - ${it}`));
+  }
+  return out;
+}
+
+/**
+ * Produces a clean, design-system-free brief for a single visual post —
+ * the thing a team member copies into Claude Design to tweak the look
+ * themselves. Claude Design already has the brand, so this is content + concept
+ * only. Pass the effective spec (which may be a regenerated override).
+ */
+export function buildPostDesignBrief(post: Post, spec?: VisualSpec | null): string {
+  const vs = spec ?? post.visualSpec;
+  if (!vs || vs.slides.length === 0) return "";
+  const slides = vs.slides;
+  const isCarousel = slides.length > 1;
+  const L: string[] = [];
+
+  L.push(`${isCarousel ? "CAROUSEL" : "INFOGRAPHIC"} — ${post.topicTitle}`);
+  L.push("");
+  L.push(
+    isCarousel
+      ? `Asset type: LinkedIn carousel — ${slides.length} swipeable slides. Design each as its own 1080×1080 frame and export each as a separate PNG.`
+      : `Asset type: single infographic image (1080×1080) — one dense graphic that lands the point at a glance.`
+  );
+  L.push("");
+  L.push("The LinkedIn post this pairs with (context for the design):");
+  L.push("");
+  L.push(post.postText.split("\n").map((l) => (l.trim() === "" ? ">" : "> " + l)).join("\n"));
+  L.push("");
+
+  if (isCarousel) {
+    L.push("Design the carousel slide by slide:");
+    L.push("");
+    slides.forEach((sl, i) => {
+      L.push(`Slide ${padNum(i)} — ${buildSlideId(post.id, i)}.png  ·  ${TEMPLATE_PURPOSE[sl.template] || sl.template}`);
+      slideCopyLines(sl).forEach((l) => L.push(l));
+      L.push("");
+    });
+  } else {
+    L.push(`The infographic — ${buildSlideId(post.id, 0)}.png:`);
+    L.push("");
+    if (post.visualAssetNeeded) {
+      L.push(`Concept: ${post.visualAssetNeeded}`);
+      L.push("");
+    }
+    L.push("Copy + elements to include:");
+    slideCopyLines(slides[0]).forEach((l) => L.push(l));
+    L.push("");
+  }
+
+  L.push(
+    "Keep the slide IDs above as the exported PNG filenames so the new versions wire back into the app automatically. (Claude Design already has the LeanScale brand — no need to specify colors or fonts.)"
+  );
+  return L.join("\n");
 }
 
 /* ============================================================

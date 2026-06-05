@@ -9,6 +9,7 @@ import {
   buildSlideFilename,
   buildAssetPngUrl,
   buildSlideId,
+  buildPostDesignBrief,
 } from "./visual-spec";
 
 const STORAGE_PREFIX = "leanscale-content:published:";
@@ -190,6 +191,10 @@ function PostCard({
         <CarouselBlock postId={post.id} spec={effectiveSpec} overridden={overridden} />
       )}
 
+      {hasVisuals && effectiveSpec && (
+        <DesignNotes brief={buildPostDesignBrief(post, effectiveSpec)} />
+      )}
+
       {hydrated && (
         <VisualControls
           post={post}
@@ -313,6 +318,38 @@ function VisualControls({
 
       {error && <p className="visual-error">Couldn&apos;t generate: {error}</p>}
     </div>
+  );
+}
+
+function DesignNotes({ brief }: { brief: string }) {
+  const [copied, setCopied] = useState(false);
+  if (!brief) return null;
+
+  const copy = async () => {
+    try {
+      await navigator.clipboard.writeText(brief);
+      setCopied(true);
+      setTimeout(() => setCopied(false), 2000);
+    } catch (e) {
+      console.error("copy failed:", e);
+    }
+  };
+
+  return (
+    <details className="design-notes">
+      <summary className="design-notes-summary">
+        <span className="visual-asset-label">Tweak this in Claude Design</span>
+        <span className="design-notes-hint">
+          Copy the description, redesign the look, keep the slide IDs
+        </span>
+      </summary>
+      <div className="design-notes-body">
+        <button className="btn btn--small btn--ghost" onClick={copy}>
+          {copied ? "Copied ✓" : "Copy design notes"}
+        </button>
+        <pre className="design-notes-pre">{brief}</pre>
+      </div>
+    </details>
   );
 }
 

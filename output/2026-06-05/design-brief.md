@@ -114,9 +114,9 @@ Paste this whole doc into Claude Design — it already has the LeanScale brand s
 >
 > Where fractional RevOps fits early (and where it doesn't)
 >
-> Full breakdown is also up on docs.leanscale.team for anyone who'd rather read than swipe. 🫡
+> Prefer reading to swiping? The full breakdown's on docs.leanscale.team.
 >
-> #revops #gtm #startups
+> #revops #gtm
 
 **Design the carousel slide by slide:**
 
@@ -160,15 +160,15 @@ Paste this whole doc into Claude Design — it already has the LeanScale brand s
 
 **The LinkedIn post this pairs with (context for the design):**
 
-> AI gave my team 10x output capacity this year. The mistake was trying to use all of it.
+> My team's output ceiling jumped about 10x this year. Spending all of it at once was the mistake.
 >
 > The field can only absorb so much change. Three things that ship and stick beat ten that ship and get ignored.
 >
 > So we run every roadmap through one filter before we commit: level of effort against business impact — with an AI multiplier on the effort axis, because what used to be "high effort" is now cheap.
 >
-> Built the whole thing into one image. Save it for your next planning session. 🫡
+> Built the whole thing into one image — save it for your next planning session.
 >
-> #revops #ai
+> #revops
 
 **The infographic — `joe-20260605-4-slide-01.png`:**
 
@@ -189,9 +189,9 @@ Paste this whole doc into Claude Design — it already has the LeanScale brand s
 
 **The LinkedIn post this pairs with (context for the design):**
 
-> The line I keep hearing from founders: "we have an AI engineer now, so we don't really need a RevOps leader."
+> There's a hiring trade founders keep trying to make: swap the RevOps leader for an AI engineer and call the org chart cleaner.
 >
-> I get why it's tempting. One sharp technical hire, a stack of tools, a cleaner org chart.
+> I get the appeal. One sharp technical hire, a stack of tools, fewer seats.
 >
 > The piece that's missing is a layer most people don't have a name for. So I mapped the three layers of GTM work — the Why, the What, and the How — and exactly where an AI-first org is about to find a gap.
 >
@@ -318,7 +318,7 @@ Paste this whole doc into Claude Design — it already has the LeanScale brand s
 
 **The LinkedIn post this pairs with (context for the design):**
 
-> The highest-quality AI work I see all starts the same way: someone wrote their own hypothesis down first, by hand, before they touched a model.
+> The best operators I know point AI at a problem only after they've written down what they think is true.
 >
 > You can always tell when they didn't. The deck looks polished, then it collapses under the first probing question — because there was never a real point of view underneath it, just AI slop arranged neatly.
 >
@@ -347,9 +347,9 @@ Paste this whole doc into Claude Design — it already has the LeanScale brand s
 
 **The LinkedIn post this pairs with (context for the design):**
 
-> "We have an AI engineer now, so we don't need a RevOps leader."
+> Founders keep telling me their AI engineer makes a RevOps leader redundant.
 >
-> I hear a version of this every week, and it's about to cost a lot of teams a very expensive year.
+> As the person who'd be that engineer: they're wrong, and it's about to cost them an expensive year.
 >
 > GTM work has three layers, and a GTM engineer only owns one of them.
 >
@@ -357,7 +357,7 @@ Paste this whole doc into Claude Design — it already has the LeanScale brand s
 >
 > What I can't do is decide what the What should be. That takes someone who's watched a comp plan break and sat through a forecast call. Skip that layer and you ship a beautifully engineered system that solves the wrong problem.
 >
-> Built this out as a 5-slide breakdown. Swipe through, and DM me if you want the diagram.
+> Built this out as a 5-slide breakdown — the whole framework's in the swipe.
 
 **Design the carousel slide by slide:**
 

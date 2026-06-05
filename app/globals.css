@@ -968,6 +968,65 @@ a.voice-overview-meta-val { color: var(--fg-accent); }
 }
 
 /* ============================================================
+   Design notes (copy the brief, tweak in Claude Design)
+   ============================================================ */
+
+.design-notes {
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  margin-bottom: var(--space-5);
+}
+
+.section--gray .design-notes { border-color: var(--border-gray-section); }
+
+.design-notes-summary {
+  cursor: pointer;
+  padding: 12px 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap: wrap;
+  list-style: none;
+  transition: background 160ms cubic-bezier(.2, 0, 0, 1);
+}
+
+.design-notes-summary::-webkit-details-marker { display: none; }
+.design-notes-summary::marker { content: ""; }
+.design-notes-summary:hover { background: var(--ls-light-gray); }
+
+.design-notes-hint {
+  font-size: var(--fs-xs);
+  color: var(--fg-muted);
+}
+
+.design-notes[open] .design-notes-summary {
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+.design-notes-body {
+  padding: var(--space-4);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.design-notes-pre {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  line-height: 1.5;
+  color: var(--fg-secondary);
+  background: var(--ls-light-gray);
+  padding: var(--space-4);
+  border-radius: var(--radius-sm);
+  white-space: pre-wrap;
+  word-break: break-word;
+  max-height: 360px;
+  overflow: auto;
+  margin: 0;
+}
+
+/* ============================================================
    Publish toggle (per-card pill — ghost off, lime on)
    ============================================================ */
 

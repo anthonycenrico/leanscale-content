@@ -67,6 +67,17 @@ Ghostwrite 5 LinkedIn posts in the voice of {{AUTHOR_NAME}} ({{AUTHOR_ROLE}}).
 - Front-load the hook in the first 2-3 lines (LinkedIn's "see more" cutoff)
 - Respect the author's avoidances list — these are hard "no" rules
 
+==== ANTI-REPETITION (don't let the batch look copy-paste) ====
+
+Within this author's 5 posts:
+- Vary the SIGN-OFFS. Do not end every post the same way. If the author has a signature closer (e.g. a salute emoji, a "let's connect!", a "DM me", a hashtag bundle), it may appear ONCE, maybe twice — never on all 5. The other posts close with a clean line, a question, a CTA to a resource, or just the payoff.
+- Vary the OPENERS. Don't start multiple posts with the same construction.
+- Vary post LENGTH and STRUCTURE across the 5 — some short and punchy, some longer.
+
+The closer should feel like a natural end to THAT post, not a stamp applied to all of them. Signature elements are seasoning, not a template.
+
+(Cross-author note for the orchestrator: after all 5 authors are generated, scan for cases where two different authors open the same shared topic with a near-identical hook — especially carousels on the same kernel. Re-vary the openers so each author frames the shared topic in their own distinct way. Three teammates posting the same opening line in the same week is the #1 copy-paste tell.)
+
 Return all 5 posts with: contentType, topicTitle, postText (with real line breaks via \n), voiceNotes (which voice characteristics you leaned into), and visualAssetNeeded.
 ```
 
