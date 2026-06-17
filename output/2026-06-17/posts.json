@@ -1,0 +1,1232 @@
+{
+  "batchId": "2026-06-17",
+  "generatedAt": "2026-06-17T17:39:43.112Z",
+  "source": {
+    "seedLabel": "Anthony on Reframe First podcast — GTM ops, AI automation, services-as-software, brand-led growth (host: Oleksij Rak)",
+    "source": "Reframe First podcast interview: Anthony Enrico on LeanScale 2026 — full-stack GTM ops as a service, harvester-vs-hunter sales hiring, brand as underpriced channel, mid-funnel AI opportunity, services-as-software margin shift, build vs buy in the AI era, four content modes of a B2B brand"
+  },
+  "topics": [
+    {
+      "title": "Salespeople Are Harvesters, Not Hunters",
+      "angle": "Founders hire AEs hoping they'll generate demand. The floor should be the opposite: AEs harvest the demand brand and marketing built. Hiring a closer to manufacture demand is the #1 GTM mistake, and the AE didn't fail — the founder did.",
+      "sourceQuote": "Over hiring and sales is number one... there's a thought process that the founder's going through that hiring salespeople will build demand... The floor and the expectation you should have is they are harvesters of demand.",
+      "sourcePerson": "Anthony",
+      "bestFor": [
+        "CONTRARIAN HOOK",
+        "INDUSTRY OBSERVATION",
+        "SOFT EDUCATIONAL"
+      ],
+      "bestForRole": [
+        "Founder",
+        "Revenue"
+      ],
+      "domain": "GTM hiring"
+    },
+    {
+      "title": "GTM Data Is Financial Data",
+      "angle": "Series A/B founders treat go-to-market data as a nice-to-have. It isn't. You need books-level accuracy on GTM data to make scaling decisions — segment, channel, double-down vs pull-back. Mess it up and you walk into a board meeting with bad numbers.",
+      "sourceQuote": "A good analogy to this would be your financial data. You need to have accurate books in order to make decisions. On the GTM side, you need that level of accuracy too.",
+      "sourcePerson": "Anthony",
+      "bestFor": [
+        "SOFT EDUCATIONAL",
+        "CONTRARIAN HOOK",
+        "INFOGRAPHIC"
+      ],
+      "bestForRole": [
+        "Revenue",
+        "Founder"
+      ],
+      "domain": "RevOps strategy"
+    },
+    {
+      "title": "The Build Order: Product, Brand, Then Sales",
+      "angle": "The non-negotiable sequence: build a lights-out product, layer in incredible marketing, THEN let the sales team harvest. Anthony names Claude as an example of a product so good it barely needs marketing. Skip step one and the rest collapses.",
+      "sourceQuote": "Build a lights out product. I mean, there's some products that don't even need marketing. Like Claude doesn't need a lot of marketing... lights out product, then layer in incredible marketing, then get the sales team to harvest all those opportunities. That's the order.",
+      "sourcePerson": "Anthony",
+      "bestFor": [
+        "CAROUSEL",
+        "INFOGRAPHIC",
+        "SOFT EDUCATIONAL"
+      ],
+      "bestForRole": [
+        "Founder",
+        "Marketing"
+      ],
+      "domain": "GTM strategy"
+    },
+    {
+      "title": "Mid-Funnel Is the Real AI Opportunity",
+      "angle": "Everyone's posting Clay tables and 63-step outbound flows. The real leverage sits between opp-open and closed-won: AI-prepped discovery, transcript-driven proposals, MCP-connected POCs that prove the concept with the prospect's actual data.",
+      "sourceQuote": "I actually think there are a lot more interesting opportunities in the middle funnel... AI can be tremendously helpful. Like, hey, connect to the MCP of tools that are relevant to them, build the assets that prove the concept of what your solution brings.",
+      "sourcePerson": "Anthony",
+      "bestFor": [
+        "CONTRARIAN HOOK",
+        "TACTICAL PLAYBOOK",
+        "INDUSTRY OBSERVATION"
+      ],
+      "bestForRole": [
+        "Revenue",
+        "Engineering/Product"
+      ],
+      "domain": "AI in GTM"
+    },
+    {
+      "title": "Outbound Only Works With a Free, Personalized Asset",
+      "angle": "Volume of outbound is up 10-100x. The only outbound that still works: build something valuable AND personalized AND free for the recipient, then deliver it. 'Hey, want to chat?' is dead. 'Here's a diagnostic of your stack — keep it' is alive.",
+      "sourceQuote": "The only things I've seen work really, really well is if you can on the outbound side... create something very valuable that's personalized, that's an asset for them, and then send them that asset.",
+      "sourcePerson": "Anthony",
+      "bestFor": [
+        "TACTICAL PLAYBOOK",
+        "CASE STUDY SNIPPET",
+        "CONTRARIAN HOOK"
+      ],
+      "bestForRole": [
+        "Revenue",
+        "Marketing"
+      ],
+      "domain": "outbound strategy"
+    },
+    {
+      "title": "Our Outbound Diagnostic Playbook",
+      "angle": "Walkthrough of how LeanScale runs outbound: three signals (raised money, new CRO, head of RevOps search) trigger research agents that build a stage-aware diagnostic. The diagnostic itself IS the cold email — not a pitch, a gift.",
+      "sourceQuote": "The signal for us is anybody who raised money, hired a new CRO, or is looking for a head of RevOps... we have research agents that go find everything we can about that company... then we send a full diagnostic.",
+      "sourcePerson": "Anthony",
+      "bestFor": [
+        "TACTICAL PLAYBOOK",
+        "CASE STUDY SNIPPET",
+        "CAROUSEL"
+      ],
+      "bestForRole": [
+        "Revenue",
+        "Marketing"
+      ],
+      "domain": "outbound playbook"
+    },
+    {
+      "title": "Brand Is the Most Underpriced GTM Channel",
+      "angle": "From a RevOps person whose job is to measure every dollar: there are bets you can't ROI-attribute, and brand is one of them. When brand works, every other channel performs better. The companies under-investing here are the ones whose paid CAC keeps climbing.",
+      "sourceQuote": "I'm on the GTM operation side. I'm here to scientifically show you the ROI of every single marketing channel... at the same time, when you invest well in your brand, all of your other channels perform better. So I see a significant underinvestment in brand.",
+      "sourcePerson": "Anthony",
+      "bestFor": [
+        "CONTRARIAN HOOK",
+        "SOFT EDUCATIONAL",
+        "INDUSTRY OBSERVATION"
+      ],
+      "bestForRole": [
+        "Marketing",
+        "Founder"
+      ],
+      "domain": "brand-led growth"
+    },
+    {
+      "title": "Slow Channels Compound: Brand, Content, Partnerships",
+      "angle": "Brand, content, and channel partnerships all have one thing in common: they're slow, the quality is bad when you start, and nobody's watching for years. That's exactly why most teams skip them — and exactly why the teams that don't get outsized returns.",
+      "sourceQuote": "All of the things that are slow, nobody wants to invest in. They create the most outsized returns over time.",
+      "sourcePerson": "Anthony",
+      "bestFor": [
+        "CONTRARIAN HOOK",
+        "INFOGRAPHIC",
+        "SOFT EDUCATIONAL"
+      ],
+      "bestForRole": [
+        "Marketing",
+        "Founder"
+      ],
+      "domain": "brand-led growth"
+    },
+    {
+      "title": "The Four Content Modes of a B2B Brand",
+      "angle": "LeanScale runs four distinct content engines, each with a different job: podcast (warm intros to buyers), education (deep how-tos on YouTube), belief content (team POVs on LinkedIn), customer-only content (referral fuel). Each has its own audience and metric.",
+      "sourceQuote": "We have a mix. The podcast is one... education content... belief content... and then the other one is content for customers... we chose YouTube and LinkedIn as the main distribution channels.",
+      "sourcePerson": "Anthony",
+      "bestFor": [
+        "CAROUSEL",
+        "INFOGRAPHIC",
+        "TACTICAL PLAYBOOK"
+      ],
+      "bestForRole": [
+        "Marketing",
+        "Founder"
+      ],
+      "domain": "content strategy"
+    },
+    {
+      "title": "Founder-Led Sales To $1M, Then Switch Engines",
+      "angle": "Zero to $1M is hand-to-hand combat — the founder calling everyone they've ever met. Things get easier after $1M, and only then can the founder transition to content-led growth and channel motions. Trying to skip this step is why most early hires fail.",
+      "sourceQuote": "It's gonna be the founder. Zero to one is gonna be hand-to-hand combat, calling all of your friends, tapping into your network, and getting to a million. And if you can get to a million, then things start to get easier.",
+      "sourcePerson": "Anthony",
+      "bestFor": [
+        "SOFT EDUCATIONAL",
+        "CONTRARIAN HOOK",
+        "INFOGRAPHIC"
+      ],
+      "bestForRole": [
+        "Founder",
+        "Revenue"
+      ],
+      "domain": "founder-led sales"
+    },
+    {
+      "title": "First-Time CRO vs Serial CRO: Different Messaging Entirely",
+      "angle": "Same firmographic ICP, totally different persona. Serial CROs know they need RevOps day zero — they've walked into a board meeting with bad data before. First-timers don't know yet. Your messaging must address one or the other, not both.",
+      "sourceQuote": "There's a big difference between a CRO who's doing this for their first time and a CRO who's on their fifth adventure in the world of startups... The CROs who have done this before are way easier for us to get in front of and close because they get it.",
+      "sourcePerson": "Anthony",
+      "bestFor": [
+        "INDUSTRY OBSERVATION",
+        "CONTRARIAN HOOK",
+        "CAROUSEL"
+      ],
+      "bestForRole": [
+        "Revenue",
+        "Marketing"
+      ],
+      "domain": "persona targeting"
+    },
+    {
+      "title": "Account-Based Targeting Is Just A Shell",
+      "angle": "Firmographic targeting (B2B SaaS, $5-50M ARR) only gets you to the door. The actual deal happens at the persona level — what does this human care about, what's their compensation, what's their history. ABM without persona is just spam at scale.",
+      "sourceQuote": "You're selling to people, people are buying from people... that's just the shell that these people live in... your messaging will also be dramatically different if you take it to the persona level.",
+      "sourcePerson": "Anthony",
+      "bestFor": [
+        "CONTRARIAN HOOK",
+        "SOFT EDUCATIONAL",
+        "INDUSTRY OBSERVATION"
+      ],
+      "bestForRole": [
+        "Revenue",
+        "Marketing"
+      ],
+      "domain": "ABM strategy"
+    },
+    {
+      "title": "We Cut Our Diagnostic From 20 Hours to Zero Headcount",
+      "angle": "The economics of a single AI agent rebuild: LeanScale used to need humans dedicated to running a 10-20 hour discovery + diagnostic process. The agent pipeline reads metadata from a CRM, generates a more accurate report than humans did, and lifted both conversion and ACV.",
+      "sourceQuote": "We used to have people dedicated to only running this process. Now we don't even have anybody in that role... it increased our conversion rate dramatically... and increased our ACV.",
+      "sourcePerson": "Anthony",
+      "bestFor": [
+        "CASE STUDY SNIPPET",
+        "PERSONAL STORY",
+        "INFOGRAPHIC"
+      ],
+      "bestForRole": [
+        "Engineering/Product",
+        "Founder",
+        "Revenue"
+      ],
+      "domain": "AI operations"
+    },
+    {
+      "title": "AI Wins Are About Consistency, Not Speed",
+      "angle": "The flashy story is hours saved. The real story is consistency. Anthony's most-loved internal pipeline isn't the fastest — it's the one that guarantees nobody forgets a call detail, every customer gets the same caliber of follow-up, no balls get dropped.",
+      "sourceQuote": "Yes, efficiency gains, great. I'm most excited about the consistency of quality. So now I know nobody's forgetting something on a call or missing something on a call.",
+      "sourcePerson": "Anthony",
+      "bestFor": [
+        "CONTRARIAN HOOK",
+        "INDUSTRY OBSERVATION",
+        "SOFT EDUCATIONAL"
+      ],
+      "bestForRole": [
+        "Customers",
+        "Engineering/Product"
+      ],
+      "domain": "AI operations"
+    },
+    {
+      "title": "The Transcript Pipeline Is the Spine of Service Delivery",
+      "angle": "If you run a services business in 2026 and you don't have a transcript pipeline routing call data to your PM, your CRM, your QBR decks, and your weekly recaps, you're leaving 90% of automation on the table. It's the substrate everything else plugs into.",
+      "sourceQuote": "We built a full transcript pipeline that takes any transcripts we're having with customers, puts them to agents that automatically build the tasks... all the communication, all the project management is pretty much 90% automated.",
+      "sourcePerson": "Anthony",
+      "bestFor": [
+        "TACTICAL PLAYBOOK",
+        "CASE STUDY SNIPPET",
+        "INFOGRAPHIC"
+      ],
+      "bestForRole": [
+        "Customers",
+        "Engineering/Product"
+      ],
+      "domain": "AI operations"
+    },
+    {
+      "title": "Software Companies Will Look Like Services Companies",
+      "angle": "The bespoke-software cost has cratered. SaaS won't survive as 'one product everyone uses' — the customer wants the problem outsourced. The next gen builds a core product plus tailored experiences per customer, AI on the back end keeping margins SaaS-grade.",
+      "sourceQuote": "I think software companies will become more like service companies because you'll have a core problem that you're building that you solve... I think because it's easier to build bespoke software, those companies can tailor their product for each one of their customers.",
+      "sourcePerson": "Anthony",
+      "bestFor": [
+        "CONTRARIAN HOOK",
+        "INDUSTRY OBSERVATION",
+        "SOFT EDUCATIONAL"
+      ],
+      "bestForRole": [
+        "Founder",
+        "Engineering/Product"
+      ],
+      "domain": "services-as-software"
+    },
+    {
+      "title": "Services Margins Were Always Better Than SaaS Margins (Math Inside)",
+      "angle": "The 80% SaaS gross margin was a polite lie. It ignored the tens of millions in upfront engineering R&D it took to get there. Services companies running 80% margins on AI-powered delivery are actually higher quality earnings — no front-loaded R&D burn.",
+      "sourceQuote": "You can still run an 80% gross margin business. By the way, you don't need all of this front-loaded cost that used to be relevant in SaaS. All of that goes away. And all of those gross margins were kind of phony anyway, because you weren't counting the tens of millions of dollars you invested up front.",
+      "sourcePerson": "Anthony",
+      "bestFor": [
+        "CONTRARIAN HOOK",
+        "INFOGRAPHIC",
+        "INDUSTRY OBSERVATION"
+      ],
+      "bestForRole": [
+        "Founder"
+      ],
+      "domain": "services-as-software"
+    },
+    {
+      "title": "The Honeymoon With AI Is Over",
+      "angle": "Phase 1: companies threw a Claude license at every employee and said 'go build.' Phase 2 (now): everyone's doing build-vs-buy reviews and realizing they don't want bespoke spaghetti. Centralized AI ops — RevOps + DevOps owning the agents — is winning.",
+      "sourceQuote": "We're just getting past the discovery and honeymoon phase of AI, where a lot of companies threw a Claude Max account license into every single person in the company and said, 'just go build'... it's consolidating down to RevOps on the go to market side, and then a group of engineering on the engineering and product side.",
+      "sourcePerson": "Anthony",
+      "bestFor": [
+        "INDUSTRY OBSERVATION",
+        "CONTRARIAN HOOK",
+        "CAROUSEL"
+      ],
+      "bestForRole": [
+        "Engineering/Product",
+        "Revenue",
+        "Founder"
+      ],
+      "domain": "AI operations"
+    },
+    {
+      "title": "Build vs Buy In 2026 Comes Down to One Question",
+      "angle": "The barrier to building is so low that 'should we build this?' is the wrong question. The right one: will this rebuild return more value per hour than the hour spent on your core service? If yes, build. If not, buy. Anthony stopped buying tools that solve generic problems.",
+      "sourceQuote": "There are a lot of tools that we are not buying because we're just building ones that are better for ourselves... if you do need something specific, like our diagnostic process, the way we need to manage projects... it was worth the investment for us to build our own tools.",
+      "sourcePerson": "Anthony",
+      "bestFor": [
+        "INDUSTRY OBSERVATION",
+        "SOFT EDUCATIONAL",
+        "INFOGRAPHIC"
+      ],
+      "bestForRole": [
+        "Engineering/Product",
+        "Founder"
+      ],
+      "domain": "AI operations"
+    },
+    {
+      "title": "Anyone Can Build a Product. Doesn't Mean They Should.",
+      "angle": "Vibe-coded products are flooding the market. The bar for taste, production-readiness, and elegantly solved problems hasn't dropped. Just because anyone can write a book doesn't mean they should. Same for products.",
+      "sourceQuote": "I think anybody can build a product, but it doesn't mean anybody should. And it doesn't mean you're building anything good. Like I see vibe-coded products all day long, but it doesn't mean it's a production grade product that speaks to a problem in an elegant way with taste.",
+      "sourcePerson": "Anthony",
+      "bestFor": [
+        "CONTRARIAN HOOK",
+        "SOFT EDUCATIONAL",
+        "INDUSTRY OBSERVATION"
+      ],
+      "bestForRole": [
+        "Engineering/Product",
+        "Founder"
+      ],
+      "domain": "product strategy"
+    },
+    {
+      "title": "Founders With Visceral Pain Build the Best Products",
+      "angle": "The highest-performing companies share a profile: founder worked in the industry, lived the pain, already had contacts. 'I'm a great engineer, I'll find a market' is a much harder path than people pretend. Domain conviction beats engineering chops every time.",
+      "sourceQuote": "The highest performing companies have a founder that was working in the industry, has a deep visceral understanding of the pain, and already has a lot of contacts in that industry... if you haven't had personal experience, I think that's very, very difficult to do.",
+      "sourcePerson": "Anthony",
+      "bestFor": [
+        "CONTRARIAN HOOK",
+        "SOFT EDUCATIONAL",
+        "INDUSTRY OBSERVATION"
+      ],
+      "bestForRole": [
+        "Founder",
+        "Engineering/Product"
+      ],
+      "domain": "founder profile"
+    },
+    {
+      "title": "Why We Built CRM Diagnostic As a Self-Serve Lead Magnet",
+      "angle": "Personal story / case study: Anthony's diagnostic is going to be turned into a self-serve lead magnet — connect your CRM, get a report, optionally upgrade. Anthony admits this idea was given to him by his podcast guest mid-recording. Lessons in shipping fast and listening.",
+      "sourceQuote": "Actually, that's a very good idea. I think we can make our diagnostic self serve. So I'll give you some royalties when we launch that. But that's a great idea.",
+      "sourcePerson": "Anthony",
+      "bestFor": [
+        "PERSONAL STORY",
+        "CASE STUDY SNIPPET",
+        "TACTICAL PLAYBOOK"
+      ],
+      "bestForRole": [
+        "Marketing",
+        "Founder"
+      ],
+      "domain": "product-led growth"
+    },
+    {
+      "title": "Distribution Partnerships Only Work With a 'Better Together' Story",
+      "angle": "Most channel partnerships fail because they're just logo swaps. The ones that work for LeanScale: where the partner's product and ours have a real better-together story for the customer. We co-sell into accounts that need both. No story = no deal.",
+      "sourceQuote": "I don't see a lot of your distribution partnerships working really well. It's gotta be something where their product and your product or their service and your product have a better together story.",
+      "sourcePerson": "Anthony",
+      "bestFor": [
+        "INDUSTRY OBSERVATION",
+        "SOFT EDUCATIONAL",
+        "TACTICAL PLAYBOOK"
+      ],
+      "bestForRole": [
+        "Marketing",
+        "Revenue"
+      ],
+      "domain": "partnerships"
+    },
+    {
+      "title": "The Three Signals We Use For Outbound (Stop Guessing ICP)",
+      "angle": "Stop targeting 'companies that look like our ICP.' Target the people most actively feeling the pain. For LeanScale: just-raised, just-hired-a-CRO, just-posted-a-head-of-RevOps job. Three signals, that's it. The rest is content and personalization.",
+      "sourceQuote": "Don't worry about people who you think are in your ICP, but maybe they're not feeling the pain as much, go find the people who are feeling the most pain possible.",
+      "sourcePerson": "Anthony",
+      "bestFor": [
+        "TACTICAL PLAYBOOK",
+        "LISTICLE",
+        "INFOGRAPHIC"
+      ],
+      "bestForRole": [
+        "Revenue",
+        "Marketing"
+      ],
+      "domain": "outbound strategy"
+    },
+    {
+      "title": "I Hired a Salesperson Knowing It Wouldn't Work — And It Didn't",
+      "angle": "Vulnerability story. Anthony explicitly hired a sales rep knowing the playbook of how this fails, convinced himself they'd build demand. They didn't. Not their fault. Founders need to feel this once before they internalize the harvest-vs-hunt distinction.",
+      "sourceQuote": "I will say I literally did this too after already knowing how this movie plays. I did the same thing. I was hired a salesperson. I was convinced that yeah, yeah, they're gonna go out and close a bunch of deals. And they didn't, and it's not their fault.",
+      "sourcePerson": "Anthony",
+      "bestFor": [
+        "PERSONAL STORY",
+        "CONTRARIAN HOOK"
+      ],
+      "bestForRole": [
+        "Founder",
+        "Revenue"
+      ],
+      "domain": "GTM hiring"
+    },
+    {
+      "title": "Why We Podcast With Our Buyers, Not Industry Friends",
+      "angle": "The podcast isn't content marketing — it's a top-of-funnel sales motion. Anthony podcasts specifically with CROs, CMOs, and heads of RevOps because that's who LeanScale sells to. Smart conversation > demo. Brand-led discovery in disguise.",
+      "sourceQuote": "The podcast is one. That's the best way for me to get introduced to our buyers. So I podcast with CROs, CMOs, heads of RevOps. So then you have a smart conversation with somebody that is in the market you're trying to sell them to.",
+      "sourcePerson": "Anthony",
+      "bestFor": [
+        "INDUSTRY OBSERVATION",
+        "TACTICAL PLAYBOOK",
+        "PERSONAL STORY"
+      ],
+      "bestForRole": [
+        "Marketing",
+        "Founder"
+      ],
+      "domain": "content strategy"
+    },
+    {
+      "title": "Every CRO Moves Every 12 Months — Optimize For It",
+      "angle": "Tenure for CROs in our space is ~12 months. That's not a downside — it's a referral engine if you're good. Serial CROs bring their RevOps partner with them. Design your service experience and your CSAT for that reality from day one.",
+      "sourceQuote": "There's a lot of movement in our space too. Like CROs. Every twelve months they're in a new company.",
+      "sourcePerson": "Anthony",
+      "bestFor": [
+        "INDUSTRY OBSERVATION",
+        "CONTRARIAN HOOK",
+        "SOFT EDUCATIONAL"
+      ],
+      "bestForRole": [
+        "Customers",
+        "Revenue"
+      ],
+      "domain": "customer success"
+    },
+    {
+      "title": "Customer-Only Content Is the Highest-Leverage Marketing You Aren't Doing",
+      "angle": "Most marketing exists to acquire. LeanScale runs customer-exclusive webinars and content specifically to fuel retention and referral. When the most powerful go-to-market channel is your existing customers' word, give them something to talk about.",
+      "sourceQuote": "Content for customers. So customer exclusive webinars, things that are only available if you're a customer... Referrals is one of the biggest channels that we have. It's customer had a good experience, they share it.",
+      "sourcePerson": "Anthony",
+      "bestFor": [
+        "CONTRARIAN HOOK",
+        "TACTICAL PLAYBOOK",
+        "INDUSTRY OBSERVATION"
+      ],
+      "bestForRole": [
+        "Customers",
+        "Marketing"
+      ],
+      "domain": "customer marketing"
+    }
+  ],
+  "posts": [
+    {
+      "id": "anthony-20260617-1",
+      "batchId": "2026-06-17",
+      "author": "Anthony Enrico",
+      "authorSlug": "anthony",
+      "contentType": "CAROUSEL",
+      "topicTitle": "The Build Order: Product, Brand, Then Sales",
+      "postText": "**The non-negotiable build order — the one we see work, repeatedly:**\n\nLights-out product. Then incredible marketing. Then a sales team to harvest.\n\nSkip step one and the rest collapses. Skip step two and your AEs are cold-calling into a black hole. Most founders try to reverse the order — and burn 5x the cash to get nowhere.\n\nThere's a reason Claude doesn't run a heavy outbound motion. The product is good enough that it sells itself, and the marketing layer just amplifies what's already there.\n\nWe put together a simple visual on the sequence — and where the wheels come off when you skip a step. Swipe through 👇",
+      "voiceNotes": "Opens with bolded thesis line in his signature 'non-negotiable build order' construction (lifted from his sample phrasings). Uses Claude as the concrete proof point named in the kernel. Em-dash asides, '5x' efficiency reference matches his recurring POV. Closes with pointing-down emoji CTA — his observed signature closer used once in this batch.",
+      "visualAssetNeeded": "A 5-slide carousel walking through the product-then-brand-then-sales build order. Slide 1 cover sets the thesis. Slides 2-4 break down each layer of the stack with a clear number and consequence-if-skipped. Slide 5 closes on a dark quote-style slide reinforcing what happens when founders invert the order.",
+      "visualSpec": {
+        "slides": [
+          {
+            "template": "cover",
+            "params": {
+              "kicker": "BUILD ORDER",
+              "title": "Product. Brand. Then Sales.",
+              "body": "The sequence every founder gets wrong — and what happens when you skip a step."
+            }
+          },
+          {
+            "template": "framework",
+            "params": {
+              "kicker": "STEP ONE",
+              "num": "01",
+              "title": "Build a lights-out product",
+              "body": "Some products barely need marketing. Claude is one of them. Skip this and nothing downstream works."
+            }
+          },
+          {
+            "template": "framework",
+            "params": {
+              "kicker": "STEP TWO",
+              "num": "02",
+              "title": "Layer in incredible marketing",
+              "body": "A great product still needs a story, a category, and a brand. Marketing turns demand into pipeline."
+            }
+          },
+          {
+            "template": "framework",
+            "params": {
+              "kicker": "STEP THREE",
+              "num": "03",
+              "title": "Let sales harvest",
+              "body": "AEs convert demand the brand already created. They are harvesters — not hunters, not magicians."
+            }
+          },
+          {
+            "template": "dark",
+            "params": {
+              "kicker": "THE TRAP",
+              "title": "Skip step one and the rest collapses.",
+              "body": "Most founders hire AEs first and call it a GTM strategy. It's the most expensive mistake in the playbook."
+            }
+          }
+        ]
+      },
+      "status": "draft",
+      "scheduledFor": null,
+      "postedAt": null,
+      "linkedInUrl": null,
+      "createdAt": "2026-06-17T17:39:43.112Z"
+    },
+    {
+      "id": "anthony-20260617-2",
+      "batchId": "2026-06-17",
+      "author": "Anthony Enrico",
+      "authorSlug": "anthony",
+      "contentType": "INFOGRAPHIC",
+      "topicTitle": "Services Margins Were Always Better Than SaaS Margins (Math Inside)",
+      "postText": "**The 80% SaaS gross margin was always a polite lie.**\n\nIt didn't count the tens of millions of dollars in upfront R&D it took to ship the product in the first place. Strip that out and the margin profile looks very different.\n\nMeanwhile — AI-powered services firms are running 80% gross margins on day one. No front-loaded engineering burn. No 7-year payback on the codebase. Higher quality of earnings, full stop.\n\nWe don't get married to any model. But the math on services in 2026 is genuinely better than the math on SaaS was in 2016. Here's the one-image version 👇",
+      "voiceNotes": "Bold thesis opener with the 'polite lie' contrarian framing. Pulls in his 'we don't get married to any platform' sample phrasing, swapped to 'model.' Tactical / numbers-grounded — fits his operator-confident register. Different closer than the carousel (still uses 👇 emoji once more in batch, then dropped from the 3 text posts).",
+      "visualAssetNeeded": "A single 1080x1080 stat infographic comparing SaaS gross margins (with R&D burden surfaced) vs AI-powered services gross margins. Anchored by a big 80% stat callout with a short footnote that the SaaS version excludes tens of millions in upfront engineering R&D.",
+      "visualSpec": {
+        "slides": [
+          {
+            "template": "stat",
+            "params": {
+              "kicker": "MARGIN MATH",
+              "title": "Same 80%. Very different earnings.",
+              "stat": "80%",
+              "statLabel": "Gross margin — both models",
+              "body": "SaaS hit 80% only after burning tens of millions in upfront R&D. AI-powered services hit 80% on day one. Same number, very different quality of earnings."
+            }
+          }
+        ]
+      },
+      "status": "draft",
+      "scheduledFor": null,
+      "postedAt": null,
+      "linkedInUrl": null,
+      "createdAt": "2026-06-17T17:39:43.112Z"
+    },
+    {
+      "id": "anthony-20260617-3",
+      "batchId": "2026-06-17",
+      "author": "Anthony Enrico",
+      "authorSlug": "anthony",
+      "contentType": "TACTICAL PLAYBOOK",
+      "topicTitle": "Founder-Led Sales To $1M, Then Switch Engines",
+      "postText": "**Zero to one is hand-to-hand combat. There is no shortcut.**\n\nHere's the founder-led playbook we see work, repeatedly:\n\n1. The founder makes the list. Every person they've ever sold to, worked with, or pitched a beer to. No SDR. No tool. Just the list.\n\n2. The founder runs every first call. Not because it scales — because that's where you learn the actual ICP.\n\n3. Get to $1M ARR before you hire a single closer. The funnel will tell you what the next hire should be.\n\n4. Around $1M things start to get easier. That's when you switch engines — content, partnerships, channel motions, a real RevOps layer.\n\nMost founders try to skip step 3 because steps 1 and 2 are exhausting. That's the mistake. Hand-to-hand combat is the unlock — not the obstacle.\n\nIf you're stuck before $1M and trying to outsource your way through it, the answer is almost always: pick up the phone yourself.",
+      "voiceNotes": "Opens with bolded thesis. Uses his 'playbook we see work, repeatedly' construction directly from sample phrasings. Numbered steps fit TACTICAL PLAYBOOK shape. Vocabulary: 'engine,' 'motion,' 'ICP,' 'funnel,' 'RevOps' — all on-voice. Closes with a clean tactical landing, no emoji, different opener and closer from the first two posts.",
+      "visualAssetNeeded": "",
+      "visualSpec": null,
+      "status": "draft",
+      "scheduledFor": null,
+      "postedAt": null,
+      "linkedInUrl": null,
+      "createdAt": "2026-06-17T17:39:43.112Z"
+    },
+    {
+      "id": "anthony-20260617-4",
+      "batchId": "2026-06-17",
+      "author": "Anthony Enrico",
+      "authorSlug": "anthony",
+      "contentType": "PERSONAL STORY",
+      "topicTitle": "I Hired a Salesperson Knowing It Wouldn't Work — And It Didn't",
+      "postText": "I knew exactly how this movie ended. I hired the salesperson anyway.\n\nI'd watched dozens of founders do it — convince themselves that the right closer would generate demand out of thin air. I'd told those founders, on the record, that it wouldn't work. And then I sat down, looked at my pipeline, and did the same thing.\n\nThe rep was good. Smart, coachable, hungry. I told myself the story every founder tells themselves: this one is different, this one will build the demand we don't yet have.\n\nThey didn't. Not because they were lazy or wrong for the role. Because there was nothing to harvest.\n\nMarketing hadn't generated the pipeline. The brand wasn't pulling. I'd hired a closer to do a marketer's job, and then quietly blamed the rep when the numbers didn't move.\n\nThat wasn't on them. It was on me.\n\nEvery founder needs to feel this once before the harvest-vs-hunt distinction actually lands. Reading about it doesn't do it. Watching other founders do it doesn't do it. You have to write the check, sit through the QBR, and own the miss.\n\nNow when a founder asks me what to hire after themselves, I tell them what I wish someone had made me listen to: it's almost never a salesperson.",
+      "voiceNotes": "Opens cold with the vulnerability hook — no bold thesis line on this one, deliberate variation. Personal story shape with quiet landing. Notably does NOT use the 'I almost gave up' self-pitying register his avoidances forbid — keeps it operator-honest. Different opener, different closer, no emojis. Mid-length narrative arc, ~280 words.",
+      "visualAssetNeeded": "",
+      "visualSpec": null,
+      "status": "draft",
+      "scheduledFor": null,
+      "postedAt": null,
+      "linkedInUrl": null,
+      "createdAt": "2026-06-17T17:39:43.112Z"
+    },
+    {
+      "id": "anthony-20260617-5",
+      "batchId": "2026-06-17",
+      "author": "Anthony Enrico",
+      "authorSlug": "anthony",
+      "contentType": "CONTRARIAN HOOK",
+      "topicTitle": "Salespeople Are Harvesters, Not Hunters",
+      "postText": "**Most founders' first GTM hire after themselves is an AE. That's why most early AEs fail.**\n\nThe job description says hunter. The expectation in the founder's head is hunter. The cap table model assumes hunter.\n\nReality: a great AE is a harvester. They close the demand brand and marketing already created. They don't manufacture it from a Sequence and a Gong call.\n\nWhen the deals don't close, founders point at the rep. The rep didn't fail — the GTM motion did. There was nothing in the field to harvest.\n\nIf your honest answer to \"where is the demand coming from?\" is \"the new AE,\" you don't have a sales problem. You have a marketing problem dressed up as a sales problem.\n\nFix the demand engine first. Then hire the harvester.",
+      "voiceNotes": "Contrarian hook opener lifted almost verbatim from the content-types.md example for his voice — the 'first GTM hire after themselves is an AE' construction is canonical Anthony. Sharp register, bolded thesis, payoff landing line with no question and no emoji. Shorter post (~120 words), distinctly different rhythm from the longer personal story right before it.",
+      "visualAssetNeeded": "",
+      "visualSpec": null,
+      "status": "draft",
+      "scheduledFor": null,
+      "postedAt": null,
+      "linkedInUrl": null,
+      "createdAt": "2026-06-17T17:39:43.112Z"
+    },
+    {
+      "id": "joe-20260617-1",
+      "batchId": "2026-06-17",
+      "author": "Joe Zaghloul",
+      "authorSlug": "joe",
+      "contentType": "CAROUSEL",
+      "topicTitle": "Our Outbound Diagnostic Playbook",
+      "postText": "𝗢𝘂𝗿 𝗼𝘂𝘁𝗯𝗼𝘂𝗻𝗱 𝗺𝗼𝘁𝗶𝗼𝗻 𝗮𝘁 𝗟𝗲𝗮𝗻𝗦𝗰𝗮𝗹𝗲 — three signals trigger it, AI research agents fuel it, and the cold email itself is a free diagnostic.\n\nNo pitch. No demo ask. A stage-aware teardown of the prospect's GTM stack, delivered before the first call.\n\nWe've shipped it to companies like Mistral AI, Clio, and Chainguard. Built it to scale across the 50+ B2B startups we work with each year.\n\nSwipe through the full playbook 👇",
+      "voiceNotes": "Unicode-bold opener, plural 'we,' customer logo name-drop (Mistral/Clio/Chainguard), 👇 link-pointer close. Operator-to-operator tone with concrete signal list.",
+      "visualAssetNeeded": "5-slide carousel walking through LeanScale's outbound diagnostic playbook: cover slide naming the motion, framework slide for the three trigger signals, listicle slide for the AI research agent stack, framework slide for what goes inside the diagnostic email, dark closing slide with the core principle.",
+      "visualSpec": {
+        "slides": [
+          {
+            "template": "cover",
+            "params": {
+              "kicker": "OUTBOUND PLAYBOOK",
+              "title": "The Diagnostic Is the Email",
+              "body": "How LeanScale runs outbound: three signals, AI research agents, and a free teardown delivered before the first call."
+            }
+          },
+          {
+            "template": "listicle",
+            "params": {
+              "kicker": "STEP 01",
+              "title": "Three Signals That Trigger Outbound",
+              "items": [
+                "Just raised a round (Series A through C)",
+                "Just hired a new CRO or VP Sales",
+                "Just posted a Head of RevOps job"
+              ]
+            }
+          },
+          {
+            "template": "listicle",
+            "params": {
+              "kicker": "STEP 02",
+              "title": "Research Agents Do the Homework",
+              "items": [
+                "Funding stage, ARR proxy, headcount curve",
+                "GTM tech stack and CRM hygiene signals",
+                "Open RevOps roles and team gaps",
+                "Recent leadership commentary and earnings"
+              ]
+            }
+          },
+          {
+            "template": "framework",
+            "params": {
+              "kicker": "STEP 03",
+              "num": "03",
+              "title": "Build the Stage-Aware Diagnostic",
+              "body": "Match findings against the playbook for their stage. Surface the 3-5 gaps that actually matter at Series A versus Series C. Keep it short, sharp, useful."
+            }
+          },
+          {
+            "template": "framework",
+            "params": {
+              "kicker": "STEP 04",
+              "num": "04",
+              "title": "Send It as the Cold Email",
+              "body": "No 'want to chat?' close. We send the diagnostic itself. They keep it whether they reply or not. Reply rate is the byproduct, not the goal."
+            }
+          },
+          {
+            "template": "dark",
+            "params": {
+              "kicker": "THE PRINCIPLE",
+              "title": "Cold Outreach Is a Gift, Not a Pitch",
+              "body": "Build the asset first. Send it free. The meeting follows the value, never the other way around."
+            }
+          }
+        ]
+      },
+      "status": "draft",
+      "scheduledFor": null,
+      "postedAt": null,
+      "linkedInUrl": null,
+      "createdAt": "2026-06-17T17:39:43.112Z"
+    },
+    {
+      "id": "joe-20260617-2",
+      "batchId": "2026-06-17",
+      "author": "Joe Zaghloul",
+      "authorSlug": "joe",
+      "contentType": "INFOGRAPHIC",
+      "topicTitle": "The Three Signals We Use For Outbound (Stop Guessing ICP)",
+      "postText": "Most outbound lists are built on \"companies that look like our ICP.\"\n\nWe've moved off that. The pain isn't evenly distributed across an ICP — it's concentrated in three buying moments.\n\nFor LeanScale, the signals are simple:\n\n𝗝𝘂𝘀𝘁 𝗿𝗮𝗶𝘀𝗲𝗱 — capital deployment pressure, new GTM hires, new board scrutiny.\n𝗝𝘂𝘀𝘁 𝗵𝗶𝗿𝗲𝗱 𝗮 𝗖𝗥𝗢 — first 90 days, new operating model, hunting for ops support.\n𝗝𝘂𝘀𝘁 𝗽𝗼𝘀𝘁𝗲𝗱 𝗮 𝗥𝗲𝘃𝗢𝗽𝘀 𝗿𝗼𝗹𝗲 — they've already admitted the gap publicly.\n\nThat's the list. Everything else is content and personalization on top.\n\n#revops #gtm",
+      "voiceNotes": "Listicle-by-construction with Unicode-bold labels, no emoji except in the closing hashtag bundle. Direct operator framing, plural 'we,' specific concrete signals over abstractions.",
+      "visualAssetNeeded": "Single-image infographic titled 'The Three Outbound Signals' with three labeled blocks: 'Just Raised,' 'Just Hired a CRO,' 'Just Posted a RevOps Role' — each with a one-line description of why the buying pain is concentrated there.",
+      "visualSpec": {
+        "slides": [
+          {
+            "template": "listicle",
+            "params": {
+              "kicker": "OUTBOUND SIGNALS",
+              "title": "The Three Triggers We Watch",
+              "items": [
+                "Just raised — capital deployment pressure, fresh board scrutiny",
+                "Just hired a CRO — first 90 days, hunting for ops leverage",
+                "Just posted a RevOps role — gap is already public",
+                "Everything else is content layered on top"
+              ]
+            }
+          }
+        ]
+      },
+      "status": "draft",
+      "scheduledFor": null,
+      "postedAt": null,
+      "linkedInUrl": null,
+      "createdAt": "2026-06-17T17:39:43.112Z"
+    },
+    {
+      "id": "joe-20260617-3",
+      "batchId": "2026-06-17",
+      "author": "Joe Zaghloul",
+      "authorSlug": "joe",
+      "contentType": "SOFT EDUCATIONAL",
+      "topicTitle": "GTM Data Is Financial Data",
+      "postText": "There's a confusion I keep running into with Series A and B founders.\n\nThey treat GTM data like a nice-to-have dashboard. They treat financial data like sacred.\n\nThey're the same thing.\n\nGood analogy — you wouldn't walk into a board meeting with messy books. You'd close the month, reconcile, sign off. Then you'd make capital allocation decisions on top of that.\n\nGTM data needs the same rigor. Pipeline by segment. Win rates by channel. CAC by motion. Sourced vs. influenced. If any of those numbers are off, the scaling decision on top is wrong — double-down on the wrong segment, pull-back on the channel that was actually working.\n\nWe've watched founders walk into board meetings with two clean P&L pages and a GTM dashboard nobody trusts. The board notices.\n\nClose your GTM books with the same discipline you close your financial books.\n\nIt's the same exercise.",
+      "voiceNotes": "Soft educational hook ('There's a confusion I keep running into…' — a sample phrasing structure), analogy-driven explainer, no emoji, clean landing line. Operator authority via the boardroom scene without punching down.",
+      "visualAssetNeeded": "",
+      "visualSpec": null,
+      "status": "draft",
+      "scheduledFor": null,
+      "postedAt": null,
+      "linkedInUrl": null,
+      "createdAt": "2026-06-17T17:39:43.112Z"
+    },
+    {
+      "id": "joe-20260617-4",
+      "batchId": "2026-06-17",
+      "author": "Joe Zaghloul",
+      "authorSlug": "joe",
+      "contentType": "TACTICAL PLAYBOOK",
+      "topicTitle": "Outbound Only Works With a Free, Personalized Asset",
+      "postText": "Outbound volume is up 10-100x across every team I talk to. Reply rates are collapsing in the same window.\n\nThe only motion we've seen actually work — for ourselves and for the 50+ B2B startups we ship with:\n\nBuild something valuable. Personalize it. Give it away free. Then send it.\n\nHere's the build order we use:\n\n𝟭. 𝗣𝗶𝗰𝗸 𝘁𝗵𝗲 𝗮𝘀𝘀𝗲𝘁 — a diagnostic, a stack teardown, a benchmarking comparison. Something the prospect would actually pay an outside firm to produce.\n\n𝟮. 𝗗𝗲𝗳𝗶𝗻𝗲 𝘁𝗵𝗲 𝘀𝗶𝗴𝗻𝗮𝗹𝘀 𝘁𝗵𝗮𝘁 𝘁𝗿𝗶𝗴𝗴𝗲𝗿 𝗶𝘁 — narrow trigger criteria so each asset is built for the exact buying moment.\n\n𝟯. 𝗥𝘂𝗻 𝗿𝗲𝘀𝗲𝗮𝗿𝗰𝗵 𝗮𝗴𝗲𝗻𝘁𝘀 — Clay + custom agents pull stage, stack, headcount, and gaps in minutes, not days.\n\n𝟰. 𝗔𝘀𝘀𝗲𝗺𝗯𝗹𝗲 𝘁𝗵𝗲 𝗮𝘀𝘀𝗲𝘁 𝘁𝗲𝗺𝗽𝗹𝗮𝘁𝗲 — same skeleton, prospect-specific findings, prospect-specific recommendations.\n\n𝟱. 𝗗𝗲𝗹𝗶𝘃𝗲𝗿 𝗶𝘁 𝗮𝘀 𝘁𝗵𝗲 𝗲𝗺𝗮𝗶𝗹 — no \"got 15 minutes?\" close. The asset IS the value. The meeting is the byproduct.\n\n\"Hey, want to chat?\" is dead.\n\n\"Here's a diagnostic of your stack — yours to keep\" is alive.",
+      "voiceNotes": "Tactical playbook with numbered steps using Unicode-bold formatting, plural 'we,' specific tool mention (Clay), tight contrast close. No emoji, no hashtag bundle.",
+      "visualAssetNeeded": "",
+      "visualSpec": null,
+      "status": "draft",
+      "scheduledFor": null,
+      "postedAt": null,
+      "linkedInUrl": null,
+      "createdAt": "2026-06-17T17:39:43.112Z"
+    },
+    {
+      "id": "joe-20260617-5",
+      "batchId": "2026-06-17",
+      "author": "Joe Zaghloul",
+      "authorSlug": "joe",
+      "contentType": "INDUSTRY OBSERVATION",
+      "topicTitle": "Distribution Partnerships Only Work With a 'Better Together' Story",
+      "postText": "Pattern I'm seeing across the partnership conversations we've had this year.\n\nMost B2B distribution partnerships fail. Not because the logos are wrong — because they're just logo swaps.\n\nTwo companies announce a partnership. Each side hopes the other team will magically source pipeline. Six months later, zero co-sold deals, both sides quietly move on.\n\nThe partnerships that actually work for us at LeanScale share one trait: a real better-together story the customer can repeat back.\n\nWhen we partner well, the prospect's stack genuinely needs both — partner's product solves layer A, ours solves layer B, and the seam between them is the unlock. We co-sell into accounts where that seam is the pain. Renewals stick. Expansion compounds.\n\nNo customer story = no partnership. Just two GTM teams sending each other Slack updates.\n\nIf you can't pitch the joint value in one sentence, the partnership is decoration. 🫡",
+      "voiceNotes": "Industry observation hook ('Pattern I'm seeing across…' — matches a sample phrasing), plural 'we,' operator authority without punching down at specific partners, salute emoji close used once across the batch.",
+      "visualAssetNeeded": "",
+      "visualSpec": null,
+      "status": "draft",
+      "scheduledFor": null,
+      "postedAt": null,
+      "linkedInUrl": null,
+      "createdAt": "2026-06-17T17:39:43.112Z"
+    },
+    {
+      "id": "cameron-20260617-1",
+      "batchId": "2026-06-17",
+      "author": "Cameron Legge",
+      "authorSlug": "cameron",
+      "contentType": "CAROUSEL",
+      "topicTitle": "First-Time CRO vs Serial CRO: Different Messaging Entirely",
+      "postText": "Same ICP. Same firmographics. Completely different buyer.\n\nThe serial CRO has walked into a board meeting with bad data before. They know they need RevOps on day zero — and they're way easier for us to get in front of and close.\n\nThe first-time CRO doesn't know yet. They will. The hard way.\n\nIf your GTM messaging tries to address both, it lands with neither. Put together a quick swipe-through on how we think about it inside LeanScale.",
+      "voiceNotes": "Leans into Cameron's calm-teacherly downshift when explaining a RevOps pattern. Opens with three fragments instead of a hot-take, uses 'inside LeanScale' framing, closes soft. Lifts the 'way easier for us to get in front of and close' phrasing almost verbatim from the source.",
+      "visualAssetNeeded": "Five-slide swipe-through comparing first-time CRO vs serial CRO as two distinct buyer personas inside the same ICP — what they already know, what they buy, and how to message each.",
+      "visualSpec": {
+        "slides": [
+          {
+            "template": "cover",
+            "params": {
+              "kicker": "CRO BUYER SPLIT",
+              "title": "Same ICP. Different CRO.",
+              "body": "First-time and serial CROs sit in the same firmographic bucket — and need completely different messaging to buy."
+            }
+          },
+          {
+            "template": "framework",
+            "params": {
+              "kicker": "PERSONA ONE",
+              "num": "01",
+              "title": "The Serial CRO",
+              "body": "Fifth adventure. Has presented bad numbers to a board before. Knows RevOps is day-zero work, not a Series B problem."
+            }
+          },
+          {
+            "template": "framework",
+            "params": {
+              "kicker": "PERSONA TWO",
+              "num": "02",
+              "title": "The First-Time CRO",
+              "body": "First adventure. Heads-down on pipeline and hiring. Doesn't yet know what bad data costs them at the board meeting."
+            }
+          },
+          {
+            "template": "listicle",
+            "params": {
+              "kicker": "MESSAGE TO EACH",
+              "title": "Two Messages, Two Motions",
+              "items": [
+                "Serial: skip the education, lead with the partner experience",
+                "First-time: lead with the pain they will hit at the next QBR",
+                "Serial: short cycle, expects you to keep up",
+                "First-time: longer cycle, needs the story before the solution"
+              ]
+            }
+          },
+          {
+            "template": "dark",
+            "params": {
+              "kicker": "TAKEAWAY",
+              "title": "Pick one CRO and message to them.",
+              "body": "Trying to talk to both at once is how good GTM messaging goes quiet. Cheers!"
+            }
+          }
+        ]
+      },
+      "status": "draft",
+      "scheduledFor": null,
+      "postedAt": null,
+      "linkedInUrl": null,
+      "createdAt": "2026-06-17T17:39:43.112Z"
+    },
+    {
+      "id": "cameron-20260617-2",
+      "batchId": "2026-06-17",
+      "author": "Cameron Legge",
+      "authorSlug": "cameron",
+      "contentType": "INFOGRAPHIC",
+      "topicTitle": "The Transcript Pipeline Is the Spine of Service Delivery",
+      "postText": "If you run a services business in 2026 and you don't have a transcript pipeline yet, you're leaving 90% of the automation on the table.\n\nWe built ours at LeanScale to take every customer call and route it — automatically — to the PM workspace, the CRM, the QBR deck, and the weekly recap.\n\nIt's the substrate. Everything else plugs into it.\n\nQuick visual on what the pipeline actually feeds.",
+      "voiceNotes": "Cameron's calm operator mode — short paragraphs, concrete percentage from the source ('90%'), no hot-take opener, ends with a clean pointer to the visual. Uses 'we built ours at LeanScale' to keep team-first framing.",
+      "visualAssetNeeded": "One-slide infographic showing a transcript pipeline at the center with four arrows out to the PM workspace, CRM, QBR deck, and weekly recap — the substrate every downstream workflow plugs into.",
+      "visualSpec": {
+        "slides": [
+          {
+            "template": "listicle",
+            "params": {
+              "kicker": "TRANSCRIPT PIPELINE",
+              "title": "What The Pipeline Feeds",
+              "items": [
+                "PM workspace — tasks auto-created from every call",
+                "CRM — notes, next steps, MEDDIC fields populated",
+                "QBR deck — themes and quotes pulled before the meeting",
+                "Weekly recap — customer-facing summary written and sent",
+                "Nothing forgotten, nothing dropped"
+              ]
+            }
+          }
+        ]
+      },
+      "status": "draft",
+      "scheduledFor": null,
+      "postedAt": null,
+      "linkedInUrl": null,
+      "createdAt": "2026-06-17T17:39:43.112Z"
+    },
+    {
+      "id": "cameron-20260617-3",
+      "batchId": "2026-06-17",
+      "author": "Cameron Legge",
+      "authorSlug": "cameron",
+      "contentType": "INDUSTRY OBSERVATION",
+      "topicTitle": "Every CRO Moves Every 12 Months — Optimize For It",
+      "postText": "Tenure for CROs in our space is roughly twelve months. Every year, they're in a new company.\n\nMost services firms treat that as a downside. We don't.\n\nA serial CRO who had a great experience with their RevOps partner brings that partner with them to the next gig. And the one after that.\n\nThat's not churn. That's a referral engine.\n\nDesign your service experience and your CSAT motion for the reality that your buyer is moving. Their next company is your next customer.",
+      "voiceNotes": "Pattern-recognition voice — 'in our space', plural 'we', short rhythmic paragraphs. No hot-take opener, no contrarian framing, but still a sharp reframe Cameron has earned via his customer-facing seat. Lands soft and forward-looking.",
+      "visualAssetNeeded": "",
+      "visualSpec": null,
+      "status": "draft",
+      "scheduledFor": null,
+      "postedAt": null,
+      "linkedInUrl": null,
+      "createdAt": "2026-06-17T17:39:43.112Z"
+    },
+    {
+      "id": "cameron-20260617-4",
+      "batchId": "2026-06-17",
+      "author": "Cameron Legge",
+      "authorSlug": "cameron",
+      "contentType": "SOFT EDUCATIONAL",
+      "topicTitle": "Customer-Only Content Is the Highest-Leverage Marketing You Aren't Doing",
+      "postText": "Most marketing exists to acquire. The highest-leverage content I see almost no one make is content for the customers you already have.\n\nAt LeanScale we run customer-exclusive webinars. Customer-only content. Things that aren't available unless you're already in the family.\n\nWhy?\n\nReferrals are one of the biggest channels we have. It's a customer who had a good experience, sharing it.\n\nIf word-of-mouth is your strongest go-to-market motion, give your customers something worth talking about. The ROI on that hour of content beats most paid campaigns we could run instead.",
+      "voiceNotes": "Cameron's teacherly downshift — explains a concept simply, frames LeanScale as the example rather than the hero, credits customers as the engine. Single rhetorical 'Why?' (rare for him but consistent with the explainer mode). No hashtags, soft landing.",
+      "visualAssetNeeded": "",
+      "visualSpec": null,
+      "status": "draft",
+      "scheduledFor": null,
+      "postedAt": null,
+      "linkedInUrl": null,
+      "createdAt": "2026-06-17T17:39:43.112Z"
+    },
+    {
+      "id": "cameron-20260617-5",
+      "batchId": "2026-06-17",
+      "author": "Cameron Legge",
+      "authorSlug": "cameron",
+      "contentType": "PERSONAL STORY",
+      "topicTitle": "AI Wins Are About Consistency, Not Speed",
+      "postText": "Everyone wants to talk about hours saved.\n\nThat's not the story I'm most excited about.\n\nThe pipeline I'm proudest of at LeanScale isn't the fastest one we built. It's the one that guarantees nobody on my team forgets a detail from a customer call. No follow-up missed. No ball dropped. Every customer gets the same caliber of work — from the first call to the hundredth.\n\nThat's the unlock for a services business. Efficiency is nice. Consistency is the moat.\n\nWhen I look at what AI has actually done for how we serve customers, the headline isn't speed. It's that I can sleep at night knowing the bar is the bar — across every account, every week.\n\nHuge shoutout to our team for building it that way. Excited for what's next.",
+      "voiceNotes": "First-person reflective Cameron — opens with the reframe instead of an exclamation. Uses 'huge shoutout' close and 'excited for what's next' (lifted directly from sample phrasings). Customer-obsessed, team-first, quietly proud. No emoji.",
+      "visualAssetNeeded": "",
+      "visualSpec": null,
+      "status": "draft",
+      "scheduledFor": null,
+      "postedAt": null,
+      "linkedInUrl": null,
+      "createdAt": "2026-06-17T17:39:43.112Z"
+    },
+    {
+      "id": "yasin-20260617-1",
+      "batchId": "2026-06-17",
+      "author": "Yaseen Arshad",
+      "authorSlug": "yasin",
+      "contentType": "CAROUSEL",
+      "topicTitle": "The Honeymoon With AI Is Over",
+      "postText": "Phase 1 of enterprise AI is ending.\n\nFor 18 months the playbook was simple: buy every employee a Claude Max seat, tell them to 'go build,' and hope something sticks. It produced energy, a few wins, and a mountain of bespoke spaghetti nobody can maintain.\n\nPhase 2 is build-vs-buy reviews and a quiet consolidation. The agents that survive are the ones owned centrally — RevOps running the go-to-market side, a small engineering pod running product.\n\nSwipe through for what the next phase actually looks like inside the companies we work with.",
+      "voiceNotes": "Opens with a clean declarative claim (no 'Hot take:' label), uses his phase/build-order vocabulary, and lands the contrarian read in the second beat. Closes with a swipe-through invitation tied to LeanScale field exposure — matches his 'we're seeing this play out across the portfolio' posture.",
+      "visualAssetNeeded": "Five-slide carousel walking the reader from the chaotic Phase 1 of AI rollout, through the build-vs-buy reckoning, into a centralized AI-ops operating model owned by RevOps and a small engineering group.",
+      "visualSpec": {
+        "slides": [
+          {
+            "template": "cover",
+            "params": {
+              "kicker": "AI OPERATING MODEL",
+              "title": "The Honeymoon With AI Is Over",
+              "body": "Phase 1 was a Claude seat for everyone. Phase 2 is consolidation, governance, and central ownership."
+            }
+          },
+          {
+            "template": "framework",
+            "params": {
+              "kicker": "PHASE 1",
+              "num": "01",
+              "title": "Distributed Discovery",
+              "body": "Every employee got a seat and a mandate to build. Output: energy, a few wins, a lot of duplicate workflows no one can maintain."
+            }
+          },
+          {
+            "template": "framework",
+            "params": {
+              "kicker": "PHASE 2",
+              "num": "02",
+              "title": "Build vs Buy Reviews",
+              "body": "Leaders are auditing the bespoke stack and asking the harder question: should this live in a tool we already pay for?"
+            }
+          },
+          {
+            "template": "listicle",
+            "params": {
+              "kicker": "WHAT WINS NEXT",
+              "title": "The Centralized AI Ops Pattern",
+              "items": [
+                "RevOps owns the go-to-market agents",
+                "A small eng pod owns product and infra agents",
+                "Workflows ship with eval and rollback baked in",
+                "Bespoke spaghetti gets archived, not extended"
+              ]
+            }
+          },
+          {
+            "template": "dark",
+            "params": {
+              "kicker": "THE TAKEAWAY",
+              "title": "Decentralized discovery, centralized ownership.",
+              "body": "Phase 1 taught the company what AI could do. Phase 2 is the operating model that turns that learning into leverage."
+            }
+          }
+        ]
+      },
+      "status": "draft",
+      "scheduledFor": null,
+      "postedAt": null,
+      "linkedInUrl": null,
+      "createdAt": "2026-06-17T17:39:43.112Z"
+    },
+    {
+      "id": "yasin-20260617-2",
+      "batchId": "2026-06-17",
+      "author": "Yaseen Arshad",
+      "authorSlug": "yasin",
+      "contentType": "INFOGRAPHIC",
+      "topicTitle": "Mid-Funnel Is the Real AI Opportunity",
+      "postText": "Everyone on this feed is posting Clay tables and 63-step outbound sequences.\n\nThe top of the funnel is the loudest part of the AI conversation and probably the most saturated. The real leverage sits in the middle — between opp-open and closed-won.\n\nThat's where AI-prepped discovery, transcript-driven proposals, and MCP-connected POCs that actually run against the prospect's own data quietly compress weeks of cycle time.\n\nOne image on where to point the next agent you build.",
+      "voiceNotes": "Stat-style reframe hook ('everyone's reading this wrong') applied to the AI-in-GTM discourse. Uses his vocabulary — 'compress,' 'cycle time,' MCP — and lands a calm payoff instead of a question. No emoji, no CTA stamp.",
+      "visualAssetNeeded": "Single-image infographic showing the B2B sales funnel split into three zones — top, middle, bottom — with the middle zone visually emphasized and four AI use cases listed beneath it.",
+      "visualSpec": {
+        "slides": [
+          {
+            "template": "listicle",
+            "params": {
+              "kicker": "MID-FUNNEL AI",
+              "title": "Four Plays Between Opp-Open and Closed-Won",
+              "items": [
+                "AI-prepped discovery briefs per account",
+                "Transcript-driven proposals built in hours",
+                "MCP-connected POCs running against the prospect's data",
+                "Auto-generated mutual action plans tied to CRM stages"
+              ]
+            }
+          }
+        ]
+      },
+      "status": "draft",
+      "scheduledFor": null,
+      "postedAt": null,
+      "linkedInUrl": null,
+      "createdAt": "2026-06-17T17:39:43.112Z"
+    },
+    {
+      "id": "yasin-20260617-3",
+      "batchId": "2026-06-17",
+      "author": "Yaseen Arshad",
+      "authorSlug": "yasin",
+      "contentType": "CONTRARIAN HOOK",
+      "topicTitle": "Software Companies Will Look Like Services Companies",
+      "postText": "Software companies in 2027 are going to look a lot more like services companies.\n\nThe cost of bespoke software has cratered. 'One product everyone uses' was a SaaS-era constraint, not a customer preference.\n\nWhat the buyer actually wants is the problem outsourced — solved against their data, their workflows, their edge cases.\n\nThe next wave wins with a sharp core product plus a tailored experience per customer, AI on the back end keeping the unit economics SaaS-grade.\n\nServices margins are about to look very different.",
+      "voiceNotes": "Pure CONTRARIAN HOOK — opens with a bold thesis, immediately reframes the SaaS-era assumption, and closes on a clean payoff line instead of a question. Uses his em-dash rhythm and 'unit economics' / 'edge cases' vocabulary. No CTA, no signature closer.",
+      "visualAssetNeeded": "",
+      "visualSpec": null,
+      "status": "draft",
+      "scheduledFor": null,
+      "postedAt": null,
+      "linkedInUrl": null,
+      "createdAt": "2026-06-17T17:39:43.112Z"
+    },
+    {
+      "id": "yasin-20260617-4",
+      "batchId": "2026-06-17",
+      "author": "Yaseen Arshad",
+      "authorSlug": "yasin",
+      "contentType": "TACTICAL PLAYBOOK",
+      "topicTitle": "Build vs Buy In 2026 Comes Down to One Question",
+      "postText": "The cost to build internal software in 2026 is so low that 'should we build this?' is the wrong question.\n\nThe right one — the one we actually use at LeanScale before we buy or build anything:\n\nWill the rebuilt version return more value per hour than the hour spent on our core service?\n\nIf yes, we build. If no, we buy. That's the entire filter.\n\nWhat that's looked like in practice the last 6 months:\n\n1. We stopped buying generic project management tools — the way we run diagnostics is specific enough that a custom one paid back inside a quarter.\n\n2. We stopped buying generic transcript apps — the routing logic was the value, not the recording.\n\n3. We kept buying CRM, data warehouse, and the LLM itself — those are leveraged infrastructure, not workflow.\n\nGeneric problems still get bought. Workflow that touches our margin gets built.",
+      "voiceNotes": "TACTICAL PLAYBOOK with his signature 'here's the filter we actually use' framing. Numbered concrete examples, parallel structure across the bullets, lands on a clean two-line payoff. Avoids the salute-emoji close — clean declarative landing.",
+      "visualAssetNeeded": "",
+      "visualSpec": null,
+      "status": "draft",
+      "scheduledFor": null,
+      "postedAt": null,
+      "linkedInUrl": null,
+      "createdAt": "2026-06-17T17:39:43.112Z"
+    },
+    {
+      "id": "yasin-20260617-5",
+      "batchId": "2026-06-17",
+      "author": "Yaseen Arshad",
+      "authorSlug": "yasin",
+      "contentType": "INDUSTRY OBSERVATION",
+      "topicTitle": "The Transcript Pipeline Is the Spine of Service Delivery",
+      "postText": "After interviewing 100+ GTM leaders this year, the services firms that feel ten years ahead all built one thing first:\n\nA transcript pipeline.\n\nNot call recording — recording is table stakes. The pipeline is what happens after. Every customer call gets routed to agents that update the project plan, score the deal, flag the risk, and draft the recap.\n\nThree reasons this is the unlock:\n\n1. It turns the least structured surface in services — a customer conversation — into structured input. AI is predictably good when the work is structured, and predictably bad when it's not.\n\n2. It eliminates the \"did anyone catch that?\" failure mode. Agents catch everything, every time, in the format you want.\n\n3. It compounds. The longer the pipeline runs, the richer the context graph behind every account.\n\nThe services firms without one are paying point-solution vendors for what should be one substrate.\n\nMake the work structured. The transcripts come first.",
+      "voiceNotes": "INDUSTRY OBSERVATION — 'pattern I'm seeing across the conversations I'm having' opener, parallel-structure body, calm declarative landing line. Uses his 'substrate' and '~90%' specificity. No emoji, no question-bait close.",
+      "visualAssetNeeded": "",
+      "visualSpec": null,
+      "status": "draft",
+      "scheduledFor": null,
+      "postedAt": null,
+      "linkedInUrl": null,
+      "createdAt": "2026-06-17T17:39:43.112Z"
+    },
+    {
+      "id": "jake-20260617-1",
+      "batchId": "2026-06-17",
+      "author": "Jake Toepel",
+      "authorSlug": "jake",
+      "contentType": "CAROUSEL",
+      "topicTitle": "Build vs Buy In 2026 Comes Down to One Question",
+      "postText": "We're not buying nearly as many tools as we used to.\n\nNot because we're cheap — because the barrier to building has collapsed. The old build-vs-buy debate doesn't survive 2026. Every internal tool conversation we have at LeanScale Labs now starts with one question instead.\n\nSwipe through the framework we use before we open a vendor demo.\n\nThe ones we still buy: generic infra, commodity workflows. The ones we now build: anything that touches our diagnostic, our project management, the muscle our service is actually made of.",
+      "voiceNotes": "Artifact-led carousel — Jake's strongest fit. Opens with the observation, not a hot take. Uses 'we' (LeanScale Labs) framing he naturally reaches for. Closes the caption with a concrete delineation instead of a CTA — the swipe IS the CTA.",
+      "visualAssetNeeded": "5-slide carousel walking through a build-vs-buy decision framework. Cover slide states the core question. Middle slides break down the one-question test, what to build, what to still buy. Closing slide is a dark quote slide landing the thesis.",
+      "visualSpec": {
+        "slides": [
+          {
+            "template": "cover",
+            "params": {
+              "kicker": "BUILD VS BUY 2026",
+              "title": "The barrier to building collapsed. The question changed.",
+              "body": "How we decide what to build at LeanScale Labs vs. what to keep paying for."
+            }
+          },
+          {
+            "template": "framework",
+            "params": {
+              "kicker": "THE ONE QUESTION",
+              "num": "01",
+              "title": "Will rebuilding it return more value per hour than the hour spent on your core service?",
+              "body": "If yes, build. If not, buy. That's the whole test."
+            }
+          },
+          {
+            "template": "listicle",
+            "params": {
+              "kicker": "STILL BUYING",
+              "title": "Tools we won't waste cycles rebuilding",
+              "items": [
+                "CRM as system of record",
+                "Generic infra (auth, hosting, billing)",
+                "Commodity workflows already commoditized",
+                "Anything we'd touch less than monthly"
+              ]
+            }
+          },
+          {
+            "template": "listicle",
+            "params": {
+              "kicker": "NOW BUILDING",
+              "title": "Tools that touch our service",
+              "items": [
+                "Our diagnostic process",
+                "Our project management muscle",
+                "Anything client-facing and proprietary",
+                "Anywhere a vendor's defaults compromise our work"
+              ]
+            }
+          },
+          {
+            "template": "stat",
+            "params": {
+              "kicker": "THE COMPRESSION",
+              "title": "The build math changed because the build time changed",
+              "stat": "1 wk",
+              "statLabel": "What used to be a 6-month build",
+              "body": "A senior team plus Claude ships what an agency used to."
+            }
+          },
+          {
+            "template": "dark",
+            "params": {
+              "kicker": "THE TAKE",
+              "title": "If a tool touches your core service, you should be building it.",
+              "body": "Everything else, keep buying. The middle ground is gone."
+            }
+          }
+        ]
+      },
+      "status": "draft",
+      "scheduledFor": null,
+      "postedAt": null,
+      "linkedInUrl": null,
+      "createdAt": "2026-06-17T17:39:43.112Z"
+    },
+    {
+      "id": "jake-20260617-2",
+      "batchId": "2026-06-17",
+      "author": "Jake Toepel",
+      "authorSlug": "jake",
+      "contentType": "INFOGRAPHIC",
+      "topicTitle": "We Cut Our Diagnostic From 20 Hours to Zero Headcount",
+      "postText": "Our discovery + diagnostic used to take a person 10-20 hours.\n\nWe had humans dedicated to running that process. Read the metadata, interview the team, assemble the report, hand it back.\n\nWe rebuilt it as an agent pipeline. The agent reads metadata from the CRM, generates the report, and ships it without anyone in that seat.\n\nWhat surprised us wasn't the cost takeout. It was that the agent's diagnostic was more accurate than the one humans were producing. Conversion went up. ACV went up. The role doesn't exist anymore — and the output is better than it was when it did.\n\nOne image with the before/after below.",
+      "voiceNotes": "Classic Jake case-study cadence — the artifact is the visual, the post quietly describes what shipped. No hype words, the result is just stated. Closes with a pointer to the image, not a sales CTA.",
+      "visualAssetNeeded": "Single 1080x1080 stat-style infographic. Hero number is the hours saved per diagnostic. Three sub-stats: human hours before, agent hours after, conversion lift, ACV lift. Clean before/after framing.",
+      "visualSpec": {
+        "slides": [
+          {
+            "template": "stat",
+            "params": {
+              "kicker": "DIAGNOSTIC REBUILD",
+              "title": "From 20 hours of human work to zero headcount",
+              "stat": "10-20 hrs",
+              "statLabel": "Human time per diagnostic — before the rebuild",
+              "body": "Headcount in that role now: zero. Agent reads CRM metadata, drafts the report, ships it. Conversion up. ACV up. The output is more accurate than the humans it replaced."
+            }
+          }
+        ]
+      },
+      "status": "draft",
+      "scheduledFor": null,
+      "postedAt": null,
+      "linkedInUrl": null,
+      "createdAt": "2026-06-17T17:39:43.112Z"
+    },
+    {
+      "id": "jake-20260617-3",
+      "batchId": "2026-06-17",
+      "author": "Jake Toepel",
+      "authorSlug": "jake",
+      "contentType": "INDUSTRY OBSERVATION",
+      "topicTitle": "Anyone Can Build a Product. Doesn't Mean They Should.",
+      "postText": "Vibe-coded products are flooding my feed.\n\nAnyone can build a product now. That's true. It also doesn't mean anyone should — and it definitely doesn't mean what's getting shipped is good.\n\nA lot of what I'm seeing is a working prototype, not a production-grade product. It runs. It doesn't speak to a real problem in an elegant way. It has no taste.\n\nThe bar for taste didn't drop just because the bar for shipping did. If anything, taste is the thing that's getting rarer and more valuable as the noise floor rises.\n\nAnyone can write a book. We don't recommend everyone do it.",
+      "voiceNotes": "INDUSTRY OBSERVATION (not CONTRARIAN HOOK — Jake's profile avoids the contrarian opener pattern). Opens with what he's observing in his feed, lands a quiet thesis on taste. The book analogy is a soft, deliberately understated landing.",
+      "visualAssetNeeded": "",
+      "visualSpec": null,
+      "status": "draft",
+      "scheduledFor": null,
+      "postedAt": null,
+      "linkedInUrl": null,
+      "createdAt": "2026-06-17T17:39:43.112Z"
+    },
+    {
+      "id": "jake-20260617-4",
+      "batchId": "2026-06-17",
+      "author": "Jake Toepel",
+      "authorSlug": "jake",
+      "contentType": "SOFT EDUCATIONAL",
+      "topicTitle": "Founders With Visceral Pain Build the Best Products",
+      "postText": "The highest-performing companies we work with share one trait — the founder lived the pain in their day job before they built anything.\n\nThe founder didn't come in from the outside looking for a market. They worked in the industry. They lived the pain personally. They already had the contacts before they wrote a line of code.\n\nThat's a very different starting position from \"I'm a great engineer, I'll go find a problem to solve.\" One has visceral conviction. The other has a hypothesis.\n\nThe market doesn't care which side you're on, but the build is much, much harder from the second one. You're discovering the problem in real time, with people who already have ten other vendors in their inbox.\n\nDomain conviction is underrated. Engineering chops are the lowest-cost thing on the table now.",
+      "voiceNotes": "SOFT EDUCATIONAL — teaches one pattern cleanly. Opens with 'There's a pattern I keep seeing,' a direct lift from the sample phrasings in the voice profile. Lands with a quiet thesis instead of a CTA. Plain-spoken, no jargon.",
+      "visualAssetNeeded": "",
+      "visualSpec": null,
+      "status": "draft",
+      "scheduledFor": null,
+      "postedAt": null,
+      "linkedInUrl": null,
+      "createdAt": "2026-06-17T17:39:43.112Z"
+    },
+    {
+      "id": "jake-20260617-5",
+      "batchId": "2026-06-17",
+      "author": "Jake Toepel",
+      "authorSlug": "jake",
+      "contentType": "TACTICAL PLAYBOOK",
+      "topicTitle": "Mid-Funnel Is the Real AI Opportunity",
+      "postText": "Spent the week wiring a mid-funnel agent stack for a B2B SaaS customer on HubSpot + Salesforce. Three pieces that shipped:\n\n1. Deal-prep agent — watches the calendar, pulls everything public on the buyer and their company, drafts the agenda in the night-before Slack DM. AEs walk into discovery already loaded.\n\n2. Transcript-to-MEDDIC agent — every call gets parsed against the team's qualification frame. If MEDDIC drops below threshold mid-cycle, the agent flags it before the next stage gate.\n\n3. POC-data agent — connects via MCP to whatever tool the prospect runs (warehouse, ticketing system, CRM). The proof-of-concept executes against the prospect's own data, not a sandbox.\n\nThe top of the funnel is crowded. Enrichment stacks, sequencers, 63-step outbound flows — everyone is building there.\n\nThe middle is mostly empty. That's where the cycle-time compression actually lives, and where I'd point the next agent you build.\n\nDM me if you want the workflow architecture — happy to share what's running.",
+      "voiceNotes": "TACTICAL PLAYBOOK — numbered, concrete, lifts Jake's MCP/agent vocabulary. Opens with the observation, then the prescription. Closes with a clean payoff line, not a CTA or DM ask — varies the close from the carousel.",
+      "visualAssetNeeded": "",
+      "visualSpec": null,
+      "status": "draft",
+      "scheduledFor": null,
+      "postedAt": null,
+      "linkedInUrl": null,
+      "createdAt": "2026-06-17T17:39:43.112Z"
+    }
+  ]
+}
