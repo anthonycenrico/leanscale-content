@@ -1,0 +1,1211 @@
+{
+  "batchId": "2026-06-24",
+  "generatedAt": "2026-06-24T15:01:53.675Z",
+  "source": {
+    "seedLabel": "Roee Hartuv on pricing & packaging in the AI era",
+    "guests": [
+      "Roee Hartuv"
+    ],
+    "topics": [
+      "pricing & packaging",
+      "outcome-based pricing",
+      "usage-based pricing",
+      "AI cost-to-serve",
+      "packaging on jobs-to-be-done"
+    ],
+    "sourceType": "podcast transcript",
+    "sourceFile": "roee-anthony (1).txt"
+  },
+  "topics": [
+    {
+      "title": "Pricing Is The Magic Growth Lever Nobody Owns",
+      "angle": "Most B2B SaaS companies don't hire a dedicated pricing leader until $500M ARR. That's why pricing is broken at every earlier stage — it sits in nobody's lane: half product, half CFO, half CRO, fully orphaned.",
+      "sourceQuote": "There are not a lot of experts out there, or companies don't have a pricing and packaging expert until they reach that 500 million ARR. Before that, like sometimes it's a CRO, sometimes the CFO, sometimes it's product or product marketing.",
+      "sourcePerson": "Roee Hartuv",
+      "bestFor": [
+        "CONTRARIAN HOOK",
+        "INDUSTRY OBSERVATION"
+      ],
+      "bestForRole": [
+        "Founder",
+        "Revenue"
+      ],
+      "domain": "GTM strategy"
+    },
+    {
+      "title": "Why Pricing Beats Every Other GTM Lever",
+      "angle": "Pricing changes compound across acquisition, onboarding, renewal, and expansion in weeks. Sales coaching, enablement, and process work take quarters — and unwind the moment a key human leaves. Fix pricing, you fix the system.",
+      "sourceQuote": "Most of the other levers take time to see results... you can train and teach and introduce tools, but as soon as somebody leaves the organization, then it's back to square one... if we fix pricing and packaging, that unlocks many different opportunities along the customer journey.",
+      "sourcePerson": "Roee Hartuv",
+      "bestFor": [
+        "CONTRARIAN HOOK",
+        "SOFT EDUCATIONAL"
+      ],
+      "bestForRole": [
+        "Founder",
+        "Revenue"
+      ],
+      "domain": "GTM strategy"
+    },
+    {
+      "title": "The Packaging Order Of Operations",
+      "angle": "Most teams start pricing conversations with 'what number do we charge.' That's backwards. The non-negotiable sequence: packaging first, then pricing structure, then pricing metric, THEN the number. Skipping steps is why your pricing meetings go in circles.",
+      "sourceQuote": "We start off with packaging and then we do the pricing structure and then the pricing metric. The pricing metric is what we price on, and then how do we price?... And the price point comes last.",
+      "sourcePerson": "Roee Hartuv",
+      "bestFor": [
+        "CAROUSEL",
+        "TACTICAL PLAYBOOK"
+      ],
+      "bestForRole": [
+        "Revenue",
+        "Founder",
+        "Customers"
+      ],
+      "domain": "pricing strategy"
+    },
+    {
+      "title": "Feature-Rank Packaging Is Dead",
+      "angle": "The old way: rank features by usage, dump the top 60% in Basic, next 30% in Pro, last 10% in Premium. That packaging is the reason your sellers can't actually value-sell — the bundles don't map to anything a buyer is trying to accomplish.",
+      "sourceQuote": "The classical way of doing packaging... let's rank all the features and how many customers are using it. And let's take the first 60%... put that under the basic. The better package gets the 60 and additional 30. And then the best is that 10% of features.",
+      "sourcePerson": "Roee Hartuv",
+      "bestFor": [
+        "CONTRARIAN HOOK",
+        "SOFT EDUCATIONAL"
+      ],
+      "bestForRole": [
+        "Marketing",
+        "Revenue",
+        "Engineering/Product"
+      ],
+      "domain": "packaging strategy"
+    },
+    {
+      "title": "You Can't Value-Sell If Your Packaging Isn't Built On Value",
+      "angle": "Every B2B team claims to do value selling. Almost none actually do — because their packages are organized around features, not jobs to be done. The seller can talk value all day, but the price sheet drags every conversation back to feature comparison.",
+      "sourceQuote": "Every time, like we do value selling, of course, everybody wants to do value selling. But only when I got into pricing and packaging, I discovered that you can talk and you can say that you're doing value selling, but if your packaging is not aligned to values and jobs to be done, then you can talk all you want.",
+      "sourcePerson": "Roee Hartuv",
+      "bestFor": [
+        "CONTRARIAN HOOK",
+        "INDUSTRY OBSERVATION"
+      ],
+      "bestForRole": [
+        "Revenue",
+        "Marketing"
+      ],
+      "domain": "sales methodology"
+    },
+    {
+      "title": "The $12K vs $13K Myth",
+      "angle": "In B2B, the difference between $12K and $13K doesn't decide the deal. Sellers obsess over the number because they don't have a framework for the actual drivers — packaging, structure, and metric. The price point is the LEAST important lever you have.",
+      "sourceQuote": "It doesn't matter for our customer if it's 12,000 or 13,000. The deal will not we won't win or lose. It's not like retail or B2C... we all know that if we put our best sellers, they will be able to sell at 12 and 13 or even 15. Because it's all about value.",
+      "sourcePerson": "Roee Hartuv",
+      "bestFor": [
+        "CONTRARIAN HOOK",
+        "SOFT EDUCATIONAL"
+      ],
+      "bestForRole": [
+        "Revenue",
+        "Founder"
+      ],
+      "domain": "pricing strategy"
+    },
+    {
+      "title": "The Complexity Budget",
+      "angle": "Every deal has a 'complexity budget' — the amount of intricacy your buyer will tolerate in pricing before they walk. AWS enterprise contracts can absorb dozens of line items. A $10K/year startup deal can absorb almost none. Match pricing complexity to ACV or you'll lose the bottom of your market.",
+      "sourceQuote": "We have a budget of complexity. Now obviously the higher your ACV... the bigger they are, the more complexity you can add into the sales process or your pricing... when I'm selling to a startup that is just starting off and the ACV there is very low, the complexity has to be very low as well.",
+      "sourcePerson": "Roee Hartuv",
+      "bestFor": [
+        "INFOGRAPHIC",
+        "SOFT EDUCATIONAL"
+      ],
+      "bestForRole": [
+        "Revenue",
+        "Marketing",
+        "Founder"
+      ],
+      "domain": "pricing strategy"
+    },
+    {
+      "title": "Classic SaaS Margins Were A Historical Anomaly",
+      "angle": "80-95% gross margins were a once-in-a-generation gift. SaaS only worked that way because marginal cost to serve was effectively zero. AI breaks the math — and most SaaS founders are running the old playbook on the new economics without realizing it yet.",
+      "sourceQuote": "In SaaS, our cost to serve is almost zero. The marginal cost to serve. The tenth client or the ten thousandth client is the same... That's why our margins were so high. Our margins was in classic SaaS eighty, ninety, ninety-five percent... But we all know that AI comes with a cost.",
+      "sourcePerson": "Roee Hartuv",
+      "bestFor": [
+        "INDUSTRY OBSERVATION",
+        "CONTRARIAN HOOK"
+      ],
+      "bestForRole": [
+        "Founder",
+        "Engineering/Product"
+      ],
+      "domain": "AI in GTM"
+    },
+    {
+      "title": "Even OpenAI Loses Money On Your Subscription",
+      "angle": "OpenAI's published financials confirm it: at $20/month, they're underwater on heavy users. If the world's most-funded AI company can't make seat pricing work for AI, your seat-based SaaS+AI bolt-on isn't working either. You just haven't been measuring.",
+      "sourceQuote": "Even the best company in the world... they're losing money. So even them, they are losing money. So all the rest of us probably doing not as good as they are... Coming back to OpenAI, Claude. I'm using 20, I pay twenty dollars a month. I'm sure that I'm costing them five times that.",
+      "sourcePerson": "Roee Hartuv",
+      "bestFor": [
+        "CONTRARIAN HOOK",
+        "INDUSTRY OBSERVATION"
+      ],
+      "bestForRole": [
+        "Founder",
+        "Engineering/Product"
+      ],
+      "domain": "AI in GTM"
+    },
+    {
+      "title": "$40M Bootstrap To Bleeding In 90 Days",
+      "angle": "A profitable, bootstrapped, $40M ARR category leader launched AI features in November on their existing seat-based plan. By February they were hemorrhaging money. The lesson: bolting AI onto seat pricing is the single fastest way to destroy a healthy SaaS P&L.",
+      "sourceQuote": "I recently did a work for a company that they bootstrap forty million in ARR. They're probably the leader in their space, and they introduced AI into a seat-based model. They launched that in November of last year. In February they called us up and told us, hey, we were a profitable bootstrap company. Since we did this launch, we're losing money like crazy.",
+      "sourcePerson": "Roee Hartuv",
+      "bestFor": [
+        "CASE STUDY SNIPPET",
+        "PERSONAL STORY"
+      ],
+      "bestForRole": [
+        "Founder",
+        "Revenue",
+        "Engineering/Product"
+      ],
+      "domain": "AI in GTM"
+    },
+    {
+      "title": "SaaS Companies Don't Have The Tools To Measure Cost-To-Serve",
+      "angle": "Ask a SaaS-native company for unit economics by customer and you'll get blank stares. They've never had to measure it — marginal cost was zero. Now AI makes cost-to-serve material, and most product and finance stacks have no way to even report on it.",
+      "sourceQuote": "In SAS, we only cared about top line... All of a sudden we're introducing another line item which is cost to serve. AI native SaaS... they don't even have the tools to measure that... what is the unit economics of selling to this type of client? We don't know. They don't even have the infrastructure to measure that.",
+      "sourcePerson": "Roee Hartuv",
+      "bestFor": [
+        "INDUSTRY OBSERVATION",
+        "TACTICAL PLAYBOOK"
+      ],
+      "bestForRole": [
+        "Engineering/Product",
+        "Founder"
+      ],
+      "domain": "RevOps strategy"
+    },
+    {
+      "title": "Outcome-Based Pricing Is Mostly A Trap",
+      "angle": "Three talks at a recent London RevOps event all pitched outcome-based pricing as the future for everyone. It's not. It works for narrow vertical AI companies with a single, agreeable outcome. For horizontal tools, it's the buzzword that's going to wreck your P&L.",
+      "sourceQuote": "I was at a RevOps event in London. There were three presentations on outcome-based pricing. And it's usually framed as everyone should do it... outcome based is different when you're selling to a horizontal solution or horizontal segment. Different use cases, outcome means different things for different users.",
+      "sourcePerson": "Anthony",
+      "bestFor": [
+        "CONTRARIAN HOOK",
+        "INDUSTRY OBSERVATION"
+      ],
+      "bestForRole": [
+        "Founder",
+        "Marketing",
+        "Revenue"
+      ],
+      "domain": "AI in GTM"
+    },
+    {
+      "title": "The 3 Questions To Decide If Outcome-Based Pricing Works",
+      "angle": "Before you copy Fin AI's closed-ticket model, run the three-question gate: (1) Can you clearly define ONE outcome? (2) Will your customers agree with that definition? (3) Is the value of that outcome the same across your customer base? Three yeses, and you're a candidate. Anything less, stay on usage.",
+      "sourceQuote": "Can you ask what is the outcome and you can clearly define that... Can your customers define the same outcome? And can you agree with your customers on that outcome?... And then the third question is the value similar to all your different customers?",
+      "sourcePerson": "Roee Hartuv",
+      "bestFor": [
+        "CAROUSEL",
+        "TACTICAL PLAYBOOK"
+      ],
+      "bestForRole": [
+        "Founder",
+        "Revenue",
+        "Engineering/Product"
+      ],
+      "domain": "AI in GTM"
+    },
+    {
+      "title": "Show Me One Good Outcome-Based Pricing Example",
+      "angle": "Everyone in the agentic AI conversation says 'price on outcomes.' Almost nobody can name three companies actually doing it well outside of Fin AI. The vocabulary is racing way ahead of the playbook.",
+      "sourceQuote": "I haven't seen a lot of good examples of outcome based pricing out there. Everybody wants to say, Hey, when you introduce a Gentic AI, you should price based on on outcomes. Great, show me a company that does it well. I haven't seen.",
+      "sourcePerson": "Roee Hartuv",
+      "bestFor": [
+        "CONTRARIAN HOOK",
+        "INDUSTRY OBSERVATION"
+      ],
+      "bestForRole": [
+        "Founder",
+        "Marketing"
+      ],
+      "domain": "AI in GTM"
+    },
+    {
+      "title": "Customers Hate Usage Pricing — Here's How To Fix It",
+      "angle": "CFOs don't fear usage-based pricing because it's expensive. They fear it because it's unpredictable. Bill shock kills renewals. The fix is mechanical: base fee + usage on top, real-time visibility, IT-level controls per team, and audit-grade traceability per token.",
+      "sourceQuote": "Customers hate to buy usage based products... it's not predictable... CFOs really see scared... bill shock is a real term. One of the best mechanisms is to create some sort of recurring base fee and usage on top of that... you need to create visibility to your customers. Do they know how much they're using in real time?",
+      "sourcePerson": "Roee Hartuv",
+      "bestFor": [
+        "TACTICAL PLAYBOOK",
+        "CAROUSEL"
+      ],
+      "bestForRole": [
+        "Revenue",
+        "Customers",
+        "Engineering/Product"
+      ],
+      "domain": "RevOps strategy"
+    },
+    {
+      "title": "Your First Big Usage Bill Triggers The Audit",
+      "angle": "Founders launching usage-based pricing always underestimate the operational tail. The first time a customer gets a five-figure bill they didn't expect, they'll demand a token-level audit. If you can't trace every dollar back to a query, by user, by hour — your renewal is in trouble before it starts.",
+      "sourceQuote": "I think the first time you send out a massive bill to a customer, they're gonna demand the audit anyway. And then you're gonna have to go lay down all of that infrastructure to make sure you can report against it.",
+      "sourcePerson": "Anthony",
+      "bestFor": [
+        "INDUSTRY OBSERVATION",
+        "TACTICAL PLAYBOOK"
+      ],
+      "bestForRole": [
+        "Customers",
+        "Engineering/Product",
+        "Revenue"
+      ],
+      "domain": "Customer success"
+    },
+    {
+      "title": "The Jobs-To-Be-Done Validation Test",
+      "angle": "Real packaging validation: put your three tiers in front of a customer with the jobs-to-be-done labeled on each. They should be able to point to ONE without hesitation. If they say 'I'm a little of this and a little of that,' your packaging just failed.",
+      "sourceQuote": "I present the different packaging and say, hey, these are the jobs to be done. Tier number one, this is what it allows you to do... Can you find yourself which jobs to be done describes you the most? And if they're able to pick without any hesitation, that's the best result that we can find. But if they're saying, I don't know, this is me, but that's also me... that's where we fail.",
+      "sourcePerson": "Roee Hartuv",
+      "bestFor": [
+        "TACTICAL PLAYBOOK",
+        "SOFT EDUCATIONAL"
+      ],
+      "bestForRole": [
+        "Marketing",
+        "Engineering/Product",
+        "Revenue"
+      ],
+      "domain": "packaging strategy"
+    },
+    {
+      "title": "The Reverse-Risk Pricing Rollout",
+      "angle": "Don't migrate your biggest customer to new pricing first. Reverse the order: design with insiders, validate with sales leadership, test with new business in your least-important region, then your second-tier customers, and ONLY THEN your most important account. End state first, sequence backwards from there.",
+      "sourceQuote": "The end goal is to introduce the new pricing and packaging and migrate our most important customer... So in order to move our most important client, before we do that, we want to test it out with maybe the second, third, and fourth and fifth most important customers... we test and iterate and build confidence as we go.",
+      "sourcePerson": "Roee Hartuv",
+      "bestFor": [
+        "CAROUSEL",
+        "TACTICAL PLAYBOOK"
+      ],
+      "bestForRole": [
+        "Customers",
+        "Revenue",
+        "Founder"
+      ],
+      "domain": "change management"
+    },
+    {
+      "title": "Pricing Should Be A Product, Not A Tablet From The Mountain",
+      "angle": "The old rule was 'set pricing, don't touch it for five years.' Dead. If your product ships new value monthly, your pricing should evolve at the same cadence. Treat pricing like a product team — iterations, releases, customer feedback loops.",
+      "sourceQuote": "Gone are the days that you said pricing and packaging, and like when you build a company and then don't visit it for five to seven years... we have reached a point where pricing and packaging should be referred to as product. Like we keep on improving, adapting.",
+      "sourcePerson": "Roee Hartuv",
+      "bestFor": [
+        "SOFT EDUCATIONAL",
+        "CONTRARIAN HOOK"
+      ],
+      "bestForRole": [
+        "Engineering/Product",
+        "Founder",
+        "Marketing"
+      ],
+      "domain": "pricing strategy"
+    },
+    {
+      "title": "Revisit Pricing On Whichever Cycle Is Longer",
+      "angle": "Concrete cadence: revisit pricing either every product release cycle OR every sales cycle, whichever is longer. Six-month enterprise cycle? Pricing review every six months. Weekly product releases? Defer to the sales cadence. Stop letting price decay quietly.",
+      "sourceQuote": "I would say revisit your pricing and packaging either every product release cycle or sales cycle? Whatever is takes longer. So if I'm selling six months of sales cycle, every six months I would say, okay, let's look at the last six months and let's see this cohort.",
+      "sourcePerson": "Roee Hartuv",
+      "bestFor": [
+        "INFOGRAPHIC",
+        "TACTICAL PLAYBOOK"
+      ],
+      "bestForRole": [
+        "Engineering/Product",
+        "Revenue",
+        "Founder"
+      ],
+      "domain": "pricing strategy"
+    },
+    {
+      "title": "Anthropic's Weekly Pricing Experiments",
+      "angle": "Pay attention to what Claude is doing. Every week: a new packaging tweak, a new credit promo, a new bundle. They're not 'changing pricing' — they're treating pricing as a feature surface that ships weekly because the product does too. That's the new bar.",
+      "sourceQuote": "I'm a Claude user... if you are, you probably notice every week they're changing something about their pricing and packaging... they keep on changing and iterating. And they know why? Because they're launching new features in Claude on a weekly basis.",
+      "sourcePerson": "Roee Hartuv",
+      "bestFor": [
+        "INDUSTRY OBSERVATION",
+        "PERSONAL STORY"
+      ],
+      "bestForRole": [
+        "Engineering/Product",
+        "Marketing",
+        "Founder"
+      ],
+      "domain": "AI in GTM"
+    },
+    {
+      "title": "Pricing Cost Me More Sleep Than Sales, Hiring, Or Delivery",
+      "angle": "Five years building a services firm, and pricing was the hardest problem of all of them. Messaging, sales motion, delivery, recruiting — those had paths forward. Pricing and packaging didn't. If you're a founder feeling stuck on it, you're not alone — and it's not because you're bad at business.",
+      "sourceQuote": "I started the company in 2021 and pricing and packaging has been and continues to be one of the biggest challenges that I have had in our business. It hasn't been the messaging, it hasn't been the sales, it hasn't been the delivery, it hasn't been the recruiting... I personally have had a really, really tough time with this topic.",
+      "sourcePerson": "Anthony",
+      "bestFor": [
+        "PERSONAL STORY",
+        "CONTRARIAN HOOK"
+      ],
+      "bestForRole": [
+        "Founder"
+      ],
+      "domain": "founder lessons"
+    },
+    {
+      "title": "Why The Customer Workshop Is Where Packaging Lives Or Dies",
+      "angle": "Packaging workshops fail when the team can't stop staring at the feature list. The skill is dragging the room from 'here's what we built' to 'here's what the customer is trying to achieve.' Your packaging session needs a forcing function to keep the conversation on the buyer.",
+      "sourceQuote": "I had a workshop yesterday with a new client... I did not do a good job. I wasn't able to take them from the mindset of hey, this is the product and this is the features... I wanted them to look at the customer and let's think of what the customer is trying to achieve.",
+      "sourcePerson": "Roee Hartuv",
+      "bestFor": [
+        "PERSONAL STORY",
+        "TACTICAL PLAYBOOK"
+      ],
+      "bestForRole": [
+        "Marketing",
+        "Customers",
+        "Engineering/Product"
+      ],
+      "domain": "packaging strategy"
+    },
+    {
+      "title": "Your Biggest Customer Might Belong In Your Cheapest Tier",
+      "angle": "Counterintuitive truth from real packaging work: a top-3 retail logo might only use one basic feature. That doesn't mean discount them — it means your entry package is where they belong, and your job is to build the staircase of value that pulls them upward over time.",
+      "sourceQuote": "One of the biggest retail companies is their customers and they just use one basic functionality of the product... that's our first package. That is our entry package... let's build packages that grow. So we're hoping that we can take them from just using that basic feature into more advanced features as we move along.",
+      "sourcePerson": "Roee Hartuv",
+      "bestFor": [
+        "INDUSTRY OBSERVATION",
+        "SOFT EDUCATIONAL"
+      ],
+      "bestForRole": [
+        "Customers",
+        "Marketing",
+        "Revenue"
+      ],
+      "domain": "customer expansion"
+    },
+    {
+      "title": "Outcome vs Consumption Are Two Different Questions",
+      "angle": "Stop conflating them. Outcome-based pricing is WHAT you charge for. Consumption-based pricing is HOW you meter. You can stack them — Fin AI charges by closed ticket (outcome) consumed (usage). Understanding the difference fixes half the bad pricing conversations on LinkedIn.",
+      "sourceQuote": "Outcome-based pricing is the what you price on. You price on outcomes. So that's one topic. Usage based is how... And you could do both, right? I could do consumption based on outcome.",
+      "sourcePerson": "Roee Hartuv",
+      "bestFor": [
+        "INFOGRAPHIC",
+        "SOFT EDUCATIONAL"
+      ],
+      "bestForRole": [
+        "Marketing",
+        "Engineering/Product",
+        "Revenue"
+      ],
+      "domain": "pricing strategy"
+    },
+    {
+      "title": "Multi-Segment Companies Need Multi-Complexity Pricing",
+      "angle": "If you sell to startups AND enterprise, you don't need one elegant pricing page — you need two architectures running in parallel. Startup pricing absorbs almost zero complexity. Enterprise pricing rewards it. Trying to make one model serve both is why your sales team can't quote either segment cleanly.",
+      "sourceQuote": "If you're selling to multiple segments and multiple types of customers, you might have multiple levels of complexity. That's also where packaging might come into the play as well.",
+      "sourcePerson": "Roee Hartuv",
+      "bestFor": [
+        "SOFT EDUCATIONAL",
+        "INDUSTRY OBSERVATION"
+      ],
+      "bestForRole": [
+        "Marketing",
+        "Revenue",
+        "Founder"
+      ],
+      "domain": "packaging strategy"
+    },
+    {
+      "title": "Pricing Is An Operations And Product Problem, Not A Sales Problem",
+      "angle": "When CROs own pricing, they tune for sellability and miss cost-to-serve. When product owns it, they build feature ladders and miss value capture. AI pricing requires product to ship metering, ops to ship traceability, and revenue to ship the offer in lockstep. Stop putting pricing in one team's lane.",
+      "sourceQuote": "So every company that now wants to introduce AI needs to understand that it's not only a pricing and packaging exercise. It's an operational and a product exercise as well.",
+      "sourcePerson": "Roee Hartuv",
+      "bestFor": [
+        "SOFT EDUCATIONAL",
+        "CONTRARIAN HOOK"
+      ],
+      "bestForRole": [
+        "Engineering/Product",
+        "Founder",
+        "Revenue"
+      ],
+      "domain": "RevOps strategy"
+    }
+  ],
+  "posts": [
+    {
+      "id": "anthony-20260624-1",
+      "batchId": "2026-06-24",
+      "author": "Anthony Enrico",
+      "authorSlug": "anthony",
+      "contentType": "CAROUSEL",
+      "topicTitle": "The Packaging Order Of Operations",
+      "postText": "**Most teams start pricing conversations with \"what number do we charge.\"**\n\nThat's backwards. And it's why your pricing meetings go in circles.\n\nThe number comes LAST. There's a sequence — and skipping a step downstream is what creates the chaos upstream.\n\nWe put together a quick visual on the non-negotiable order of operations we use with every B2B SaaS client we touch.\n\nSwipe through 👇",
+      "voiceNotes": "Bolded thesis hook in his classic 'most teams are doing X — that's backwards' construction. Em-dash asides, short punchy paragraphs, signature 'Swipe through' + pointing-down emoji CTA that maps to his observed carousel close pattern.",
+      "visualAssetNeeded": "A 5-slide carousel walking through the packaging-then-pricing sequence: cover slide framing the contrarian thesis, four framework slides numbered 01/02/03/04 for Packaging, Pricing Structure, Pricing Metric, and Price Point, and a closing dark slide with the payoff line about why teams skip steps.",
+      "visualSpec": {
+        "slides": [
+          {
+            "template": "cover",
+            "params": {
+              "kicker": "PRICING PLAYBOOK",
+              "title": "The Packaging Order Of Operations",
+              "body": "Four decisions, in order. Skip one and your pricing meetings go in circles."
+            }
+          },
+          {
+            "template": "framework",
+            "params": {
+              "kicker": "STEP ONE",
+              "num": "01",
+              "title": "Packaging",
+              "body": "What's in the box? Decide what you're selling before you decide how to sell it. Good/Better/Best, modules, tiers — this is the architecture."
+            }
+          },
+          {
+            "template": "framework",
+            "params": {
+              "kicker": "STEP TWO",
+              "num": "02",
+              "title": "Pricing Structure",
+              "body": "Subscription? Usage? Hybrid? Outcome-based? The structure decides how your customer experiences cost over time."
+            }
+          },
+          {
+            "template": "framework",
+            "params": {
+              "kicker": "STEP THREE",
+              "num": "03",
+              "title": "Pricing Metric",
+              "body": "What you price ON. Seats, API calls, GB processed, agents deployed. Pick the metric that scales with the value your buyer feels."
+            }
+          },
+          {
+            "template": "framework",
+            "params": {
+              "kicker": "STEP FOUR",
+              "num": "04",
+              "title": "The Number",
+              "body": "Now — and only now — you set the price point. The number is the easy part once the first three are locked."
+            }
+          },
+          {
+            "template": "dark",
+            "params": {
+              "kicker": "THE PAYOFF",
+              "title": "Skip a step. Pay later.",
+              "body": "Most teams jump straight to the number and reverse-engineer the rest. That's why pricing feels broken. Run the sequence."
+            }
+          }
+        ]
+      },
+      "status": "draft",
+      "scheduledFor": null,
+      "postedAt": null,
+      "linkedInUrl": null,
+      "createdAt": "2026-06-24T15:01:53.675Z"
+    },
+    {
+      "id": "anthony-20260624-2",
+      "batchId": "2026-06-24",
+      "author": "Anthony Enrico",
+      "authorSlug": "anthony",
+      "contentType": "INFOGRAPHIC",
+      "topicTitle": "The Complexity Budget",
+      "postText": "**Every deal has a \"complexity budget.\"**\n\nIt's the amount of intricacy your buyer will tolerate in your pricing before they walk away.\n\nAn AWS enterprise contract can absorb dozens of line items, usage tiers, and commitments. A $10K/year startup deal can absorb almost none.\n\nThe rule we use with B2B SaaS clients: match pricing complexity to ACV. Higher ACV = more sophisticated buyer = more complexity allowed. Lower ACV = self-serve buyer = ruthless simplicity required.\n\nFounders blow this all the time at the bottom of the market. They design enterprise-grade pricing matrices for SMB deals — and watch their conversion rate fall off a cliff.\n\nOne image, the whole concept 👇",
+      "voiceNotes": "Bolded contrarian-truth hook, em-dash asides, plain operator vocabulary (ACV, conversion, SMB), specific dollar figures, and a clean payoff line. Single CTA emoji at the end — not signature-stamped.",
+      "visualAssetNeeded": "A single 1080x1080 stat-style infographic with the headline 'The Complexity Budget,' a big visual showing ACV on one axis and tolerable complexity on the other, and a one-line rule at the bottom about matching one to the other.",
+      "visualSpec": {
+        "slides": [
+          {
+            "template": "stat",
+            "params": {
+              "kicker": "PRICING RULE",
+              "title": "The Complexity Budget",
+              "stat": "1:1",
+              "statLabel": "ACV to complexity ratio",
+              "body": "Every deal has a budget of complexity your buyer will tolerate. Enterprise contracts can absorb dozens of line items. A $10K startup deal can absorb almost none. Match pricing complexity to ACV — or lose the bottom of your market."
+            }
+          }
+        ]
+      },
+      "status": "draft",
+      "scheduledFor": null,
+      "postedAt": null,
+      "linkedInUrl": null,
+      "createdAt": "2026-06-24T15:01:53.675Z"
+    },
+    {
+      "id": "anthony-20260624-3",
+      "batchId": "2026-06-24",
+      "author": "Anthony Enrico",
+      "authorSlug": "anthony",
+      "contentType": "PERSONAL STORY",
+      "topicTitle": "Pricing Cost Me More Sleep Than Sales, Hiring, Or Delivery",
+      "postText": "I started LeanScale in 2021.\n\nIn five years, pricing and packaging has been the single hardest problem I've worked on.\n\nNot messaging. Not the sales motion. Not delivery. Not recruiting. Those had paths forward — frameworks I'd seen work, operators I could learn from, playbooks I could borrow.\n\nPricing didn't.\n\nIt sits between product, finance, sales, and the customer's psychology — and the right answer changes every time the market does. There's no SOP that survives the next ICP shift, the next competitor move, the next AI-shaped change to the cost structure.\n\nIf you're a founder feeling stuck on this one — you're not alone. And it's not because you're bad at business. It's because pricing is genuinely the hardest puzzle in B2B, and most of us are figuring it out in public.\n\nThe only thing that's worked for me: stop chasing the perfect answer, start running the sequence (packaging → structure → metric → price), and rebuild the model every 6-12 months.\n\nYou don't solve pricing. You operate it.",
+      "voiceNotes": "Personal story but grounded — no vulnerability bait, no 'I almost quit' arc (which his profile flags as avoidance). Honest founder-peer register, opens with company-founding date matching his 'I started the company in 2021' phrasing. Lands on a tactical aphorism ('You don't solve pricing. You operate it.') instead of a CTA — varies the close.",
+      "visualAssetNeeded": "",
+      "visualSpec": null,
+      "status": "draft",
+      "scheduledFor": null,
+      "postedAt": null,
+      "linkedInUrl": null,
+      "createdAt": "2026-06-24T15:01:53.675Z"
+    },
+    {
+      "id": "anthony-20260624-4",
+      "batchId": "2026-06-24",
+      "author": "Anthony Enrico",
+      "authorSlug": "anthony",
+      "contentType": "CASE STUDY SNIPPET",
+      "topicTitle": "$40M Bootstrap To Bleeding In 90 Days",
+      "postText": "We recently did work for a $40M ARR, bootstrapped, profitable category leader.\n\nThey launched AI features in November. By February they called us.\n\n\"We were profitable for years. Since the AI launch, we're losing money like crazy.\"\n\nHere's what happened: they bolted AI onto their existing seat-based plan. Same pricing model, new feature set. Customers loved it. Adoption was through the roof.\n\nThat was the problem.\n\nEvery additional user on the AI feature dragged compute cost up linearly. Seat pricing didn't move. They were selling $40 worth of inference for the price of a $20 seat — at scale — and the gross margin curve collapsed in 90 days.\n\nThis is the trap most B2B SaaS leaders are walking into right now:\n\n— Seat pricing was built for low-marginal-cost software\n— AI features have real per-use COGS\n— Bolting one onto the other guarantees a P&L blowup\n\nIf you're shipping AI on top of a seat-based model, the question isn't \"how do we capture more value.\" It's \"how do we stop bleeding the value we already had.\"\n\nFix the pricing structure before the board meeting where the gross margin chart shows up.",
+      "voiceNotes": "Classic case-study opener ('We recently did work for...') with concrete numbers, anonymized customer, mini-dialogue quote, and operator vocabulary (COGS, gross margin, seat pricing). Uses em-dash bullets like his observed style. Closes with a tactical imperative instead of a CTA emoji — anti-repetition.",
+      "visualAssetNeeded": "",
+      "visualSpec": null,
+      "status": "draft",
+      "scheduledFor": null,
+      "postedAt": null,
+      "linkedInUrl": null,
+      "createdAt": "2026-06-24T15:01:53.675Z"
+    },
+    {
+      "id": "anthony-20260624-5",
+      "batchId": "2026-06-24",
+      "author": "Anthony Enrico",
+      "authorSlug": "anthony",
+      "contentType": "CONTRARIAN HOOK",
+      "topicTitle": "Pricing Is The Magic Growth Lever Nobody Owns",
+      "postText": "**Most B2B SaaS companies don't hire a dedicated pricing leader until $500M ARR.**\n\nThat's why pricing is broken at every earlier stage.\n\nIt sits in nobody's lane. Half product. Half CFO. Half CRO. Fully orphaned.\n\nThe biggest growth lever in the entire P&L — the one with more leverage on EBITDA than any hire or campaign — gets owned by committee until the company is too big to fix it without scar tissue.\n\nThe fix isn't a $300K head of pricing at Series A. It's deciding NOW who has the pen on packaging, structure, metric, and the number — and revisiting it every two quarters with real data.\n\nOwnership beats expertise. Always has.",
+      "voiceNotes": "Bolded contrarian-truth hook with a hard statistic, his 'most companies are doing X — here's why' construction, and a clean payoff line ('Ownership beats expertise. Always has.') with no emoji and no CTA. Variation: shortest post in the batch, no sign-off stamp.",
+      "visualAssetNeeded": "",
+      "visualSpec": null,
+      "status": "draft",
+      "scheduledFor": null,
+      "postedAt": null,
+      "linkedInUrl": null,
+      "createdAt": "2026-06-24T15:01:53.675Z"
+    },
+    {
+      "id": "joe-20260624-1",
+      "batchId": "2026-06-24",
+      "author": "Joe Zaghloul",
+      "authorSlug": "joe",
+      "contentType": "CAROUSEL",
+      "topicTitle": "Customers Hate Usage Pricing — Here's How To Fix It",
+      "postText": "We've been deep in pricing & packaging conversations with our AI-native B2B customers for months now.\n\nOne pattern keeps surfacing: CFOs don't push back on usage-based pricing because it's expensive. They push back because it's unpredictable.\n\nBill shock is killing renewals. The fix is mechanical, not philosophical — base fee + usage on top, real-time visibility, team-level controls, traceability per consumption unit.\n\nSwipe through the build order we're recommending 👇\n\n#revops #pricing",
+      "voiceNotes": "Opens with 'We've been deep in' — pattern-recognition framing from the operator vantage point he's earned. Tight paragraphs, RevOps shorthand (CFOs, renewals, AI-native), 👇 link-pointer, hashtag bundle close.",
+      "visualAssetNeeded": "5-slide carousel on de-risking usage-based pricing for B2B AI buyers. Opens with a cover slide naming the problem (CFOs fear unpredictability, not cost). Middle slides walk the four-part fix: base fee + usage layer, real-time consumption visibility, IT-level team controls, audit-grade traceability per unit. Closes with a dark-template summary slide on what predictable usage pricing actually looks like for the buyer.",
+      "visualSpec": {
+        "slides": [
+          {
+            "template": "cover",
+            "params": {
+              "kicker": "PRICING & PACKAGING",
+              "title": "Customers Hate Usage Pricing. Here's How To Fix It.",
+              "body": "CFOs don't fear usage-based pricing because it's expensive. They fear it because it's unpredictable. Bill shock kills renewals."
+            }
+          },
+          {
+            "template": "framework",
+            "params": {
+              "kicker": "FIX 01",
+              "num": "01",
+              "title": "Base Fee + Usage On Top",
+              "body": "Anchor the contract with a recurring floor. Layer usage above it. CFOs can forecast the floor and only sweat the variable layer."
+            }
+          },
+          {
+            "template": "framework",
+            "params": {
+              "kicker": "FIX 02",
+              "num": "02",
+              "title": "Real-Time Consumption Visibility",
+              "body": "Buyers should never wait for an invoice to know what they spent. Show usage live, by team, by user, by unit."
+            }
+          },
+          {
+            "template": "framework",
+            "params": {
+              "kicker": "FIX 03",
+              "num": "03",
+              "title": "IT-Level Controls Per Team",
+              "body": "Caps, alerts, and team-level budgets. Give IT the same governance posture they expect from any cloud spend tool."
+            }
+          },
+          {
+            "template": "framework",
+            "params": {
+              "kicker": "FIX 04",
+              "num": "04",
+              "title": "Audit-Grade Traceability",
+              "body": "Every consumption unit tied to a user, prompt, agent run, or workflow. When finance asks 'what drove this spike?' the answer is one click away."
+            }
+          },
+          {
+            "template": "dark",
+            "params": {
+              "kicker": "THE TAKEAWAY",
+              "title": "Predictability Sells. Surprises Don't.",
+              "body": "Usage pricing isn't the problem. The lack of a floor, visibility, controls, and traceability is. Ship those four and renewals stop being a fight."
+            }
+          }
+        ]
+      },
+      "status": "draft",
+      "scheduledFor": null,
+      "postedAt": null,
+      "linkedInUrl": null,
+      "createdAt": "2026-06-24T15:01:53.675Z"
+    },
+    {
+      "id": "joe-20260624-2",
+      "batchId": "2026-06-24",
+      "author": "Joe Zaghloul",
+      "authorSlug": "joe",
+      "contentType": "INFOGRAPHIC",
+      "topicTitle": "Revisit Pricing On Whichever Cycle Is Longer",
+      "postText": "Most B2B startups we work with let pricing decay quietly.\n\nThe cleanest cadence we've seen: revisit pricing & packaging every product release cycle OR every sales cycle — whichever is longer.\n\nSix-month enterprise sales cycle? Pricing review every six months. Weekly product releases? Defer to the sales cadence so you're reviewing real cohort behavior, not noise.\n\nSimple rule. Hard to argue with. One image below to make it stick.\n\n#revops #pricing",
+      "voiceNotes": "Operator-to-operator framing — names the pattern, gives the rule, anchors it with concrete numbers (six months, weekly). 'Simple rule. Hard to argue with.' uses his short-fragment cadence sparingly. Hashtag bundle close, no salute emoji this time.",
+      "visualAssetNeeded": "Single-slide infographic showing the pricing review cadence rule. Headline states the rule: revisit pricing on whichever cycle is longer — product release or sales cycle. A simple visual contrast: a six-month sales cycle bar vs. a weekly product release bar, with an arrow showing 'longer cycle wins.' A concrete example callout: 6-month sales cycle = pricing review every 6 months.",
+      "visualSpec": {
+        "slides": [
+          {
+            "template": "framework",
+            "params": {
+              "kicker": "THE RULE",
+              "num": "→",
+              "title": "Revisit Pricing On Whichever Cycle Is Longer",
+              "body": "Review pricing & packaging every product release OR every sales cycle — whichever takes longer. 6-month sales cycle? Review every 6 months. Weekly releases? Defer to the sales cadence so you're reading real cohort behavior, not noise."
+            }
+          }
+        ]
+      },
+      "status": "draft",
+      "scheduledFor": null,
+      "postedAt": null,
+      "linkedInUrl": null,
+      "createdAt": "2026-06-24T15:01:53.675Z"
+    },
+    {
+      "id": "joe-20260624-3",
+      "batchId": "2026-06-24",
+      "author": "Joe Zaghloul",
+      "authorSlug": "joe",
+      "contentType": "INDUSTRY OBSERVATION",
+      "topicTitle": "SaaS Companies Don't Have The Tools To Measure Cost-To-Serve",
+      "postText": "Pattern we're seeing across the AI-native B2B startups we work with:\n\nAsk a SaaS-native team for unit economics by customer and you get blank stares.\n\nThey've never had to measure cost-to-serve. Marginal cost was effectively zero. Their product analytics, their billing stack, their finance close — none of it was built to report on it.\n\nNow AI makes cost-to-serve material. A heavy-usage customer can be a margin drag, not a logo win. And the tooling gap is real — most teams literally cannot answer 'what's the unit economics on this segment?'\n\nThe operators getting ahead of it are wiring cost-per-call, cost-per-agent-run, and cost-per-workflow into the same dashboard as ARR and NRR. Right now. Not next planning cycle.",
+      "voiceNotes": "Classic Joe pattern-recognition opener ('Pattern we're seeing across...') lifted from his sample phrasings. Operator vantage point earned by 50+ implementations. Lands with a 'right now, not next cycle' urgency that matches his AI-stack-today posture.",
+      "visualAssetNeeded": "",
+      "visualSpec": null,
+      "status": "draft",
+      "scheduledFor": null,
+      "postedAt": null,
+      "linkedInUrl": null,
+      "createdAt": "2026-06-24T15:01:53.675Z"
+    },
+    {
+      "id": "joe-20260624-4",
+      "batchId": "2026-06-24",
+      "author": "Joe Zaghloul",
+      "authorSlug": "joe",
+      "contentType": "SOFT EDUCATIONAL",
+      "topicTitle": "You Can't Value-Sell If Your Packaging Isn't Built On Value",
+      "postText": "Every B2B team we talk to says they do value selling.\n\nAlmost none actually do — and the reason isn't the sellers.\n\nIt's the packaging. If your packages are organized around features (Starter / Pro / Enterprise with a feature checklist), the price sheet drags every conversation back to feature comparison. The seller can talk value all day. The buyer is still mentally diffing your matrix against the competitor's.\n\nValue selling requires packages built around jobs to be done, outcomes, and the value driver the buyer actually cares about. That's a packaging problem, not a training problem.\n\nFix the package. The sales motion follows.",
+      "voiceNotes": "Soft educational explainer — names the confusion ('it's not the sellers'), gives the mental model (packaging organizes the conversation), lands with a clean rule. Tight 3-4 sentence paragraphs, no emoji, no hashtag — varies the close.",
+      "visualAssetNeeded": "",
+      "visualSpec": null,
+      "status": "draft",
+      "scheduledFor": null,
+      "postedAt": null,
+      "linkedInUrl": null,
+      "createdAt": "2026-06-24T15:01:53.675Z"
+    },
+    {
+      "id": "joe-20260624-5",
+      "batchId": "2026-06-24",
+      "author": "Joe Zaghloul",
+      "authorSlug": "joe",
+      "contentType": "CONTRARIAN HOOK",
+      "topicTitle": "The $12K vs $13K Myth",
+      "postText": "The price point is the least important lever you have.\n\nIn B2B, the difference between $12K and $13K doesn't decide the deal.\n\nSellers obsess over the number because they don't have a framework for the actual drivers — packaging, structure, and metric. Drop your best seller into the same deal at $12K, $13K, or $15K and they'll close all three. Because they're selling value, not negotiating around a number.\n\nIf your team is fighting over price points, the fight you're actually losing is upstream — in how the offer is packaged and what it's priced on.\n\n🫡",
+      "voiceNotes": "Slightly sharper for Joe — but the contrarian claim is backed with specifics (the $12/$13/$15K example, the three real drivers) and lands on packaging, which is his domain. Uses the 🫡 salute close once in the batch to honor his signature without over-using it.",
+      "visualAssetNeeded": "",
+      "visualSpec": null,
+      "status": "draft",
+      "scheduledFor": null,
+      "postedAt": null,
+      "linkedInUrl": null,
+      "createdAt": "2026-06-24T15:01:53.675Z"
+    },
+    {
+      "id": "cameron-20260624-1",
+      "batchId": "2026-06-24",
+      "author": "Cameron Legge",
+      "authorSlug": "cameron",
+      "contentType": "CAROUSEL",
+      "topicTitle": "The Reverse-Risk Pricing Rollout",
+      "postText": "Pricing and packaging changes are scary because most teams roll them out in the wrong order.\n\nWe usually start with the customer who matters most. That's where the risk is highest.\n\nThe move is to flip it. Design the end state first, then sequence the rollout backwards from there — insiders, sales leadership, new business in a small region, second-tier accounts, and your most important customer last.\n\nBy the time you get to the account that matters most, you have months of evidence behind you.\n\nSwipe through the sequence we use with clients.",
+      "voiceNotes": "Teacherly downshift register he uses for tactical playbooks. No contrarian framing — frames the lesson as 'the move is to flip it' rather than 'everyone is wrong.' Short connective prose, payoff line, no sales CTA.",
+      "visualAssetNeeded": "5-slide carousel walking through the reverse-order pricing rollout sequence — open with cover, then 4 numbered framework slides for each rollout stage, closing on a dark slide with the payoff line.",
+      "visualSpec": {
+        "slides": [
+          {
+            "template": "cover",
+            "params": {
+              "kicker": "PRICING ROLLOUT",
+              "title": "Start at the end. Sequence backwards.",
+              "body": "The order you roll out new pricing matters as much as the pricing itself."
+            }
+          },
+          {
+            "template": "framework",
+            "params": {
+              "kicker": "STEP 01",
+              "num": "01",
+              "title": "Design with insiders first",
+              "body": "Pull your CS and product leads into the room. Pressure-test the model before any customer sees it."
+            }
+          },
+          {
+            "template": "framework",
+            "params": {
+              "kicker": "STEP 02",
+              "num": "02",
+              "title": "Validate with sales leadership",
+              "body": "Get your CRO and frontline leaders behind it. If they can't sell it internally, they won't sell it externally."
+            }
+          },
+          {
+            "template": "framework",
+            "params": {
+              "kicker": "STEP 03",
+              "num": "03",
+              "title": "Test on new business in your smallest region",
+              "body": "Lowest stakes, fastest feedback. You learn the objections without exposing real revenue."
+            }
+          },
+          {
+            "template": "framework",
+            "params": {
+              "kicker": "STEP 04",
+              "num": "04",
+              "title": "Migrate your second tier next",
+              "body": "Customers 2, 3, 4, and 5. Build the migration muscle before the one that matters most."
+            }
+          },
+          {
+            "template": "dark",
+            "params": {
+              "kicker": "STEP 05",
+              "title": "Then, and only then, your top account.",
+              "body": "By the time you get there, you have months of evidence and a tested motion. That's how you protect the customer you can't afford to lose."
+            }
+          }
+        ]
+      },
+      "status": "draft",
+      "scheduledFor": null,
+      "postedAt": null,
+      "linkedInUrl": null,
+      "createdAt": "2026-06-24T15:01:53.675Z"
+    },
+    {
+      "id": "cameron-20260624-2",
+      "batchId": "2026-06-24",
+      "author": "Cameron Legge",
+      "authorSlug": "cameron",
+      "contentType": "INFOGRAPHIC",
+      "topicTitle": "Outcome vs Consumption Are Two Different Questions",
+      "postText": "Half the pricing debates on LinkedIn are people arguing about two different things.\n\nOutcome-based pricing is WHAT you charge for. The customer pays when something good happens — a ticket gets resolved, a deal gets booked, a meeting gets set.\n\nConsumption-based pricing is HOW you meter. Per query, per seat, per minute.\n\nThese are not competing models. You can stack them. Fin AI charges by closed ticket — that's the outcome — consumed across the month — that's the consumption.\n\nGet the two questions separated and a lot of the noise clears up. Cheers!",
+      "voiceNotes": "Soft educational explainer in his teacherly register. Uses a real example (Fin AI) for concreteness. Closes with 'Cheers!' — his signature closer, used once in this batch.",
+      "visualAssetNeeded": "Single infographic with a two-column comparison: left column 'Outcome-Based (the WHAT)' with examples, right column 'Consumption-Based (the HOW)' with examples, and a bottom bar showing they can stack — with Fin AI as the worked example.",
+      "visualSpec": {
+        "slides": [
+          {
+            "template": "listicle",
+            "params": {
+              "kicker": "PRICING MODELS",
+              "title": "Outcome vs consumption are two different questions.",
+              "items": [
+                "Outcome-based pricing is WHAT you charge for — resolved tickets, booked meetings, closed deals.",
+                "Consumption-based pricing is HOW you meter — per query, per seat, per minute, per token.",
+                "They are not competing models. You can stack them.",
+                "Fin AI charges by closed ticket (outcome) consumed across the month (consumption).",
+                "Separate the two questions and most pricing debates get a lot shorter."
+              ]
+            }
+          }
+        ]
+      },
+      "status": "draft",
+      "scheduledFor": null,
+      "postedAt": null,
+      "linkedInUrl": null,
+      "createdAt": "2026-06-24T15:01:53.675Z"
+    },
+    {
+      "id": "cameron-20260624-3",
+      "batchId": "2026-06-24",
+      "author": "Cameron Legge",
+      "authorSlug": "cameron",
+      "contentType": "INDUSTRY OBSERVATION",
+      "topicTitle": "Your First Big Usage Bill Triggers The Audit",
+      "postText": "Pattern I'm seeing with founders rolling out usage-based pricing.\n\nThey underestimate the operational tail.\n\nThe first time a customer gets a five-figure bill they didn't see coming, they will demand a token-level audit. Every dollar, traced back to a query, by user, by hour.\n\nIf you can't produce it, the renewal conversation is in trouble before it even starts.\n\nThe metering, the reporting, the customer-facing dashboard — all of that infrastructure has to exist BEFORE the first surprise bill, not after. Build it once on your timeline or build it twice on theirs.",
+      "voiceNotes": "Pattern-recognition voice — uses 'Pattern I'm seeing' opener consistent with the INDUSTRY OBSERVATION template. Calm, instructive teacherly downshift. No 'Cheers!' or signature close — clean payoff line ('Build it once on your timeline or build it twice on theirs').",
+      "visualAssetNeeded": "",
+      "visualSpec": null,
+      "status": "draft",
+      "scheduledFor": null,
+      "postedAt": null,
+      "linkedInUrl": null,
+      "createdAt": "2026-06-24T15:01:53.675Z"
+    },
+    {
+      "id": "cameron-20260624-4",
+      "batchId": "2026-06-24",
+      "author": "Cameron Legge",
+      "authorSlug": "cameron",
+      "contentType": "PERSONAL STORY",
+      "topicTitle": "Why The Customer Workshop Is Where Packaging Lives Or Dies",
+      "postText": "Ran a packaging workshop with a new client yesterday. Honestly, I didn't do a great job.\n\nThe whole session, the team kept pulling the conversation back to the product. Here's what we built. Here's the feature list. Here's the roadmap.\n\nI wanted them to flip it. Look at the customer. What is the customer actually trying to achieve? What outcome are they buying? What does success look like a year from now?\n\nEvery time we got close, someone would surface a feature and we'd be right back where we started.\n\nThe lesson I took home: the workshop needs a forcing function. A prompt taped to the wall, a question on every slide, something that drags the room back to the buyer every time it drifts.\n\nPackaging conversations don't fail on smart people. They fail when there's nothing in the room loud enough to keep the customer at the center.\n\nGoing back next week with a better structure.",
+      "voiceNotes": "Personal story / vulnerability done in his voice — sincere, not performative, owns the mistake without self-flagellation. Quiet landing line ('Going back next week with a better structure'), no CTA, no emoji. Hooks with a specific moment from yesterday — true to his observed personal-story openers.",
+      "visualAssetNeeded": "",
+      "visualSpec": null,
+      "status": "draft",
+      "scheduledFor": null,
+      "postedAt": null,
+      "linkedInUrl": null,
+      "createdAt": "2026-06-24T15:01:53.675Z"
+    },
+    {
+      "id": "cameron-20260624-5",
+      "batchId": "2026-06-24",
+      "author": "Cameron Legge",
+      "authorSlug": "cameron",
+      "contentType": "CASE STUDY SNIPPET",
+      "topicTitle": "Your Biggest Customer Might Belong In Your Cheapest Tier",
+      "postText": "Working through a packaging exercise with a client right now. One of the biggest retail logos in the world is on their customer list. Top three by ARR.\n\nThey use exactly one basic feature of the product.\n\nFirst instinct from the room was to build them their own premium package. That felt wrong to me. They are already getting full value out of one feature — why would we engineer a tier around them they don't need?\n\nWhere they belong is the entry package. The same one a brand new logo would land on.\n\nThe real work isn't moving them up the price card. The real work is building the staircase — packages designed to grow into — so that over the next few years, they have a clear path from one basic feature into the more advanced layers of the product.\n\nThat's the move. Not 'discount the whale.' Build the staircase that pulls them up.",
+      "voiceNotes": "Case study snippet with a real (anonymized) customer. Counterintuitive insight delivered in his teacherly register — 'That felt wrong to me' rather than 'Everyone gets this wrong.' Closes with a clean punchy reframe ('Not discount the whale. Build the staircase that pulls them up.') — no signature closer, no hashtags.",
+      "visualAssetNeeded": "",
+      "visualSpec": null,
+      "status": "draft",
+      "scheduledFor": null,
+      "postedAt": null,
+      "linkedInUrl": null,
+      "createdAt": "2026-06-24T15:01:53.675Z"
+    },
+    {
+      "id": "yasin-20260624-1",
+      "batchId": "2026-06-24",
+      "author": "Yaseen Arshad",
+      "authorSlug": "yasin",
+      "contentType": "CAROUSEL",
+      "topicTitle": "The 3 Questions To Decide If Outcome-Based Pricing Works",
+      "postText": "Everyone in agentic AI wants to copy Fin AI's closed-ticket pricing.\n\nMost shouldn't.\n\nBefore you torch your pricing page, run the three-question gate we use with portfolio teams thinking about going outcome-based.\n\nThree yeses, you're a candidate. Anything less, stay on usage.\n\nThe gate, swipe through.",
+      "voiceNotes": "Stat-as-hook reframe in his pattern — Fin AI as the conventional wisdom, immediate pivot to 'most shouldn't.' Framework callout (the three-question gate) is his signature move. Bullets in the slides are parallel grammatical structure per the voice profile. Closing line is a clean declarative restate, not a CTA.",
+      "visualAssetNeeded": "5-slide carousel introducing the three-question gate for outcome-based pricing. Open with a cover slide framing the problem (people are copying Fin AI without checking fit). Three middle slides each unpacking one question. Close with a dark slide delivering the verdict line.",
+      "visualSpec": {
+        "slides": [
+          {
+            "template": "cover",
+            "params": {
+              "kicker": "PRICING GATE",
+              "title": "Should You Move To Outcome-Based Pricing?",
+              "body": "Three questions decide it. Three yeses, you're a candidate. Anything less, stay on usage."
+            }
+          },
+          {
+            "template": "framework",
+            "params": {
+              "kicker": "QUESTION ONE",
+              "num": "01",
+              "title": "Can you define one clear outcome?",
+              "body": "Not three. Not 'value delivered.' One outcome a buyer can point to and a system can count."
+            }
+          },
+          {
+            "template": "framework",
+            "params": {
+              "kicker": "QUESTION TWO",
+              "num": "02",
+              "title": "Will customers agree with that definition?",
+              "body": "Your version of 'resolved ticket' has to match theirs. If you're still negotiating the definition mid-deal, you're not ready."
+            }
+          },
+          {
+            "template": "framework",
+            "params": {
+              "kicker": "QUESTION THREE",
+              "num": "03",
+              "title": "Is the value of that outcome the same across customers?",
+              "body": "A resolved ticket worth $5 to one buyer and $500 to another breaks the model. Outcome pricing needs a tight value band."
+            }
+          },
+          {
+            "template": "dark",
+            "params": {
+              "kicker": "THE VERDICT",
+              "title": "Three yeses, you're a candidate. Anything less, stay on usage.",
+              "body": "Outcome-based pricing isn't the future for everyone. It's the future for a narrow set of vertical AI companies who pass this gate."
+            }
+          }
+        ]
+      },
+      "status": "draft",
+      "scheduledFor": null,
+      "postedAt": null,
+      "linkedInUrl": null,
+      "createdAt": "2026-06-24T15:01:53.675Z"
+    },
+    {
+      "id": "yasin-20260624-2",
+      "batchId": "2026-06-24",
+      "author": "Yaseen Arshad",
+      "authorSlug": "yasin",
+      "contentType": "INFOGRAPHIC",
+      "topicTitle": "Classic SaaS Margins Were A Historical Anomaly",
+      "postText": "80-95% gross margins were a once-in-a-generation gift.\n\nClassic SaaS only worked that way because the marginal cost to serve the 10th customer and the 10,000th was effectively the same — basically zero.\n\nAI breaks that math. Every additional call costs compute, and that compute compounds with usage.\n\nMost SaaS founders are running the old playbook on the new economics and haven't done the unit math yet. The bolt-on AI feature looks great on the demo and quietly drags the contribution margin down for every account that actually uses it.\n\nWorth re-running the numbers before the next pricing cycle.",
+      "voiceNotes": "Industry-observation register, calm and even per his emotional register. Reframes the conventional wisdom (high margins were normal) with a structural reason (zero marginal cost). Lands on an operator takeaway. No emoji, no hype words. Closing line is a quiet operator nudge, not a CTA.",
+      "visualAssetNeeded": "Single-image stat infographic. Big headline contrast: classic SaaS marginal cost (~$0) vs AI-era marginal cost (compounds with usage). Should read as a 'the math has changed' callout — clean, scannable, save-worthy.",
+      "visualSpec": {
+        "slides": [
+          {
+            "template": "stat",
+            "params": {
+              "kicker": "MARGIN MATH",
+              "title": "Classic SaaS Was A Historical Anomaly",
+              "stat": "80-95%",
+              "statLabel": "Classic SaaS gross margins",
+              "body": "Only possible because marginal cost to serve was ~$0. The 10th customer and the 10,000th cost the same to deliver. AI breaks that assumption — every call costs compute, and compute compounds with usage."
+            }
+          }
+        ]
+      },
+      "status": "draft",
+      "scheduledFor": null,
+      "postedAt": null,
+      "linkedInUrl": null,
+      "createdAt": "2026-06-24T15:01:53.675Z"
+    },
+    {
+      "id": "yasin-20260624-3",
+      "batchId": "2026-06-24",
+      "author": "Yaseen Arshad",
+      "authorSlug": "yasin",
+      "contentType": "CONTRARIAN HOOK",
+      "topicTitle": "Outcome-Based Pricing Is Mostly A Trap",
+      "postText": "Three talks at a recent London RevOps event all pitched outcome-based pricing as the future for everyone.\n\nIt isn't.\n\nIt works for a narrow slice of vertical AI companies — single, agreeable outcome, tight value band across customers, clean way to measure it. Fin AI, basically.\n\nFor horizontal tools? Different users, different use cases, 'outcome' means a different thing in every account. The minute you try to standardize it on a horizontal SKU, you're either underpricing your power users or arguing with your champion mid-renewal.\n\nThe vocabulary is racing ahead of the playbook. Worth slowing down before you rewrite the pricing page.",
+      "voiceNotes": "Behind-the-scenes anchor opener (RevOps event in London) per his hook style. Contrarian-but-constructive — reframes rather than dunks. Uses parallel structure (vertical vs horizontal). Sample-phrasing-style closing line ('The vocabulary is racing ahead of the playbook') matches his understated declarative landings.",
+      "visualAssetNeeded": "",
+      "visualSpec": null,
+      "status": "draft",
+      "scheduledFor": null,
+      "postedAt": null,
+      "linkedInUrl": null,
+      "createdAt": "2026-06-24T15:01:53.675Z"
+    },
+    {
+      "id": "yasin-20260624-4",
+      "batchId": "2026-06-24",
+      "author": "Yaseen Arshad",
+      "authorSlug": "yasin",
+      "contentType": "INDUSTRY OBSERVATION",
+      "topicTitle": "Even OpenAI Loses Money On Your Subscription",
+      "postText": "OpenAI's own published financials confirm it: at $20/month, they're underwater on heavy users.\n\nThink about that for a second.\n\nThe most-funded, most-scaled, most-optimized AI company on the planet — losing money on seat-based pricing for AI.\n\nIf they can't make $20/month work, the seat-based SaaS-plus-AI bolt-on most B2B vendors are shipping isn't working either. The losses just live further down the P&L, in cloud bills nobody's attributing back to specific accounts yet.\n\nFor my own use, I'm paying $20 and almost certainly costing them 5x that. Multiply that pattern across every power user in your base.\n\nThis is the gap most pricing pages haven't closed.",
+      "voiceNotes": "Pattern-recognition register from his vantage point — he watches AI/GTM patterns and reports back. Sentence rhythm matches: medium declaratives broken up by one-line punches ('Think about that for a second.'). Personal data point ($20 / 5x) grounds the abstract claim. No emoji, no question bait, declarative landing.",
+      "visualAssetNeeded": "",
+      "visualSpec": null,
+      "status": "draft",
+      "scheduledFor": null,
+      "postedAt": null,
+      "linkedInUrl": null,
+      "createdAt": "2026-06-24T15:01:53.675Z"
+    },
+    {
+      "id": "yasin-20260624-5",
+      "batchId": "2026-06-24",
+      "author": "Yaseen Arshad",
+      "authorSlug": "yasin",
+      "contentType": "TACTICAL PLAYBOOK",
+      "topicTitle": "Show Me One Good Outcome-Based Pricing Example",
+      "postText": "Every conversation about agentic AI right now ends with the same line: 'price on outcomes.'\n\nGreat. Name three companies actually doing it well outside of Fin AI.\n\nI've been asking that question for months across podcasts, events, and portfolio calls. Almost nobody can.\n\nIf you want to actually pressure-test whether outcome-based pricing fits your business, here's what I'd do:\n\n1. Write down the single outcome you'd charge on. One line. If you need a paragraph, you don't have one.\n\n2. Ask three customers to define that same outcome unprompted. Compare to your definition word-for-word.\n\n3. Calculate the dollar value of that outcome for your top, middle, and bottom decile of accounts. If the spread is more than 3x, the model breaks.\n\n4. Model your COGS per outcome at scale. If the math only works at price points your buyers won't pay, you have a margin problem dressed up as a pricing question.\n\nIf you can't pass all four, you don't have an outcome-pricing problem. You have an outcome-definition problem. Solve that first.",
+      "voiceNotes": "Tactical-playbook structure per the taxonomy — setup line, numbered actionable steps, payoff. Hook is the 'show me three companies' challenge, which is his contrarian-reframe reflex in action. Steps are parallel (each starts with a verb, each has a measurable criterion). Closing line restates the thesis cleanly without a sign-off.",
+      "visualAssetNeeded": "",
+      "visualSpec": null,
+      "status": "draft",
+      "scheduledFor": null,
+      "postedAt": null,
+      "linkedInUrl": null,
+      "createdAt": "2026-06-24T15:01:53.675Z"
+    },
+    {
+      "id": "jake-20260624-1",
+      "batchId": "2026-06-24",
+      "author": "Jake Toepel",
+      "authorSlug": "jake",
+      "contentType": "CAROUSEL",
+      "topicTitle": "The Jobs-To-Be-Done Validation Test",
+      "postText": "We use a dead-simple test to validate packaging before it ships.\n\nPut the three tiers in front of a real customer. Label the jobs-to-be-done on each. Ask them to point to the one that describes them.\n\nIf they pick without hesitation, the packaging works.\n\nIf they say \"I'm a little of this and a little of that\" — the packaging just failed.\n\nSwipe through the test we run on every pricing project at LeanScale Labs.",
+      "voiceNotes": "Opens with the artifact-led frame (\"we use\"), builder-pragmatic register. Show-don't-shout. Uses the actual transcript phrasing (\"a little of this and a little of that\"). Soft practitioner-facing close — names LeanScale Labs naturally, no pitch.",
+      "visualAssetNeeded": "Five-slide carousel walking through the jobs-to-be-done packaging validation test: setup, the three-tier layout shown to customers, the pass condition, the fail condition, and a closing reminder that ambiguity equals failed packaging.",
+      "visualSpec": {
+        "slides": [
+          {
+            "template": "cover",
+            "params": {
+              "kicker": "PACKAGING VALIDATION",
+              "title": "The Jobs-To-Be-Done Test",
+              "body": "A one-question check that tells you if your packaging actually works — before you ship it."
+            }
+          },
+          {
+            "template": "framework",
+            "params": {
+              "kicker": "STEP 01",
+              "num": "01",
+              "title": "Lay out the three tiers",
+              "body": "Put your full packaging in front of a real customer. Label the jobs-to-be-done on each tier so nothing is hidden."
+            }
+          },
+          {
+            "template": "framework",
+            "params": {
+              "kicker": "STEP 02",
+              "num": "02",
+              "title": "Ask one question",
+              "body": "Which tier describes the job you are trying to get done? Stay quiet. Let them point."
+            }
+          },
+          {
+            "template": "listicle",
+            "params": {
+              "kicker": "READING THE RESULT",
+              "title": "What the answer tells you",
+              "items": [
+                "Points immediately = packaging works",
+                "Hedges between two tiers = boundaries are blurry",
+                "Says \"a little of both\" = packaging failed",
+                "Asks clarifying questions = jobs are not legible"
+              ]
+            }
+          },
+          {
+            "template": "quote",
+            "params": {
+              "kicker": "THE BAR",
+              "title": "If they cannot pick one without hesitation, the packaging is not done.",
+              "body": "LeanScale Labs — pricing and packaging workstream"
+            }
+          },
+          {
+            "template": "dark",
+            "params": {
+              "kicker": "RUN THE TEST",
+              "title": "Validate before you launch",
+              "body": "Most packaging fails in front of customers, not in the spreadsheet. Pull three customers this week and run the test."
+            }
+          }
+        ]
+      },
+      "status": "draft",
+      "scheduledFor": null,
+      "postedAt": null,
+      "linkedInUrl": null,
+      "createdAt": "2026-06-24T15:01:53.675Z"
+    },
+    {
+      "id": "jake-20260624-2",
+      "batchId": "2026-06-24",
+      "author": "Jake Toepel",
+      "authorSlug": "jake",
+      "contentType": "INFOGRAPHIC",
+      "topicTitle": "Multi-Segment Companies Need Multi-Complexity Pricing",
+      "postText": "If you sell to startups and enterprise off the same pricing page, you have a problem.\n\nStartup pricing absorbs almost zero complexity. One number, one tier, self-serve checkout.\n\nEnterprise pricing rewards complexity. Volume curves, seat tiers, usage commits, custom SKUs.\n\nTrying to make one architecture serve both is why your sales team cannot quote either segment cleanly.\n\nThe fix is not an elegant unified model. The fix is two architectures running in parallel — and packaging that decides which one a deal lives in.\n\nOne image on what that actually looks like.",
+      "voiceNotes": "Earnest builder voice, no contrarian bait. Frames the problem before the solution. Uses concrete artifacts (volume curves, seat tiers, SKUs) — load-bearing jargon, not decorative. Lands on a practical reframe rather than a hot take.",
+      "visualAssetNeeded": "Single-slide side-by-side comparison of startup pricing architecture vs. enterprise pricing architecture, showing the different complexity each absorbs and the routing decision that sits between them.",
+      "visualSpec": {
+        "slides": [
+          {
+            "template": "listicle",
+            "params": {
+              "kicker": "TWO ARCHITECTURES",
+              "title": "Multi-segment companies need multi-complexity pricing",
+              "items": [
+                "Startup track: one tier, one number, self-serve",
+                "Enterprise track: tiers, commits, seat curves, custom SKUs",
+                "Packaging decides which track a deal enters",
+                "Sales team quotes against the right model the first time",
+                "One unified page is what is breaking your quoting motion"
+              ]
+            }
+          }
+        ]
+      },
+      "status": "draft",
+      "scheduledFor": null,
+      "postedAt": null,
+      "linkedInUrl": null,
+      "createdAt": "2026-06-24T15:01:53.675Z"
+    },
+    {
+      "id": "jake-20260624-3",
+      "batchId": "2026-06-24",
+      "author": "Jake Toepel",
+      "authorSlug": "jake",
+      "contentType": "INDUSTRY OBSERVATION",
+      "topicTitle": "Pricing Should Be A Product, Not A Tablet From The Mountain",
+      "postText": "Pattern we are seeing across the pricing work at LeanScale Labs:\n\nThe old rule was \"set pricing once, don't touch it for five to seven years.\"\n\nThat rule is dead.\n\nIf your product ships new value monthly — new models, new agents, new capabilities — your pricing has to evolve at the same cadence. Otherwise the price stops reflecting what the product actually does.\n\nThe teams winning this right now treat pricing like a product team treats a product. Iterations. Releases. Customer feedback loops. A backlog. An owner.\n\nNot a tablet handed down from a Q4 offsite.\n\nIf your pricing page hasn't changed in two years and your product has, that gap is showing up in your sales calls.",
+      "voiceNotes": "Industry-observation register that fits Jake without forcing a contrarian opener. Uses \"pattern we are seeing\" — his earned vantage from LeanScale Labs. Lands on a concrete diagnostic the reader can run on themselves. No emoji, no hashtag stack.",
+      "visualAssetNeeded": "",
+      "visualSpec": null,
+      "status": "draft",
+      "scheduledFor": null,
+      "postedAt": null,
+      "linkedInUrl": null,
+      "createdAt": "2026-06-24T15:01:53.675Z"
+    },
+    {
+      "id": "jake-20260624-4",
+      "batchId": "2026-06-24",
+      "author": "Jake Toepel",
+      "authorSlug": "jake",
+      "contentType": "SOFT EDUCATIONAL",
+      "topicTitle": "Pricing Is An Operations And Product Problem, Not A Sales Problem",
+      "postText": "Confusion I keep running into when teams roll out AI pricing:\n\nThey treat it as a sales problem. One owner, usually the CRO. Tune for sellability, ship the new SKUs, hope finance can track it.\n\nThat model breaks the second AI usage shows up.\n\nWhen the CRO owns pricing alone, you optimize for what closes — and miss cost-to-serve. When product owns pricing alone, you build elegant feature ladders — and miss value capture.\n\nAI pricing only works when three teams ship in lockstep:\n\nProduct ships the metering — what gets counted, at what granularity.\n\nOperations ships the traceability — usage flowing cleanly from product to billing to CRM.\n\nRevenue ships the offer — packaging, discounting rules, quote-to-cash motion.\n\nStop putting AI pricing in one team's lane. It is an operations and product exercise as much as a pricing one. The teams that get this right are the ones that actually capture the value their AI delivers.",
+      "voiceNotes": "Soft educational register — clears up a real confusion he is hearing. Uses his \"three layers\" mental model habit. Plain-spoken, no jargon salad. Land-the-plane closer instead of a CTA. Slightly longer post (~220 words) to match his \"explaining a LeanScale Labs experiment\" length norm.",
+      "visualAssetNeeded": "",
+      "visualSpec": null,
+      "status": "draft",
+      "scheduledFor": null,
+      "postedAt": null,
+      "linkedInUrl": null,
+      "createdAt": "2026-06-24T15:01:53.675Z"
+    },
+    {
+      "id": "jake-20260624-5",
+      "batchId": "2026-06-24",
+      "author": "Jake Toepel",
+      "authorSlug": "jake",
+      "contentType": "CASE STUDY SNIPPET",
+      "topicTitle": "Anthropic's Weekly Pricing Experiments",
+      "postText": "I use Claude every day. If you do too, you have probably noticed something.\n\nAnthropic is shipping pricing changes almost weekly.\n\nNew credit promos. New plan tweaks. New bundles. Different limits on different tiers. A new add-on appears, an old one quietly gets repackaged.\n\nMost companies would call that chaotic.\n\nIt isn't. They are treating pricing as a feature surface — one that ships at the same cadence as the product. And the product ships fast, because the model capabilities ship fast.\n\nThe interesting part: this only works because the underlying telemetry is good enough to learn from each iteration. Usage data, conversion data, retention data — all wired into how the next packaging change gets shaped.\n\nThat is the new bar for any company building AI-native product.\n\nNot \"set pricing carefully and defend it.\" It is \"instrument it like a feature, ship it like a release, learn from it like a product team.\"\n\nIf your pricing only changes when leadership runs an offsite, you are operating on the old playbook against teams running the new one.",
+      "voiceNotes": "Case-study-snippet about a public example he can credibly comment on as a Claude user. Earnest builder voice — \"the interesting part\" framing fits his enthusiastic-without-hype register. Closes on a quiet diagnostic instead of a CTA — keeps it from feeling stamped onto the batch.",
+      "visualAssetNeeded": "",
+      "visualSpec": null,
+      "status": "draft",
+      "scheduledFor": null,
+      "postedAt": null,
+      "linkedInUrl": null,
+      "createdAt": "2026-06-24T15:01:53.675Z"
+    }
+  ]
+}
