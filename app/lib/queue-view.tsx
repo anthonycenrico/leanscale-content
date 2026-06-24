@@ -8,6 +8,8 @@ import {
   buildSlideUrl,
   buildSlideFilename,
   buildAssetPngUrl,
+  buildAssetPdfUrl,
+  buildPdfFilename,
   buildSlideId,
   buildPostDesignBrief,
 } from "./visual-spec";
@@ -222,9 +224,9 @@ function DesignNotes({ brief }: { brief: string }) {
 }
 
 function CarouselBlock({ postId, spec }: { postId: string; spec: VisualSpec }) {
-  const [downloadingAll, setDownloadingAll] = useState(false);
+  const [downloading, setDownloading] = useState(false);
 
-  const downloadSlide = async (url: string, filename: string) => {
+  const downloadFile = async (url: string, filename: string) => {
     try {
       const res = await fetch(url);
       const blob = await res.blob();
@@ -241,28 +243,24 @@ function CarouselBlock({ postId, spec }: { postId: string; spec: VisualSpec }) {
     }
   };
 
-  const downloadAll = async () => {
-    setDownloadingAll(true);
+  const single = spec.slides.length === 1;
+
+  const handlePrimaryDownload = async () => {
+    setDownloading(true);
     try {
-      for (let i = 0; i < spec.slides.length; i++) {
-        const slide = spec.slides[i];
-        const pngUrl = buildAssetPngUrl(postId, i);
-        const satoriUrl = buildSlideUrl(slide);
-        // Prefer the designed PNG; fall back to Satori if it isn't there yet.
-        let url = satoriUrl;
-        try {
-          const head = await fetch(pngUrl, { method: "HEAD" });
-          if (head.ok) url = pngUrl;
-        } catch {}
-        await downloadSlide(url, buildSlideFilename(postId, i));
-        await new Promise((r) => setTimeout(r, 220));
+      if (single) {
+        // Infographic — single PNG.
+        const url = buildAssetPngUrl(postId, 0);
+        await downloadFile(url, buildSlideFilename(postId, 0));
+      } else {
+        // Carousel — bundled PDF for LinkedIn's document-carousel viewer.
+        const url = buildAssetPdfUrl(postId);
+        await downloadFile(url, buildPdfFilename(postId));
       }
     } finally {
-      setDownloadingAll(false);
+      setDownloading(false);
     }
   };
-
-  const single = spec.slides.length === 1;
 
   return (
     <div className="carousel-block">
@@ -272,10 +270,14 @@ function CarouselBlock({ postId, spec }: { postId: string; spec: VisualSpec }) {
         </span>
         <button
           className="btn btn--small btn--lime"
-          onClick={downloadAll}
-          disabled={downloadingAll}
+          onClick={handlePrimaryDownload}
+          disabled={downloading}
         >
-          {downloadingAll ? "Downloading…" : single ? "Download PNG →" : "Download all →"}
+          {downloading
+            ? "Downloading…"
+            : single
+              ? "Download PNG →"
+              : "Download PDF →"}
         </button>
       </div>
 

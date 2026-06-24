@@ -45,6 +45,19 @@ export function buildSlideFilename(postId: string, index: number): string {
   return `${buildSlideId(postId, index)}.png`;
 }
 
+/**
+ * Bundled-carousel PDF — one file per CAROUSEL post, pages at 1080×1080. This
+ * is the LinkedIn upload format (document-carousel viewer). Infographics do not
+ * get a PDF; they upload as the single PNG.
+ */
+export function buildAssetPdfUrl(postId: string): string {
+  return `/assets/${postId}.pdf`;
+}
+
+export function buildPdfFilename(postId: string): string {
+  return `${postId}.pdf`;
+}
+
 /* ============================================================
    Per-post design brief — for the "tweak it yourself" workflow
    ============================================================ */
