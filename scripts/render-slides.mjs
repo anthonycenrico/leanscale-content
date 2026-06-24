@@ -133,6 +133,7 @@ const PAGE = ({ body, scheme = "light" }) => {
     color: var(--accent);
     font-variant-numeric: tabular-nums;
     min-width: 240px;
+    white-space: nowrap;
   }
   .framework-body { flex: 1; }
   .framework-title {
@@ -179,6 +180,7 @@ const PAGE = ({ body, scheme = "light" }) => {
     letter-spacing: -0.04em;
     color: var(--accent);
     font-variant-numeric: tabular-nums;
+    white-space: nowrap;
   }
   .stat-label {
     margin-top: 12px;
@@ -280,9 +282,9 @@ function renderCover(p, pageInfo) {
   const body = /* html */ `
     <div class="slide">
       <div class="top-row"><div class="tag">${escape(p.kicker || "")}</div></div>
-      <div class="stack" style="justify-content: center;">
-        <div class="cover-title">${escape(p.title || "")}</div>
-        ${p.body ? `<div class="cover-body">${escape(p.body)}</div>` : ""}
+      <div class="stack" data-audit="stack" style="justify-content: center;">
+        <div class="cover-title" data-audit="cover-title">${escape(p.title || "")}</div>
+        ${p.body ? `<div class="cover-body" data-audit="cover-body">${escape(p.body)}</div>` : ""}
       </div>
       ${footer(pageInfo, "light")}
     </div>`;
@@ -293,11 +295,11 @@ function renderFramework(p, pageInfo, scheme = "light") {
   const body = /* html */ `
     <div class="slide">
       <div class="top-row"><div class="tag">${escape(p.kicker || "")}</div></div>
-      <div class="framework-row">
-        <div class="framework-num">${escape(p.num || "01")}</div>
+      <div class="framework-row" data-audit="stack">
+        <div class="framework-num" data-fit-width="true" data-audit="framework-num">${escape(p.num || "01")}</div>
         <div class="framework-body">
-          <div class="framework-title">${escape(p.title || "")}</div>
-          ${p.body ? `<div class="framework-body-text">${escape(p.body)}</div>` : ""}
+          <div class="framework-title" data-audit="framework-title">${escape(p.title || "")}</div>
+          ${p.body ? `<div class="framework-body-text" data-audit="framework-body">${escape(p.body)}</div>` : ""}
         </div>
       </div>
       ${footer(pageInfo, scheme)}
@@ -309,11 +311,11 @@ function renderDark(p, pageInfo) {
   const body = /* html */ `
     <div class="slide">
       <div class="top-row"><div class="tag">${escape(p.kicker || "")}</div></div>
-      <div class="stack" style="justify-content: center;">
+      <div class="stack" data-audit="stack" style="justify-content: center;">
         <div>
           <div class="dark-accent-bar"></div>
-          <div class="dark-title">${escape(p.title || "")}</div>
-          ${p.body ? `<div class="dark-body">${escape(p.body)}</div>` : ""}
+          <div class="dark-title" data-audit="dark-title">${escape(p.title || "")}</div>
+          ${p.body ? `<div class="dark-body" data-audit="dark-body">${escape(p.body)}</div>` : ""}
         </div>
       </div>
       ${footer(pageInfo, "dark")}
@@ -325,10 +327,10 @@ function renderStat(p, pageInfo) {
   const body = /* html */ `
     <div class="slide">
       <div class="top-row"><div class="tag">${escape(p.kicker || "")}</div></div>
-      <div class="stack" style="justify-content: center;">
-        <div class="stat-num">${escape(p.stat || p.title || "")}</div>
-        ${p.statLabel ? `<div class="stat-label">${escape(p.statLabel)}</div>` : ""}
-        ${p.body ? `<div class="stat-body">${escape(p.body)}</div>` : ""}
+      <div class="stack" data-audit="stack" style="justify-content: center;">
+        <div class="stat-num" data-fit-width="true" data-audit="stat-num">${escape(p.stat || p.title || "")}</div>
+        ${p.statLabel ? `<div class="stat-label" data-audit="stat-label">${escape(p.statLabel)}</div>` : ""}
+        ${p.body ? `<div class="stat-body" data-audit="stat-body">${escape(p.body)}</div>` : ""}
       </div>
       ${footer(pageInfo, "light")}
     </div>`;
@@ -338,15 +340,15 @@ function renderStat(p, pageInfo) {
 function renderListicle(p, pageInfo) {
   const items = (p.items || []).slice(0, 6);
   const rows = items.map((item, idx) => /* html */ `
-    <div class="listicle-row">
+    <div class="listicle-row" data-audit="listicle-row">
       <span class="listicle-num">${String(idx + 1).padStart(2, "0")}</span>
       <span class="text">${escape(item)}</span>
     </div>`).join("");
   const body = /* html */ `
     <div class="slide">
       <div class="top-row"><div class="tag">${escape(p.kicker || "")}</div></div>
-      <div class="stack" style="justify-content: center; gap: 0;">
-        ${p.title ? `<div class="listicle-title">${escape(p.title)}</div>` : ""}
+      <div class="stack" data-audit="stack" style="justify-content: center; gap: 0;">
+        ${p.title ? `<div class="listicle-title" data-audit="listicle-title">${escape(p.title)}</div>` : ""}
         <div class="listicle-items">${rows}</div>
       </div>
       ${footer(pageInfo, "light")}
@@ -358,11 +360,11 @@ function renderQuote(p, pageInfo) {
   const body = /* html */ `
     <div class="slide">
       <div class="top-row"><div class="tag">${escape(p.kicker || "")}</div></div>
-      <div class="stack" style="justify-content: center;">
+      <div class="stack" data-audit="stack" style="justify-content: center;">
         <div>
           <div class="quote-mark">"</div>
-          <div class="quote-text">${escape(p.title || "")}</div>
-          ${p.body ? `<div class="quote-attrib">${escape(p.body)}</div>` : ""}
+          <div class="quote-text" data-audit="quote-text">${escape(p.title || "")}</div>
+          ${p.body ? `<div class="quote-attrib" data-audit="quote-attrib">${escape(p.body)}</div>` : ""}
         </div>
       </div>
       ${footer(pageInfo, "lime")}
@@ -417,6 +419,7 @@ async function main() {
   const page = await context.newPage();
 
   let written = 0;
+  const failures = [];
   for (const post of targets) {
     const slides = post.visualSpec.slides;
     const total = slides.length;
@@ -427,15 +430,68 @@ async function main() {
       await page.setContent(html, { waitUntil: "networkidle" });
       // Wait for Plus Jakarta Sans to finish loading
       await page.evaluate(() => document.fonts.ready);
+      // Auto-fit any [data-fit-width] element by shrinking font-size until scrollWidth fits
+      // its own allocated clientWidth (the box flex/grid actually gave it).
+      await page.evaluate(() => {
+        document.querySelectorAll('[data-fit-width="true"]').forEach((el) => {
+          let size = parseFloat(getComputedStyle(el).fontSize);
+          const minSize = size * 0.35;
+          let guard = 80;
+          while (el.scrollWidth > el.clientWidth + 1 && size > minSize && guard-- > 0) {
+            size *= 0.93;
+            el.style.fontSize = size + "px";
+          }
+        });
+      });
+      // Layout audit: real defects are horizontal overflow OR content crashing into the footer.
+      // We do NOT check per-element vertical scroll — tight line-heights (line-height < 1.1) cause
+      // false positives where the glyph extent exceeds the line-box by design.
+      const issues = await page.evaluate(() => {
+        const out = [];
+        document.querySelectorAll("[data-audit]").forEach((el) => {
+          const key = el.getAttribute("data-audit");
+          if (el.scrollWidth > el.clientWidth + 2) {
+            out.push({ where: key, kind: "h-overflow", got: el.scrollWidth, max: el.clientWidth });
+          }
+        });
+        // Stack content shouldn't crash into the footer.
+        const stack = document.querySelector('[data-audit="stack"]');
+        const footer = document.querySelector(".footer");
+        if (stack && footer) {
+          const sb = stack.getBoundingClientRect().bottom;
+          const ft = footer.getBoundingClientRect().top;
+          if (sb > ft + 2) out.push({ where: "stack-vs-footer", kind: "collision", got: sb, max: ft });
+        }
+        // Slide-level: anything escaping the 1080 canvas.
+        const slide = document.querySelector(".slide");
+        if (slide && slide.scrollHeight > 1080 + 2) {
+          out.push({ where: "slide", kind: "canvas-overflow", got: slide.scrollHeight, max: 1080 });
+        }
+        return out;
+      });
       const filename = `${buildSlideId(post.id, i)}.png`;
       const filePath = join(outDir, filename);
       await page.screenshot({ path: filePath, type: "png", omitBackground: false, clip: { x: 0, y: 0, width: 1080, height: 1080 } });
       written++;
-      process.stdout.write(`  [${written.toString().padStart(2, " ")}/${totalSlides}] ${filename}\n`);
+      const mark = issues.length ? `FAIL ${issues.length}` : "ok";
+      process.stdout.write(`  [${written.toString().padStart(2, " ")}/${totalSlides}] ${filename}  ${mark}\n`);
+      if (issues.length) failures.push({ slide: filename, issues });
     }
   }
   await browser.close();
   console.log(`Done. Wrote ${written} PNG${written === 1 ? "" : "s"} to public/assets/`);
+  if (failures.length) {
+    console.error(`\nLayout QA — ${failures.length} slide${failures.length === 1 ? "" : "s"} have content that does not fit:`);
+    for (const f of failures) {
+      console.error(`  ${f.slide}`);
+      for (const i of f.issues) {
+        console.error(`    · ${i.where} — ${i.kind} (got ${Math.round(i.got)} / max ${Math.round(i.max)})`);
+      }
+    }
+    console.error(`\nFix: shorten the offending visualSpec.params field in output/<date>/posts.json, then re-render just that post:`);
+    console.error(`  node scripts/render-slides.mjs <date> <postId>`);
+    process.exit(2);
+  }
 }
 
 main().catch((e) => { console.error(e); process.exit(1); });
